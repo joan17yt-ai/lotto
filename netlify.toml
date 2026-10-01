@@ -2,6 +2,7 @@
 
 [build]
   publish = "."
+  functions = "netlify/functions"
 
 # Custom headers for SEO, performance, and security
 [[headers]]
