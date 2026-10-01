@@ -50,18 +50,15 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python -c "
+          python scripts/send_telegram_alert.py --type reminder_630pm || python -c "
           import os, urllib.request, urllib.parse, json
           token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
           chat_id = os.environ.get('TELEGRAM_CHAT_ID', '')
-          if token and chat_id:
-              msg = '🔔 *¡HOLA JOAN! CONEXIÓN EXITOSA DESDE LA NUBE* 🇨🇴\n\nTu bot de Telegram ya está conectado oficialmente con GitHub Actions y Netlify.\n\n💰 *Baloto:* $61.600 Millones\n💰 *MiLoto:* $260 Millones\n\n👉 *Página web en vivo:* https://lotto-colombia.netlify.app\n\nTodos los días de sorteo a las 6:30 PM saldrá este recordatorio automático a tus clientes.'
-              url = f'https://api.telegram.org/bot{token}/sendMessage'
-              data = urllib.parse.urlencode({'chat_id': chat_id, 'text': msg, 'parse_mode': 'Markdown'}).encode()
-              req = urllib.request.Request(url, data=data)
-              try:
-                  with urllib.request.urlopen(req) as resp:
-                      print('Mensaje enviado exitosamente:', resp.read().decode())
-              except Exception as e:
-                  print('Error:', e)
+          data = json.load(open('data/lottery_data.json')) if os.path.exists('data/lottery_data.json') else {}
+          b_jp = data.get('games', {}).get('baloto', {}).get('latest_draw', {}).get('jackpot', '\$61.600 Millones')
+          m_jp = data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '\$260 Millones')
+          msg = f'🔔 *¡RECORDATORIO DE SORTEO HOY!* 🇨🇴\n\nEsta noche juegan Baloto y MiLoto.\n💰 *Acumulado Baloto:* {b_jp}\n💰 *Acumulado MiLoto:* {m_jp}\n\n👉 *Página web en vivo:* https://lotto-colombia.netlify.app\n\nNo olvides ingresar a la página y buscar tus números optimizados para hoy. 🍀'
+          url = f'https://api.telegram.org/bot{token}/sendMessage'
+          payload = urllib.parse.urlencode({'chat_id': chat_id, 'text': msg, 'parse_mode': 'Markdown'}).encode()
+          urllib.request.urlopen(urllib.request.Request(url, data=payload))
           "
