@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin PIN Generator | LottoAnalytics Colombia</title>
+  <title>Panel de Control y PINs | LottoAnalytics Admin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .admin-container {
-      max-width: 650px;
-      margin: 2rem auto;
+      max-width: 900px;
+      margin: 1.5rem auto;
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 16px;
@@ -51,7 +51,7 @@
       background: rgba(16, 185, 129, 0.1);
       border: 1px solid #10b981;
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 1.25rem;
       margin-top: 1.5rem;
     }
     .pin-display {
@@ -77,6 +77,61 @@
       margin-top: 0.75rem;
       line-height: 1.5;
     }
+    /* Registry Table */
+    .history-card {
+      margin-top: 2.5rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+    }
+    .badge-active {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      display: inline-block;
+    }
+    .badge-expired {
+      background: rgba(239, 68, 68, 0.2);
+      color: #f87171;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      display: inline-block;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+    .btn-action-small {
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: #cbd5e1;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+      margin-right: 4px;
+    }
+    .btn-action-small:hover {
+      background: #334155;
+      color: #fff;
+    }
+    .btn-delete-small {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid #ef4444;
+      color: #f87171;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    .btn-delete-small:hover {
+      background: #ef4444;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -87,7 +142,7 @@
       <div id="admin-auth-screen">
         <h2 style="font-size: 1.4rem; font-weight:800; color:#60a5fa; margin-bottom: 0.5rem;">🔐 Acceso de Administrador</h2>
         <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom: 1.25rem;">
-          Panel privado para generar PINs seguros con fecha de inicio y vencimiento por cliente.
+          Panel privado para generar PINs seguros, consultar clientes y verificar estados de suscripción.
         </p>
         <div class="form-group">
           <label>Contraseña Maestra</label>
@@ -96,59 +151,113 @@
         <button class="btn-primary" style="width:100%;" onclick="checkAdminAuth()">Ingresar al Generador</button>
       </div>
 
-      <!-- PIN GENERATOR PANEL -->
+      <!-- MAIN ADMIN PANEL -->
       <div id="admin-panel" style="display:none;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom:1px solid #1f293d; padding-bottom:1rem;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; border-bottom:1px solid #1f293d; padding-bottom:1rem; flex-wrap:wrap; gap:0.5rem;">
           <div>
-            <h2 style="font-size: 1.3rem; font-weight:800; color:#fbbf24;">👑 Generador de PINs VIP Criptográficos</h2>
-            <p style="font-size:0.8rem; color:var(--text-muted);">Genera claves únicas e infalsificables con vigencia individual.</p>
+            <h2 style="font-size: 1.4rem; font-weight:800; color:#fbbf24;">👑 Control de PINs y Clientes VIP</h2>
+            <p style="font-size:0.85rem; color:var(--text-muted);">Generación con vigencia individual y registro de ventas.</p>
           </div>
-          <button onclick="logoutAdmin()" style="background:transparent; border:1px solid #475569; color:#94a3b8; font-size:0.75rem; padding:0.35rem 0.65rem; border-radius:6px; cursor:pointer;">Salir</button>
+          <button onclick="logoutAdmin()" style="background:transparent; border:1px solid #475569; color:#94a3b8; font-size:0.8rem; padding:0.4rem 0.85rem; border-radius:6px; cursor:pointer;">Cerrar Sesión</button>
         </div>
 
-        <div class="form-group">
-          <label>Nombre o Teléfono del Cliente</label>
-          <input type="text" id="client-name" placeholder="Ej. Carlos Mendoza (Bucaramanga)">
-        </div>
-
-        <div class="form-group">
-          <label>Duración de la Membresía</label>
-          <select id="duration-select" onchange="toggleCustomDate(this.value)">
-            <option value="30">1 Mes (30 Días) — Plan Estándar</option>
-            <option value="15">15 Días (Quincenal)</option>
-            <option value="7">7 Días (Semana de Prueba)</option>
-            <option value="60">2 Meses (60 Días)</option>
-            <option value="90">3 Meses (Trimestral)</option>
-            <option value="custom">Fecha de fin personalizada...</option>
-          </select>
-        </div>
-
-        <div class="form-group" id="custom-date-group" style="display:none;">
-          <label>Fecha de Vencimiento Exacta</label>
-          <input type="date" id="custom-exp-date">
-        </div>
-
-        <button class="btn-primary" style="width:100%; font-size:1rem; padding:0.85rem;" onclick="generateClientPin()">
-          ⚡ Generar PIN y Mensaje de WhatsApp
-        </button>
-
-        <!-- RESULT CARD -->
-        <div class="result-card" id="result-box">
-          <div style="font-weight:700; color:#34d399; font-size:0.9rem; text-align:center;">✅ PIN GENERADO CON ÉXITO</div>
-          <div class="pin-display" id="out-pin">VIP-XXXXXX-XXX-XXXX</div>
+        <!-- SECCIÓN 1: GENERADOR DE PIN -->
+        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight:700; color:#93c5fd; margin-bottom: 1rem;">➕ Generar Nuevo PIN para Cliente</h3>
           
-          <div style="font-size:0.85rem; color:#cbd5e1; margin:0.75rem 0; line-height:1.6;">
-            • <strong>Cliente:</strong> <span id="out-client">--</span><br>
-            • <strong>Fecha de activación:</strong> <span id="out-start">--</span><br>
-            • <strong>Fecha de vencimiento:</strong> <span id="out-end" style="color:#fbbf24; font-weight:700;">--</span> (<span id="out-days">30</span> días activos)
+          <div class="form-group">
+            <label>Nombre o Teléfono del Cliente</label>
+            <input type="text" id="client-name" placeholder="Ej. Carlos Mendoza (WhatsApp 315...)">
           </div>
 
-          <label style="margin-top:1rem;">Mensaje Listo para Enviar por WhatsApp:</label>
-          <div class="whatsapp-box" id="out-msg"></div>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1rem;">
+            <div class="form-group">
+              <label>Duración</label>
+              <select id="duration-select" onchange="toggleCustomDate(this.value)">
+                <option value="30">1 Mes (30 Días) — $15.000 COP</option>
+                <option value="15">15 Días (Quincenal)</option>
+                <option value="7">7 Días (Semana de Prueba)</option>
+                <option value="60">2 Meses (60 Días)</option>
+                <option value="90">3 Meses (Trimestral)</option>
+                <option value="custom">Fecha de fin personalizada...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Monto Pagado (Opcional)</label>
+              <input type="text" id="client-amount" placeholder="Ej. $15.000 Nequi">
+            </div>
+          </div>
 
-          <button class="btn-primary" style="width:100%; margin-top:0.75rem; background:linear-gradient(135deg, #10b981, #059669);" onclick="copyWhatsappMsg()">
-            📋 Copiar Mensaje para WhatsApp
+          <div class="form-group" id="custom-date-group" style="display:none;">
+            <label>Fecha de Vencimiento Exacta</label>
+            <input type="date" id="custom-exp-date">
+          </div>
+
+          <button class="btn-primary" style="width:100%; font-size:1rem; padding:0.85rem;" onclick="generateClientPin()">
+            ⚡ Generar PIN y Registrar Venta
           </button>
+
+          <!-- RESULT CARD -->
+          <div class="result-card" id="result-box">
+            <div style="font-weight:700; color:#34d399; font-size:0.9rem; text-align:center;">✅ PIN GENERADO Y REGISTRADO EN EL HISTORIAL</div>
+            <div class="pin-display" id="out-pin">VIP-XXXXXX-XXX-XXXX</div>
+            
+            <div style="font-size:0.85rem; color:#cbd5e1; margin:0.75rem 0; line-height:1.6;">
+              • <strong>Cliente:</strong> <span id="out-client">--</span><br>
+              • <strong>Fecha de activación:</strong> <span id="out-start">--</span><br>
+              • <strong>Fecha de vencimiento:</strong> <span id="out-end" style="color:#fbbf24; font-weight:700;">--</span> (<span id="out-days">30</span> días activos)
+            </div>
+
+            <label style="margin-top:1rem;">Mensaje Listo para Enviar por WhatsApp:</label>
+            <div class="whatsapp-box" id="out-msg"></div>
+
+            <button class="btn-primary" style="width:100%; margin-top:0.75rem; background:linear-gradient(135deg, #10b981, #059669);" onclick="copyWhatsappMsg()">
+              📋 Copiar Mensaje para WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- SECCIÓN 2: AUDITOR / VERIFICADOR MANUAL DE CUALQUIER PIN -->
+        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid #1e293b; border-radius: 12px; padding: 1.25rem; margin-bottom: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight:700; color:#93c5fd; margin-bottom: 0.5rem;">🔍 Verificar Estado de Cualquier PIN</h3>
+          <p style="font-size:0.8rem; color:var(--text-muted); margin-bottom: 0.75rem;">Si un cliente te escribe preguntando si su PIN está activo o cuándo se vence, pégalo aquí para auditarlo al instante:</p>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <input type="text" id="verify-input" placeholder="Pega el PIN (ej. VIP-261031-842-50EB)" style="flex:1; min-width:220px;">
+            <button class="btn-primary" onclick="auditSinglePin()">Consultar PIN</button>
+          </div>
+          <div id="verify-result-box" style="display:none; margin-top:0.75rem; padding:0.75rem; border-radius:8px; font-size:0.85rem;"></div>
+        </div>
+
+        <!-- SECCIÓN 3: HISTORIAL DE PINES GENERADOS Y VENTAS -->
+        <div class="history-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+            <div>
+              <h3 style="font-size: 1.2rem; font-weight:800; color:#fff;">📋 Historial de PINs Registrados (<span id="pins-count">0</span>)</h3>
+              <p style="font-size:0.8rem; color:var(--text-muted);">Monitoreo de clientes, estados en tiempo real y fechas de corte.</p>
+            </div>
+            <div>
+              <button class="btn-action-small" onclick="exportToCsv()">📥 Exportar a Excel (CSV)</button>
+              <button class="btn-action-small" onclick="clearExpiredPins()">🧹 Limpiar Vencidos</button>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cliente</th>
+                  <th>PIN</th>
+                  <th>Vencimiento</th>
+                  <th>Estado</th>
+                  <th>Pago</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="pins-table-body">
+                <!-- Filas renderizadas con JavaScript -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div>
@@ -158,7 +267,8 @@
 
   <script>
     const SECRET_SALT = 'Joan17LottoSecretKey2026';
-    const ADMIN_PASS = 'JOAN17-ADMIN'; // Puedes cambiar esta contraseña maestra cuando desees
+    const ADMIN_PASS = 'JOAN17-ADMIN';
+    const STORAGE_KEY = 'lotto_admin_pins_registry';
 
     function checkAdminAuth() {
       const pass = document.getElementById('admin-pass').value.trim();
@@ -166,6 +276,7 @@
         document.getElementById('admin-auth-screen').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
         sessionStorage.setItem('admin_logged', 'true');
+        renderPinsTable();
       } else {
         alert('Contraseña maestra incorrecta.');
       }
@@ -184,13 +295,23 @@
     async function sha256Short(str) {
       const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
       const arr = Array.from(new Uint8Array(buf));
-      const hex = arr.map(b => b.toString(16).padStart(2, '0')).join('');
-      return hex.substring(0, 4).toUpperCase();
+      return arr.map(b => b.toString(16).padStart(2, '0')).join('').substring(0, 4).toUpperCase();
+    }
+
+    function getSavedPins() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : [];
+    }
+
+    function savePinsList(list) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      renderPinsTable();
     }
 
     async function generateClientPin() {
-      const client = document.getElementById('client-name').value.trim() || 'Cliente';
+      const client = document.getElementById('client-name').value.trim() || 'Cliente VIP';
       const durVal = document.getElementById('duration-select').value;
+      const amount = document.getElementById('client-amount').value.trim() || '$15.000 COP';
       
       const today = new Date();
       let expDate = new Date();
@@ -243,6 +364,167 @@
 
       document.getElementById('out-msg').innerText = msg;
       document.getElementById('result-box').style.display = 'block';
+
+      // Save to registry
+      const pins = getSavedPins();
+      pins.unshift({
+        id: Date.now(),
+        client: client,
+        pin: finalPin,
+        created_at: today.toISOString().split('T')[0],
+        expires_at: expDate.toISOString().split('T')[0],
+        amount: amount,
+        msg: msg
+      });
+      savePinsList(pins);
+    }
+
+    function renderPinsTable() {
+      const pins = getSavedPins();
+      const countEl = document.getElementById('pins-count');
+      if (countEl) countEl.innerText = pins.length;
+
+      const tbody = document.getElementById('pins-table-body');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      if (pins.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; color:#94a3b8; padding:1.5rem;">Aún no has generado ningún PIN. Los que generes se guardarán aquí automáticamente.</td></tr>`;
+        return;
+      }
+
+      const today = new Date().toISOString().split('T')[0];
+
+      pins.forEach(item => {
+        const isExpired = item.expires_at < today;
+        const statusBadge = isExpired ? 
+          `<span class="badge-expired">🔴 Vencido (${item.expires_at})</span>` : 
+          `<span class="badge-active">🟢 Activo</span>`;
+
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><strong>${item.client}</strong></td>
+          <td style="font-family:monospace; color:#60a5fa; font-weight:700;">${item.pin}</td>
+          <td>${item.expires_at}</td>
+          <td>${statusBadge}</td>
+          <td style="color:#94a3b8;">${item.amount || '--'}</td>
+          <td>
+            <button class="btn-action-small" onclick="copyPinText('${item.pin}')" title="Copiar PIN">PIN</button>
+            <button class="btn-action-small" onclick="copyStoredMsg(${item.id})" title="Copiar WhatsApp">WA</button>
+            <button class="btn-delete-small" onclick="deletePin(${item.id})" title="Eliminar">✕</button>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    function copyPinText(pin) {
+      navigator.clipboard.writeText(pin).then(() => alert(`PIN copiado: ${pin}`));
+    }
+
+    function copyStoredMsg(id) {
+      const pins = getSavedPins();
+      const item = pins.find(x => x.id === id);
+      if (item && item.msg) {
+        navigator.clipboard.writeText(item.msg).then(() => alert('¡Mensaje de WhatsApp copiado al portapapeles!'));
+      }
+    }
+
+    function deletePin(id) {
+      if (confirm('¿Deseas eliminar este registro del historial?')) {
+        const pins = getSavedPins().filter(x => x.id !== id);
+        savePinsList(pins);
+      }
+    }
+
+    function clearExpiredPins() {
+      if (confirm('¿Eliminar del historial los PINs que ya están vencidos?')) {
+        const today = new Date().toISOString().split('T')[0];
+        const activeOnly = getSavedPins().filter(x => x.expires_at >= today);
+        savePinsList(activeOnly);
+      }
+    }
+
+    function exportToCsv() {
+      const pins = getSavedPins();
+      if (pins.length === 0) {
+        alert('No hay registros para exportar.');
+        return;
+      }
+
+      let csv = 'Cliente,PIN,Fecha Creacion,Fecha Vencimiento,Monto,Estado\n';
+      const today = new Date().toISOString().split('T')[0];
+      pins.forEach(p => {
+        const est = p.expires_at >= today ? 'ACTIVO' : 'VENCIDO';
+        csv += `"${p.client}","${p.pin}","${p.created_at}","${p.expires_at}","${p.amount}","${est}"\n`;
+      });
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `clientes_vip_lotto_${today}.csv`;
+      a.click();
+    }
+
+    // Auditor manual rápido de PIN
+    async function auditSinglePin() {
+      const rawPin = document.getElementById('verify-input').value.trim().toUpperCase();
+      const resBox = document.getElementById('verify-result-box');
+      if (!rawPin) return;
+
+      const parts = rawPin.split('-');
+      if (parts.length !== 4 || parts[0] !== 'VIP') {
+        resBox.style.display = 'block';
+        resBox.style.background = 'rgba(239, 68, 68, 0.2)';
+        resBox.style.border = '1px solid #ef4444';
+        resBox.innerHTML = `<span style="color:#f87171; font-weight:700;">❌ Formato Inválido:</span> Este código no tiene la estructura de un PIN VIP válido.`;
+        return;
+      }
+
+      const [prefix, dateCode, clientId, providedHash] = parts;
+      const payload = `${dateCode}-${clientId}-${SECRET_SALT}`;
+      const expectedHash = await sha256Short(payload);
+
+      if (providedHash !== expectedHash) {
+        resBox.style.display = 'block';
+        resBox.style.background = 'rgba(239, 68, 68, 0.2)';
+        resBox.style.border = '1px solid #ef4444';
+        resBox.innerHTML = `<span style="color:#f87171; font-weight:700;">❌ PIN Falso / Adulterado:</span> La firma criptográfica no coincide. Este código no fue emitido por ti.`;
+        return;
+      }
+
+      const year = parseInt('20' + dateCode.substring(0, 2));
+      const month = parseInt(dateCode.substring(2, 4)) - 1;
+      const day = parseInt(dateCode.substring(4, 6));
+      const expDate = new Date(year, month, day, 23, 59, 59);
+      const now = new Date();
+      const diffDays = Math.ceil((expDate - now) / (1000 * 60 * 60 * 24));
+      const formattedDate = expDate.toLocaleDateString('es-CO', { day: '2-digit', month: 'long', year: 'numeric' });
+
+      resBox.style.display = 'block';
+      if (diffDays >= 0) {
+        resBox.style.background = 'rgba(16, 185, 129, 0.2)';
+        resBox.style.border = '1px solid #10b981';
+        resBox.innerHTML = `
+          <div style="color:#34d399; font-weight:800; font-size:0.95rem;">✅ PIN AUTÉNTICO Y ACTIVO</div>
+          <div style="color:#e2e8f0; margin-top:4px;">
+            • Vence el: <strong>${formattedDate}</strong><br>
+            • Tiempo restante: <strong>${diffDays} días disponibles</strong><br>
+            • ID de cliente: #${clientId}
+          </div>
+        `;
+      } else {
+        resBox.style.background = 'rgba(239, 68, 68, 0.2)';
+        resBox.style.border = '1px solid #ef4444';
+        resBox.innerHTML = `
+          <div style="color:#f87171; font-weight:800; font-size:0.95rem;">⚠️ PIN AUTÉNTICO PERO YA VENCIDO</div>
+          <div style="color:#e2e8f0; margin-top:4px;">
+            • Este PIN venció el <strong>${formattedDate}</strong> (hace ${Math.abs(diffDays)} días).<br>
+            • El cliente debe renovar su pago por Nequi/Daviplata.
+          </div>
+        `;
+      }
     }
 
     function copyWhatsappMsg() {
@@ -256,6 +538,7 @@
       if (sessionStorage.getItem('admin_logged') === 'true') {
         document.getElementById('admin-auth-screen').style.display = 'none';
         document.getElementById('admin-panel').style.display = 'block';
+        renderPinsTable();
       }
     };
   </script>
