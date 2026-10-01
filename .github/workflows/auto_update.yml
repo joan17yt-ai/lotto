@@ -1,0 +1,67 @@
+name: LottoAnalytics Cloud Engine (Alertas y Auto-Actualizacion)
+
+on:
+  schedule:
+    # 23:30 UTC = 6:30 PM Colombia (Recordatorio de sorteo)
+    - cron: '30 23 * * *'
+    # 04:30 UTC = 11:30 PM Colombia (Sorteo nocturno)
+    - cron: '30 4 * * *'
+    # 05:30 UTC = 12:30 AM Colombia (Revisión diferida +1h)
+    - cron: '30 5 * * *'
+  workflow_dispatch: # Botón para probar el envío manual cuando quieras
+
+jobs:
+  run-lotto:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clonar Repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar Dependencias
+        run: |
+          pip install beautifulsoup4 numpy
+
+      - name: Actualizar Sorteos
+        run: |
+          python scripts/update_data.py || true
+
+      - name: Guardar Nuevos Sorteos en Netlify
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/lottery_data.json
+          if git diff --staged --quiet; then
+            echo "No hay sorteos nuevos pendientes de guardar."
+          else
+            git commit -m "Auto-update: Nuevos sorteos oficiales [$(date -u)]"
+            git push
+          fi
+
+      - name: Enviar Alerta Oficial a Telegram desde la Nube
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "
+          import os, urllib.request, urllib.parse, json
+          token = os.environ.get('TELEGRAM_BOT_TOKEN', '')
+          chat_id = os.environ.get('TELEGRAM_CHAT_ID', '')
+          if token and chat_id:
+              msg = '🔔 *¡HOLA JOAN! CONEXIÓN EXITOSA DESDE LA NUBE* 🇨🇴\n\nTu bot de Telegram ya está conectado oficialmente con GitHub Actions y Netlify.\n\n💰 *Baloto:* $61.600 Millones\n💰 *MiLoto:* $260 Millones\n\n👉 *Página web en vivo:* https://lotto-colombia.netlify.app\n\nTodos los días de sorteo a las 6:30 PM saldrá este recordatorio automático a tus clientes.'
+              url = f'https://api.telegram.org/bot{token}/sendMessage'
+              data = urllib.parse.urlencode({'chat_id': chat_id, 'text': msg, 'parse_mode': 'Markdown'}).encode()
+              req = urllib.request.Request(url, data=data)
+              try:
+                  with urllib.request.urlopen(req) as resp:
+                      print('Mensaje enviado exitosamente:', resp.read().decode())
+              except Exception as e:
+                  print('Error:', e)
+          "
