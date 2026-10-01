@@ -1,0 +1,577 @@
+/* LottoAnalytics Pro Colombia - Modern Stylesheet */
+:root {
+  --bg-dark: #090d16;
+  --bg-card: #111827;
+  --bg-card-hover: #172033;
+  --border-color: #1f293d;
+  --text-main: #f9fafb;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  
+  --primary: #3b82f6;
+  --primary-glow: rgba(59, 130, 246, 0.25);
+  --accent-gold: #f59e0b;
+  --accent-red: #ef4444;
+  --accent-green: #10b981;
+  --accent-cyan: #06b6d4;
+
+  --ball-baloto-grad: linear-gradient(135deg, #fde047 0%, #f59e0b 50%, #d97706 100%);
+  --ball-revancha-grad: linear-gradient(135deg, #f87171 0%, #ef4444 50%, #b91c1c 100%);
+  --ball-miloto-grad: linear-gradient(135deg, #34d399 0%, #10b981 50%, #047857 100%);
+  --ball-super-grad: linear-gradient(135deg, #fb7185 0%, #e11d48 50%, #be123c 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Branding */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.brand-wrapper h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-wrapper p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.header-badges {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Monetization: Ad Slots */
+.ad-slot {
+  background: rgba(17, 24, 39, 0.5);
+  border: 1px dashed #2d3748;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-label {
+  font-size: 0.65rem;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.ad-placeholder-text {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+/* VIP / Affiliate Banner */
+.vip-card {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(88, 28, 135, 0.3) 100%);
+  border: 1px solid #3b82f6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+}
+
+.vip-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #93c5fd;
+  margin-bottom: 0.25rem;
+}
+
+.vip-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.btn-vip {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-vip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+/* Grids & Cards */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.35rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #374151;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.jackpot-pill {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* 3D Lottery Balls */
+.ball-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1.25rem 0;
+  flex-wrap: wrap;
+}
+
+.ball {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.45);
+  user-select: none;
+}
+
+.ball-baloto { background: var(--ball-baloto-grad); color: #000; }
+.ball-revancha { background: var(--ball-revancha-grad); color: #fff; }
+.ball-miloto { background: var(--ball-miloto-grad); color: #042f2e; }
+.ball-super {
+  background: var(--ball-super-grad);
+  color: #fff;
+  border: 2px solid #fda4af;
+  box-shadow: 0 0 12px rgba(225, 29, 72, 0.5), inset 0 2px 4px rgba(255,255,255,0.45);
+}
+
+.card-meta {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+}
+
+/* Tabs Navigation */
+.tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  padding: 0.65rem 1.35rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+  color: #fff;
+  background: #1f293d;
+  border-color: #3b82f6;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25);
+}
+
+/* Generator Section */
+.generator-section {
+  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  border: 1px solid #1e3a8a;
+  border-radius: 14px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.section-heading {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.controls-bar {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+select {
+  background: #1f293d;
+  color: #fff;
+  border: 1px solid #374151;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.ticket-box {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid #27354f;
+  border-radius: 12px;
+  padding: 1.15rem;
+  position: relative;
+  transition: transform 0.15s;
+}
+
+.ticket-box:hover {
+  transform: translateY(-2px);
+  border-color: #3b82f6;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.ticket-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-copy {
+  background: transparent;
+  border: 1px solid #334155;
+  color: var(--text-muted);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-copy:hover {
+  color: #fff;
+  background: #1e293b;
+}
+
+.ticket-footer {
+  margin-top: 0.75rem;
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  border-top: 1px solid #1f293d;
+  padding-top: 0.6rem;
+}
+
+/* Heatmap Grid */
+.heatmap-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+  gap: 0.5rem;
+  margin: 1.25rem 0 2rem 0;
+}
+
+.heat-cell {
+  background: #131c2e;
+  border: 1px solid #23314d;
+  border-radius: 10px;
+  padding: 0.6rem 0.4rem;
+  text-align: center;
+  transition: transform 0.15s;
+}
+
+.heat-cell:hover {
+  transform: scale(1.05);
+  border-color: #60a5fa;
+  z-index: 2;
+}
+
+.heat-val {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.heat-sub {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.tag-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 2px 5px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.tag-hot { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+.tag-warm { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245,158,11,0.3); }
+.tag-cold { background: rgba(6, 182, 212, 0.2); color: #38bdf8; border: 1px solid rgba(6,182,212,0.3); }
+
+/* Tables */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+th, td {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  color: var(--text-subtle);
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* Ticket Checker Tool */
+.checker-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.checker-inputs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.checker-input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #1f293d;
+  color: #fff;
+  outline: none;
+}
+
+.checker-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.checker-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.7);
+  display: none;
+}
+
+/* Footer & Legal */
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.825rem;
+  color: var(--text-subtle);
+  text-align: center;
+}
+
+.legal-notice {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid #1f293d;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}

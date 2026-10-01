@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags Colombia -->
+  <title>LottoAnalytics Colombia | Resultados, Estadísticas y Pronósticos Baloto y MiLoto</title>
+  <meta name="description" content="Consulta los últimos resultados oficiales de Baloto, Revancha y MiLoto en Colombia. Análisis estadístico de balotas calientes, rezagadas, mapas de calor y generador inteligente de jugadas.">
+  <meta name="keywords" content="Baloto Colombia, MiLoto, Baloto Revancha, Resultados Baloto hoy, Estadísticas Baloto, Pronóstico Baloto, Números que más caen Baloto, Coljuegos">
+  <meta name="author" content="LottoAnalytics Pro">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LottoAnalytics Colombia | Inteligencia de Datos Baloto & MiLoto">
+  <meta property="og:description" content="Resultados en vivo, mapas de calor, números calientes y pronósticos estadísticos optimizados.">
+  <meta property="og:locale" content="es_CO">
+
+  <!-- PWA & Mobile Web App -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#090d16">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Espacio para Google AdSense (Reemplazar con tu ID ca-pub-XXXXX cuando lo tengas) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- BANNER DE PUBLICIDAD SUPERIOR (MONETIZACIÓN) -->
+    <div class="ad-slot" id="top-ad-slot">
+      <span class="ad-label">Espacio Publicitario / Google AdSense</span>
+      <span class="ad-placeholder-text">Banner Superior 728x90 (Desktop) / 320x100 (Móvil)</span>
+      <!-- Código de AdSense aquí: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-..." data-ad-slot="..." data-ad-format="auto"></ins> -->
+    </div>
+
+    <!-- ENCABEZADO Y BRANDING -->
+    <header>
+      <div class="brand-wrapper">
+        <h1>LottoAnalytics Pro Colombia</h1>
+        <p>Motor de Análisis Numérico, Mapas de Frecuencia y Pronósticos</p>
+      </div>
+      <div class="header-badges">
+        <span class="status-badge">
+          <span class="pulse-dot"></span> Sincronizado: <span id="last-sync-time">Cargando...</span>
+        </span>
+      </div>
+    </header>
+
+    <!-- ÚLTIMOS RESULTADOS EN VIVO (CARDS SUPERIORES) -->
+    <section>
+      <div class="grid-3" id="summary-cards-container">
+        <!-- Renderizado dinámicamente con JavaScript -->
+      </div>
+    </section>
+
+    <!-- BANNER FREEMIUM / CLUB VIP / TELEGRAM (MONETIZACIÓN DIRECTA) -->
+    <div class="vip-card">
+      <div class="vip-content">
+        <h3>🚀 Únete al Club VIP de Pronósticos por Telegram</h3>
+        <p>Recibe alertas automáticas 15 minutos antes de cada sorteo con las 3 jugadas de mayor probabilidad gaussiana.</p>
+      </div>
+      <a href="https://t.me/" target="_blank" rel="noopener" class="btn-vip">
+        <span>📲 Unirse al Canal Gratis</span>
+      </a>
+    </div>
+
+    <!-- SELECTOR DE PESTAÑAS POR JUEGO -->
+    <nav class="tabs-nav" aria-label="Juegos">
+      <button class="tab-btn active" data-game="baloto" onclick="setGameTab('baloto')">Baloto Tradicional</button>
+      <button class="tab-btn" data-game="revancha" onclick="setGameTab('revancha')">Baloto Revancha</button>
+      <button class="tab-btn" data-game="miloto" onclick="setGameTab('miloto')">MiLoto</button>
+    </nav>
+
+    <!-- GENERADOR DE JUGADAS INTELIGENTES -->
+    <section class="generator-section">
+      <div class="section-heading">⚡ Generador Algorítmico de Pronósticos</div>
+      <p class="section-desc">
+        Aplica filtros de campana de Gauss, balance de paridad (65% histórico), pares de co-ocurrencia y teoría de juegos para no compartir pozo.
+      </p>
+
+      <div class="controls-bar">
+        <select id="strategy-select" aria-label="Estrategia">
+          <option value="all">Portafolio Completo (Las 4 Estrategias)</option>
+          <option value="balanced">Estrategia Equilibrada (Gauss + Paridad)</option>
+          <option value="hot">Tendencia Caliente (Momentum & Pares)</option>
+          <option value="cold">Reversión a la Media (Rezagadas)</option>
+          <option value="anticrowd">Anti-Aglomeración (Premios sin compartir >31)</option>
+        </select>
+        <button class="btn-primary" onclick="handleGenerateTickets()">Generar Jugadas</button>
+      </div>
+
+      <div class="ticket-grid" id="ticket-results-grid">
+        <!-- Generación de boletos -->
+      </div>
+    </section>
+
+    <!-- ANUNCIO INTERMEDIO (MONETIZACIÓN IN-FEED) -->
+    <div class="ad-slot" id="middle-ad-slot">
+      <span class="ad-label">Espacio Publicitario / Google AdSense</span>
+      <span class="ad-placeholder-text">Banner In-Feed Nativo Responsivo</span>
+    </div>
+
+    <!-- SECCIÓN DE INTELIGENCIA DE DATOS -->
+    <section>
+      <div class="section-heading" id="current-game-title">Inteligencia de Datos</div>
+      <p class="section-desc" id="total-draws-count">Cargando sorteos...</p>
+
+      <!-- MAPA DE CALOR -->
+      <div class="card" style="margin-bottom: 2rem;">
+        <div class="card-top">
+          <span class="card-title">🔥 Mapa de Calor y Frecuencia de Balotas</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Frecuencia total y clasificación en tiempo real: <span style="color:#f87171; font-weight:700;">HOT 🔥</span> (racha alta), <span style="color:#fbbf24; font-weight:700;">REG 🟡</span> (frecuencia esperada), <span style="color:#38bdf8; font-weight:700;">FRÍA ❄️</span> (baja frecuencia).
+        </p>
+        <div class="heatmap-container" id="heatmap-container"></div>
+      </div>
+
+      <!-- TABLAS DE REZAGOS Y GAUSS -->
+      <div class="grid-2">
+        <!-- Tabla de Atrasos -->
+        <div class="card">
+          <div class="card-top">
+            <span class="card-title">⚠️ Balotas Más Rezagadas (Gaps)</span>
+          </div>
+          <p style="font-size: 0.775rem; color: var(--text-muted);">
+            Sorteos consecutivos sin salir vs. intervalo promedio y récord de atraso.
+          </p>
+          <table id="gaps-table">
+            <thead>
+              <tr>
+                <th>Balota</th>
+                <th>Atraso</th>
+                <th>Prom.</th>
+                <th>Máx.</th>
+                <th>Índice</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <!-- Métricas Gaussianas & Paridad -->
+        <div class="card">
+          <div class="card-top">
+            <span class="card-title">📊 Distribución Normal & Paridad</span>
+          </div>
+          <div style="font-size: 0.875rem; margin: 0.75rem 0; line-height: 1.8;">
+            <p><strong>Suma Promedio Histórica:</strong> <span id="val-mean" style="color: #60a5fa; font-weight:700;">--</span></p>
+            <p><strong>Rango Óptimo Gauss (50% central):</strong> <span id="val-iqr" style="color: #34d399; font-weight:700;">--</span></p>
+            <p><strong>Desviación Estándar (σ):</strong> <span id="val-std" style="color: #94a3b8;">--</span></p>
+          </div>
+          
+          <div class="card-top" style="margin-top: 1.5rem;">
+            <span class="card-title" style="font-size: 1rem;">Probabilidad Par / Impar</span>
+          </div>
+          <table id="parity-table">
+            <thead>
+              <tr>
+                <th>Distribución</th>
+                <th>Frecuencia Histórica</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPROBADOR DE BOLETOS -->
+    <section class="checker-box">
+      <div class="section-heading">🔍 Validador & Auditor de Boletos</div>
+      <p class="section-desc">
+        Ingresa tus 5 números y verifica si cumplen los filtros matemáticos o si ya cayeron en el pasado.
+      </p>
+      <div class="checker-inputs">
+        <input type="number" id="c1" class="checker-input" placeholder="01" min="1" max="43">
+        <input type="number" id="c2" class="checker-input" placeholder="02" min="1" max="43">
+        <input type="number" id="c3" class="checker-input" placeholder="03" min="1" max="43">
+        <input type="number" id="c4" class="checker-input" placeholder="04" min="1" max="43">
+        <input type="number" id="c5" class="checker-input" placeholder="05" min="1" max="43">
+        <input type="number" id="check-sb" class="checker-input" placeholder="SB" min="1" max="16" style="border-color: #fda4af;" title="Superbalota">
+        <button class="btn-primary" onclick="checkUserTicket()">Auditar Boleto</button>
+      </div>
+      <div class="checker-result" id="checker-result-box"></div>
+    </section>
+
+    <!-- BANNER DE PUBLICIDAD INFERIOR (MONETIZACIÓN) -->
+    <div class="ad-slot" id="bottom-ad-slot">
+      <span class="ad-label">Espacio Publicitario / Google AdSense</span>
+      <span class="ad-placeholder-text">Banner Multiplex / Anuncio de Bloque Inferior</span>
+    </div>
+
+    <!-- AVISO LEGAL Y FOOTER -->
+    <footer>
+      <div class="legal-notice">
+        <strong>Aviso Legal y Juego Responsable:</strong> LottoAnalytics Pro es una herramienta independiente de investigación, ciencia de datos y estadística analítica sobre sorteos oficiales de Colombia. No es un sitio de apuestas ni está afiliado, patrocinado o avalado por Coljuegos u Operador Nacional de Juegos S.A.S. Los juegos de azar son eventos independientes con probabilidad uniforme; ningún algoritmo puede garantizar ganancias. Juegue con responsabilidad. Prohibida la venta a menores de edad (Ley 643 de 2001).
+      </div>
+      <p>© 2026 LottoAnalytics Pro Colombia • Diseñado para la comunidad de entusiastas y apostadores analíticos.</p>
+    </footer>
+
+  </div>
+
+  <script src="js/fallback_data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
