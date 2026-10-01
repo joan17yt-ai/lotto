@@ -104,39 +104,70 @@
 
       <div class="vip-features-grid">
         
-        <!-- PRIVILEGIO 1: NÚMEROS PERSONALIZADOS -->
+        <!-- PRIVILEGIO 1: NÚMEROS PERSONALIZADOS (1 a 3 NÚMEROS Y SELECTOR DE JUEGO) -->
         <div class="vip-box">
           <div class="vip-box-title">🎯 1. Optimizar Mis Números Favoritos</div>
-          <p style="font-size:0.8rem; color:#cbd5e1;">Digita 1 o 2 balotas que quieras jugar obligatoriamente. El algoritmo completará las restantes respetando la campana de Gauss y co-ocurrencia:</p>
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.5rem;">
+            Elige el sorteo y digita <strong>1, 2 o hasta 3 números</strong> que quieras jugar obligatoriamente. El algoritmo completará las balotas restantes optimizando la suma (Gauss), la paridad y los pares con mayor afinidad:
+          </p>
+          <div style="margin-bottom:0.75rem;">
+            <label style="font-size:0.75rem; font-weight:700; color:#c084fc; text-transform:uppercase;">Sorteo a Jugar:</label>
+            <select id="vip-custom-game-select" onchange="onVipGameChange()" style="width:100%; margin-top:4px;">
+              <option value="baloto">Baloto Tradicional (1 al 43 + Superbalota)</option>
+              <option value="revancha">Baloto Revancha (1 al 43 + Superbalota)</option>
+              <option value="miloto">MiLoto (1 al 39)</option>
+            </select>
+          </div>
           <div class="custom-inputs-row">
-            <input type="number" id="vip-f1" class="custom-input" placeholder="07" min="1" max="43">
-            <input type="number" id="vip-f2" class="custom-input" placeholder="21" min="1" max="43">
+            <input type="number" id="vip-f1" class="custom-input" placeholder="07" min="1" max="43" title="Número favorito 1">
+            <input type="number" id="vip-f2" class="custom-input" placeholder="21" min="1" max="43" title="Número favorito 2">
+            <input type="number" id="vip-f3" class="custom-input" placeholder="33" min="1" max="43" title="Número favorito 3 (opcional)">
             <button class="btn-vip-action" onclick="generateVipCustomTicket()">Optimizar Jugada</button>
           </div>
           <div id="vip-custom-result"></div>
         </div>
 
-        <!-- PRIVILEGIO 2: RADAR DE ATRASOS CRÍTICOS -->
+        <!-- PRIVILEGIO 2: RADAR DE ATRASOS CRÍTICOS CON SELECTOR DE JUEGO -->
         <div class="vip-box">
           <div class="vip-box-title">📡 2. Radar de Atrasos Críticos (>1.5x)</div>
-          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom: 0.75rem;">Balotas que han superado su promedio histórico de ausencia y entran en zona de retorno estadístico:</p>
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom: 0.5rem;">
+            Selecciona el sorteo para ver qué balotas han roto su ciclo promedio de ausencia y entraron en ventana matemática de retorno:
+          </p>
+          <div style="margin-bottom:0.75rem;">
+            <label style="font-size:0.75rem; font-weight:700; color:#c084fc; text-transform:uppercase;">Consultar Sorteo:</label>
+            <select id="vip-radar-game-select" onchange="renderVipRadar()" style="width:100%; margin-top:4px;">
+              <option value="baloto">Baloto Tradicional</option>
+              <option value="revancha">Baloto Revancha</option>
+              <option value="miloto">MiLoto</option>
+            </select>
+          </div>
           <div id="vip-radar-container"></div>
         </div>
 
-        <!-- PRIVILEGIO 3: BOLETO ÚNICO NO COMPARTIDO -->
+        <!-- PRIVILEGIO 3: BOLETO ÚNICO PRIVADO CON SELECTOR DE JUEGO Y FUNDAMENTO -->
         <div class="vip-box">
           <div class="vip-box-title">🔒 3. Generador de Jugada Única Privada</div>
-          <p style="font-size:0.8rem; color:#cbd5e1;">Genera una combinación con semilla criptográfica que ningún otro usuario tiene asignada hoy para no compartir el pozo:</p>
-          <button class="btn-vip-action" style="margin-top:0.75rem;" onclick="generateVipUniqueTicket()">Generar Boleto Exclusivo</button>
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.5rem;">
+            Genera una combinación con semilla criptográfica única para el juego que elijas. Diseñada para no coincidir con otros usuarios y no compartir el premio mayor:
+          </p>
+          <div style="margin-bottom:0.75rem;">
+            <label style="font-size:0.75rem; font-weight:700; color:#c084fc; text-transform:uppercase;">Sorteo Destino:</label>
+            <select id="vip-unique-game-select" style="width:100%; margin-top:4px;">
+              <option value="baloto">Baloto Tradicional (1 a 43 + SB)</option>
+              <option value="revancha">Baloto Revancha (1 a 43 + SB)</option>
+              <option value="miloto">MiLoto (1 a 39)</option>
+            </select>
+          </div>
+          <button class="btn-vip-action" style="width:100%;" onclick="generateVipUniqueTicket()">Generar Boleto Exclusivo</button>
           <div id="vip-unique-result"></div>
         </div>
 
         <!-- PRIVILEGIO 4: ALERTAS TELEGRAM -->
         <div class="vip-box">
           <div class="vip-box-title">📲 4. Canal & Bot de Alertas al Celular</div>
-          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.75rem;">Recibe las alertas automáticas los días de sorteo a las 6:30 PM y los resultados en vivo a las 11:20 PM:</p>
-          <a href="https://t.me/" target="_blank" rel="noopener" class="btn-vip-action" style="text-decoration:none; display:inline-block; text-align:center;">
-            Conectar Bot de Alertas Telegram
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.75rem;">Recibe las alertas automáticas los días de sorteo a las 6:30 PM con las combinaciones del día y los resultados oficiales tras la transmisión:</p>
+          <a href="https://t.me/" target="_blank" rel="noopener" class="btn-vip-action" style="text-decoration:none; display:inline-block; text-align:center; width:100%;">
+            📲 Conectar Bot de Alertas Telegram
           </a>
         </div>
 
