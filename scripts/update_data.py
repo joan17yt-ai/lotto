@@ -1,6 +1,6 @@
 """
 Automated Data Updater and JSON Generator for Netlify Web App.
-Runs locally or inside GitHub Actions nightly to refresh lottery_data.json.
+Includes multi-pass delayed verification (immediate + 1 hour later) for delayed lottery publications.
 """
 
 import os
@@ -8,7 +8,8 @@ import sys
 import json
 import re
 import urllib.request
-from datetime import datetime
+from datetime import datetime, date, timedelta
+from typing import Dict, Any, List
 from bs4 import BeautifulSoup
 
 # Ensure local packages are importable
@@ -18,37 +19,86 @@ sys.path.insert(0, os.path.join(root_dir, 'lottery_system'))
 sys.path.insert(0, os.path.join(root_dir, 'lottery_engine'))
 
 try:
-    from database import get_draws, get_latest_draw, insert_draw
+    from database import get_draws, get_latest_draw, insert_draw, log_sync
     from analyzer import LotteryAnalyzer
     from predictor import LotteryPredictor
     from updater import fetch_and_update
 except ImportError:
-    # Standalone fallback if run outside repo
     sys.path.insert(0, root_dir)
-    from lottery_system.database import get_draws, get_latest_draw, insert_draw
+    from lottery_system.database import get_draws, get_latest_draw, insert_draw, log_sync
     from lottery_system.analyzer import LotteryAnalyzer
     from lottery_system.predictor import LotteryPredictor
     from lottery_system.updater import fetch_and_update
 
 OUTPUT_JSON_PATH = os.path.join(os.path.dirname(current_dir), 'data', 'lottery_data.json')
 
-def update_and_export():
-    print(f"[{datetime.now().isoformat()}] Iniciando actualización de datos...")
+def is_draw_day(game: str, check_date: date) -> bool:
+    """Returns True if check_date is an official draw day for the game."""
+    weekday = check_date.weekday() # 0=Mon, 1=Tue, 2=Wed, 3=Thu, 4=Fri, 5=Sat, 6=Sun
+    if game in ['baloto', 'revancha']:
+        return weekday in [0, 2, 5] # Lunes, Miércoles, Sábado
+    elif game == 'miloto':
+        return weekday in [0, 1, 3, 4] # Lunes, Martes, Jueves, Viernes
+    return False
+
+def check_publication_status(game: str) -> Dict[str, Any]:
+    """Evaluates whether today's draw has been published or if a 1-hour delay check is needed."""
+    today = datetime.now().date()
+    latest = get_latest_draw(game)
+    latest_date_str = latest.get("draw_date") if latest else None
     
-    # 1. Intentar actualizar desde la web si hay conexión a internet
+    if not is_draw_day(game, today):
+        return {
+            "is_draw_day": False,
+            "status": "up_to_date",
+            "message": f"Hoy no es día de sorteo de {game.capitalize()}. Último sorteo registrado: {latest_date_str}."
+        }
+
+    # If it is draw day:
+    if latest_date_str == today.strftime("%Y-%m-%d"):
+        return {
+            "is_draw_day": True,
+            "status": "published",
+            "message": f"Sorteo de hoy ({today}) ya publicado y registrado con éxito."
+        }
+    else:
+        return {
+            "is_draw_day": True,
+            "status": "pending_verification",
+            "message": f"Sorteo de hoy ({today}) aún pendiente en web oficial. Se activará la re-verificación a la hora siguiente."
+        }
+
+def update_and_export():
+    now_iso = datetime.now().isoformat()
+    print(f"[{now_iso}] Iniciando ciclo de verificación y actualización de sorteos...")
+    
+    # 1. Intentar extracción web oficial
+    sync_result = {"status": "offline_mode", "updated_counts": {}}
     try:
         sync_result = fetch_and_update()
-        print(f"Estado de sincronización web: {sync_result['status']}")
+        print(f"Resultado de consulta oficial: {sync_result.get('status')}")
     except Exception as e:
-        print(f"Aviso: No se pudo conectar a la web externa ({e}), utilizando datos locales almacenados.")
+        print(f"Aviso de conexión: {e}. Usando datos locales almacenados.")
 
-    # 2. Generar el payload analítico completo
+    # 2. Diagnóstico de publicación para cada juego
+    pub_status = {}
+    for g in ['baloto', 'revancha', 'miloto']:
+        pub_status[g] = check_publication_status(g)
+        print(f"• {g.upper()}: {pub_status[g]['status']} -> {pub_status[g]['message']}")
+
+    # 3. Generar el payload analítico completo
     games = ['baloto', 'revancha', 'miloto']
     payload = {
         "metadata": {
             "title": "LottoAnalytics Colombia",
-            "last_updated": datetime.now().isoformat(),
-            "status": "online"
+            "last_updated": now_iso,
+            "status": "online",
+            "publication_status": pub_status,
+            "sync_info": {
+                "auto_sync_active": True,
+                "multi_pass_active": True,
+                "verification_policy": "Doble chequeo: 11:30 PM y re-verificación 1 hora después (12:30 AM) ante demoras oficiales."
+            }
         },
         "games": {}
     }
@@ -65,6 +115,9 @@ def update_and_export():
         recent_draws = get_draws(g, limit=10)
         pack = predictor.generate_full_ticket_pack()
 
+        # Precompute VIP critical radar (balls with overdue index >= 1.5)
+        critical_radar = [x for x in gaps if x["overdue_index"] >= 1.5]
+
         payload["games"][g] = {
             "id": g,
             "name": "Baloto Tradicional" if g == 'baloto' else ("Baloto Revancha" if g == 'revancha' else "MiLoto"),
@@ -79,6 +132,7 @@ def update_and_export():
             "number_stats": freq["number_stats"],
             "superball_stats": freq.get("superball_stats", []),
             "gaps": gaps,
+            "critical_radar": critical_radar,
             "top_pairs": pairs["top_pairs"],
             "top_triplets": pairs["top_triplets"],
             "predictions": pack

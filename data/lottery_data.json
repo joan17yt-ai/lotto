@@ -1,8 +1,30 @@
 {
   "metadata": {
     "title": "LottoAnalytics Colombia",
-    "last_updated": "2026-10-01T12:15:51.631216",
-    "status": "online"
+    "last_updated": "2026-10-01T15:45:50.503220",
+    "status": "online",
+    "publication_status": {
+      "baloto": {
+        "is_draw_day": false,
+        "status": "up_to_date",
+        "message": "Hoy no es día de sorteo de Baloto. Último sorteo registrado: 2026-09-30."
+      },
+      "revancha": {
+        "is_draw_day": false,
+        "status": "up_to_date",
+        "message": "Hoy no es día de sorteo de Revancha. Último sorteo registrado: 2026-09-30."
+      },
+      "miloto": {
+        "is_draw_day": true,
+        "status": "pending_verification",
+        "message": "Sorteo de hoy (2026-10-01) aún pendiente en web oficial. Se activará la re-verificación a la hora siguiente."
+      }
+    },
+    "sync_info": {
+      "auto_sync_active": true,
+      "multi_pass_active": true,
+      "verification_policy": "Doble chequeo: 11:30 PM y re-verificación 1 hora después (12:30 AM) ante demoras oficiales."
+    }
   },
   "games": {
     "baloto": {
@@ -1051,6 +1073,88 @@
           "status": "FRECUENTE"
         }
       ],
+      "critical_radar": [
+        {
+          "number": 34,
+          "current_gap": 35,
+          "avg_interval": 10.4,
+          "max_gap": 44,
+          "overdue_index": 3.37,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 33,
+          "current_gap": 33,
+          "avg_interval": 9.5,
+          "max_gap": 32,
+          "overdue_index": 3.46,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 28,
+          "current_gap": 30,
+          "avg_interval": 6.1,
+          "max_gap": 15,
+          "overdue_index": 4.92,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 21,
+          "current_gap": 24,
+          "avg_interval": 11.2,
+          "max_gap": 31,
+          "overdue_index": 2.15,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 43,
+          "current_gap": 19,
+          "avg_interval": 5.8,
+          "max_gap": 18,
+          "overdue_index": 3.26,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 24,
+          "current_gap": 18,
+          "avg_interval": 10.2,
+          "max_gap": 47,
+          "overdue_index": 1.77,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 37,
+          "current_gap": 18,
+          "avg_interval": 9.4,
+          "max_gap": 26,
+          "overdue_index": 1.91,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 40,
+          "current_gap": 18,
+          "avg_interval": 10.1,
+          "max_gap": 41,
+          "overdue_index": 1.79,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 27,
+          "current_gap": 13,
+          "avg_interval": 8.6,
+          "max_gap": 33,
+          "overdue_index": 1.51,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 35,
+          "current_gap": 11,
+          "avg_interval": 6.3,
+          "max_gap": 20,
+          "overdue_index": 1.73,
+          "status": "RETRASADO"
+        }
+      ],
       "top_pairs": [
         {
           "pair": [
@@ -1229,54 +1333,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            6,
-            15,
-            26,
-            29,
-            34
+            4,
+            7,
+            19,
+            38,
+            41
           ],
-          "superball": 2,
-          "sum": 110,
-          "rationale": "Suma 110 en rango óptimo [89-130], balance par/impar equilibrado y dispersión controlada."
+          "superball": 10,
+          "sum": 109,
+          "rationale": "Suma 109 en rango óptimo [89-130], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            2,
+            6,
+            11,
             15,
-            18,
-            30,
-            41
+            28,
+            30
           ],
-          "superball": 16,
-          "sum": 106,
-          "rationale": "Incluye pareja frecuente [2, 15] y balotas en racha reciente con Superbalota caliente."
+          "superball": 9,
+          "sum": 90,
+          "rationale": "Incluye pareja frecuente [28, 30] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            5,
-            15,
-            21,
+            16,
+            17,
             24,
-            34
+            33,
+            37
           ],
-          "superball": 12,
-          "sum": 99,
-          "rationale": "Reversión a la media con rezagados [24, 21, 34] y anclas de alta frecuencia [15, 5]."
+          "superball": 7,
+          "sum": 127,
+          "rationale": "Reversión a la media con rezagados [37, 24, 33] y anclas de alta frecuencia [17, 16]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            9,
-            13,
-            20,
-            39,
+            3,
+            7,
+            22,
+            35,
             42
           ],
-          "superball": 8,
-          "sum": 123,
-          "rationale": "Optimización de premio individual: incluye balotas altas [42, 39] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 15,
+          "sum": 109,
+          "rationale": "Optimización de premio individual: incluye balotas altas [35, 42] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -2326,6 +2430,56 @@
           "status": "FRECUENTE"
         }
       ],
+      "critical_radar": [
+        {
+          "number": 41,
+          "current_gap": 45,
+          "avg_interval": 7.1,
+          "max_gap": 21,
+          "overdue_index": 6.37,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 35,
+          "current_gap": 26,
+          "avg_interval": 9.4,
+          "max_gap": 21,
+          "overdue_index": 2.78,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 20,
+          "current_gap": 24,
+          "avg_interval": 6.9,
+          "max_gap": 18,
+          "overdue_index": 3.48,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 31,
+          "current_gap": 22,
+          "avg_interval": 8.9,
+          "max_gap": 28,
+          "overdue_index": 2.46,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 7,
+          "current_gap": 13,
+          "avg_interval": 5.6,
+          "max_gap": 26,
+          "overdue_index": 2.3,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 37,
+          "current_gap": 12,
+          "avg_interval": 6.6,
+          "max_gap": 16,
+          "overdue_index": 1.82,
+          "status": "RETRASADO"
+        }
+      ],
       "top_pairs": [
         {
           "pair": [
@@ -2504,54 +2658,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            3,
+            7,
+            13,
             20,
-            22,
-            25,
-            31
+            26,
+            34
           ],
-          "superball": 3,
-          "sum": 101,
-          "rationale": "Suma 101 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 4,
+          "sum": 100,
+          "rationale": "Suma 100 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            4,
-            7,
-            9,
-            39,
-            40
+            10,
+            13,
+            21,
+            40,
+            42
           ],
-          "superball": 2,
-          "sum": 99,
-          "rationale": "Incluye pareja frecuente [7, 40] y balotas en racha reciente con Superbalota caliente."
+          "superball": 3,
+          "sum": 126,
+          "rationale": "Incluye pareja frecuente [13, 40] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            2,
             12,
             20,
-            35,
-            41
+            29,
+            31,
+            37
           ],
-          "superball": 12,
-          "sum": 110,
-          "rationale": "Reversión a la media con rezagados [20, 41, 35] y anclas de alta frecuencia [12, 2]."
+          "superball": 8,
+          "sum": 129,
+          "rationale": "Reversión a la media con rezagados [37, 20, 31] y anclas de alta frecuencia [12, 29]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            3,
-            9,
-            30,
-            38,
-            39
+            10,
+            20,
+            23,
+            33,
+            35
           ],
-          "superball": 2,
-          "sum": 119,
-          "rationale": "Optimización de premio individual: incluye balotas altas [38, 39] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 14,
+          "sum": 121,
+          "rationale": "Optimización de premio individual: incluye balotas altas [33, 35] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -3436,6 +3590,40 @@
           "status": "FRECUENTE"
         }
       ],
+      "critical_radar": [
+        {
+          "number": 11,
+          "current_gap": 15,
+          "avg_interval": 5.7,
+          "max_gap": 19,
+          "overdue_index": 2.64,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 2,
+          "current_gap": 14,
+          "avg_interval": 6.5,
+          "max_gap": 33,
+          "overdue_index": 2.14,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 19,
+          "current_gap": 14,
+          "avg_interval": 6.8,
+          "max_gap": 22,
+          "overdue_index": 2.06,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 25,
+          "current_gap": 12,
+          "avg_interval": 7.2,
+          "max_gap": 25,
+          "overdue_index": 1.66,
+          "status": "RETRASADO"
+        }
+      ],
       "top_pairs": [
         {
           "pair": [
@@ -3614,54 +3802,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            11,
-            13,
-            17,
-            26,
-            36
+            2,
+            5,
+            14,
+            27,
+            35
           ],
           "superball": null,
-          "sum": 103,
-          "rationale": "Suma 103 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
+          "sum": 83,
+          "rationale": "Suma 83 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            8,
+            1,
             10,
-            15,
-            23,
-            31
+            22,
+            35,
+            38
           ],
           "superball": null,
-          "sum": 87,
-          "rationale": "Incluye pareja frecuente [10, 31] y balotas en racha reciente con Superbalota caliente."
+          "sum": 106,
+          "rationale": "Incluye pareja frecuente [1, 22] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            2,
+            8,
             11,
+            19,
             24,
-            25,
-            35
+            25
           ],
           "superball": null,
-          "sum": 97,
-          "rationale": "Reversión a la media con rezagados [11, 25, 2] y anclas de alta frecuencia [35, 24]."
+          "sum": 87,
+          "rationale": "Reversión a la media con rezagados [19, 11, 25] y anclas de alta frecuencia [8, 24]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            3,
-            6,
-            32,
-            33,
-            38
+            8,
+            13,
+            14,
+            35,
+            39
           ],
           "superball": null,
-          "sum": 112,
-          "rationale": "Optimización de premio individual: incluye balotas altas [33, 32, 38] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "sum": 109,
+          "rationale": "Optimización de premio individual: incluye balotas altas [39, 35] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     }

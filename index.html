@@ -6,7 +6,7 @@
   
   <!-- SEO Meta Tags Colombia -->
   <title>LottoAnalytics Colombia | Resultados, Estadísticas y Pronósticos Baloto y MiLoto</title>
-  <meta name="description" content="Consulta los últimos resultados oficiales de Baloto, Revancha y MiLoto en Colombia. Análisis estadístico de balotas calientes, rezagadas, mapas de calor y generador inteligente de jugadas.">
+  <meta name="description" content="Consulta los últimos resultados oficiales de Baloto, Revancha y MiLoto en Colombia. Análisis estadístico de balotas calientes, rezagadas, mapas de calor y generador inteligente de jugadas con suite VIP.">
   <meta name="keywords" content="Baloto Colombia, MiLoto, Baloto Revancha, Resultados Baloto hoy, Estadísticas Baloto, Pronóstico Baloto, Números que más caen Baloto, Coljuegos">
   <meta name="author" content="LottoAnalytics Pro">
   <meta name="robots" content="index, follow">
@@ -14,7 +14,7 @@
   <!-- Open Graph / Redes Sociales -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="LottoAnalytics Colombia | Inteligencia de Datos Baloto & MiLoto">
-  <meta property="og:description" content="Resultados en vivo, mapas de calor, números calientes y pronósticos estadísticos optimizados.">
+  <meta property="og:description" content="Resultados en vivo, mapas de calor, números calientes, suite VIP personalizada y pronósticos estadísticos optimizados.">
   <meta property="og:locale" content="es_CO">
 
   <!-- PWA & Mobile Web App -->
@@ -41,7 +41,6 @@
     <div class="ad-slot" id="top-ad-slot">
       <span class="ad-label">Espacio Publicitario / Google AdSense</span>
       <span class="ad-placeholder-text">Banner Superior 728x90 (Desktop) / 320x100 (Móvil)</span>
-      <!-- Código de AdSense aquí: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-..." data-ad-slot="..." data-ad-format="auto"></ins> -->
     </div>
 
     <!-- ENCABEZADO Y BRANDING -->
@@ -51,11 +50,20 @@
         <p>Motor de Análisis Numérico, Mapas de Frecuencia y Pronósticos</p>
       </div>
       <div class="header-badges">
+        <span class="vip-status-pill" id="vip-header-pill" style="display: none;">
+          👑 Membresía VIP Activa
+        </span>
         <span class="status-badge">
           <span class="pulse-dot"></span> Sincronizado: <span id="last-sync-time">Cargando...</span>
         </span>
       </div>
     </header>
+
+    <!-- AVISO DE AUTO-ACTUALIZACIÓN Y DOBLE CHEQUEO +1 HORA -->
+    <div style="background: rgba(30, 41, 59, 0.5); border: 1px solid #1e293b; border-radius: 8px; padding: 0.6rem 1rem; font-size: 0.775rem; color: #94a3b8; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom: 1.5rem;">
+      <span>⏱️ <strong>Protocolo de Actualización:</strong> 11:30 PM (inmediato) y 12:30 AM (+1 hora diferido por demoras de lotería oficial).</span>
+      <span id="delayed-sync-badge" style="color: #38bdf8; font-weight:600;">Monitoreo nocturno activo</span>
+    </div>
 
     <!-- ÚLTIMOS RESULTADOS EN VIVO (CARDS SUPERIORES) -->
     <section>
@@ -64,15 +72,75 @@
       </div>
     </section>
 
-    <!-- BANNER FREEMIUM / CLUB VIP / TELEGRAM (MONETIZACIÓN DIRECTA) -->
-    <div class="vip-card">
-      <div class="vip-content">
-        <h3>🚀 Únete al Club VIP de Pronósticos por Telegram</h3>
-        <p>Recibe alertas automáticas 15 minutos antes de cada sorteo con las 3 jugadas de mayor probabilidad gaussiana.</p>
+    <!-- MÓDULO VIP GATEWAY / DESBLOQUEO POR PIN -->
+    <div class="vip-card" id="vip-unlock-box">
+      <div class="vip-header-row">
+        <div>
+          <h3>👑 Desbloquea la Suite VIP Premium</h3>
+          <p style="font-size:0.875rem; color:#94a3b8; margin-top:4px;">
+            Obtén jugadas con <strong>tus propios números favoritos optimizados</strong>, radar de atrasos críticos, boletos únicos no repetidos y alertas directas a tu celular.
+          </p>
+        </div>
+        <a href="https://wa.me/573000000000?text=Hola,%20quiero%20adquirir%20mi%20PIN%20VIP%20de%20LottoAnalytics" target="_blank" rel="noopener" class="btn-whatsapp-buy">
+          <span>📲 Obtener PIN por Nequi/WhatsApp</span>
+        </a>
       </div>
-      <a href="https://t.me/" target="_blank" rel="noopener" class="btn-vip">
-        <span>📲 Unirse al Canal Gratis</span>
-      </a>
+
+      <div class="vip-pin-form">
+        <input type="text" id="vip-pin-input" class="pin-input" placeholder="Ingresa tu PIN VIP (ej. VIP2026)">
+        <button class="btn-unlock" onclick="unlockWithPin()">Desbloquear Privilegios VIP</button>
+      </div>
+    </div>
+
+    <!-- PANEL VIP EXCLUSIVO (VISIBLE CUANDO ESTÁ DESBLOQUEADO) -->
+    <div class="vip-active-panel" id="vip-active-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+        <div>
+          <div class="vip-panel-title">👑 Panel de Privilegios VIP Activo</div>
+          <p id="vip-expiry-detail" style="font-size: 0.85rem; color: #d8b4fe;">Bienvenido a tu suite de análisis avanzado y personalización matemática.</p>
+        </div>
+        <button onclick="logoutVip()" style="background:transparent; border:1px solid #6b21a8; color:#c084fc; font-size:0.75rem; padding:0.35rem 0.75rem; border-radius:6px; cursor:pointer;">Cerrar Sesión VIP</button>
+      </div>
+
+      <div class="vip-features-grid">
+        
+        <!-- PRIVILEGIO 1: NÚMEROS PERSONALIZADOS -->
+        <div class="vip-box">
+          <div class="vip-box-title">🎯 1. Optimizar Mis Números Favoritos</div>
+          <p style="font-size:0.8rem; color:#cbd5e1;">Digita 1 o 2 balotas que quieras jugar obligatoriamente. El algoritmo completará las restantes respetando la campana de Gauss y co-ocurrencia:</p>
+          <div class="custom-inputs-row">
+            <input type="number" id="vip-f1" class="custom-input" placeholder="07" min="1" max="43">
+            <input type="number" id="vip-f2" class="custom-input" placeholder="21" min="1" max="43">
+            <button class="btn-vip-action" onclick="generateVipCustomTicket()">Optimizar Jugada</button>
+          </div>
+          <div id="vip-custom-result"></div>
+        </div>
+
+        <!-- PRIVILEGIO 2: RADAR DE ATRASOS CRÍTICOS -->
+        <div class="vip-box">
+          <div class="vip-box-title">📡 2. Radar de Atrasos Críticos (>1.5x)</div>
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom: 0.75rem;">Balotas que han superado su promedio histórico de ausencia y entran en zona de retorno estadístico:</p>
+          <div id="vip-radar-container"></div>
+        </div>
+
+        <!-- PRIVILEGIO 3: BOLETO ÚNICO NO COMPARTIDO -->
+        <div class="vip-box">
+          <div class="vip-box-title">🔒 3. Generador de Jugada Única Privada</div>
+          <p style="font-size:0.8rem; color:#cbd5e1;">Genera una combinación con semilla criptográfica que ningún otro usuario tiene asignada hoy para no compartir el pozo:</p>
+          <button class="btn-vip-action" style="margin-top:0.75rem;" onclick="generateVipUniqueTicket()">Generar Boleto Exclusivo</button>
+          <div id="vip-unique-result"></div>
+        </div>
+
+        <!-- PRIVILEGIO 4: ALERTAS TELEGRAM -->
+        <div class="vip-box">
+          <div class="vip-box-title">📲 4. Canal & Bot de Alertas al Celular</div>
+          <p style="font-size:0.8rem; color:#cbd5e1; margin-bottom:0.75rem;">Recibe las alertas automáticas los días de sorteo a las 6:30 PM y los resultados en vivo a las 11:20 PM:</p>
+          <a href="https://t.me/" target="_blank" rel="noopener" class="btn-vip-action" style="text-decoration:none; display:inline-block; text-align:center;">
+            Conectar Bot de Alertas Telegram
+          </a>
+        </div>
+
+      </div>
     </div>
 
     <!-- SELECTOR DE PESTAÑAS POR JUEGO -->
@@ -82,9 +150,9 @@
       <button class="tab-btn" data-game="miloto" onclick="setGameTab('miloto')">MiLoto</button>
     </nav>
 
-    <!-- GENERADOR DE JUGADAS INTELIGENTES -->
+    <!-- GENERADOR DE JUGADAS (VERSIÓN GRATUITA) -->
     <section class="generator-section">
-      <div class="section-heading">⚡ Generador Algorítmico de Pronósticos</div>
+      <div class="section-heading">⚡ Generador Algorítmico de Pronósticos (Gratuito)</div>
       <p class="section-desc">
         Aplica filtros de campana de Gauss, balance de paridad (65% histórico), pares de co-ocurrencia y teoría de juegos para no compartir pozo.
       </p>
@@ -207,7 +275,7 @@
       <div class="legal-notice">
         <strong>Aviso Legal y Juego Responsable:</strong> LottoAnalytics Pro es una herramienta independiente de investigación, ciencia de datos y estadística analítica sobre sorteos oficiales de Colombia. No es un sitio de apuestas ni está afiliado, patrocinado o avalado por Coljuegos u Operador Nacional de Juegos S.A.S. Los juegos de azar son eventos independientes con probabilidad uniforme; ningún algoritmo puede garantizar ganancias. Juegue con responsabilidad. Prohibida la venta a menores de edad (Ley 643 de 2001).
       </div>
-      <p>© 2026 LottoAnalytics Pro Colombia • Diseñado para la comunidad de entusiastas y apostadores analíticos.</p>
+      <p>© 2026 LottoAnalytics Pro Colombia • Diseñado para la comunidad de entusiastas y apostadores analíticos. | <a href="admin.html" style="color:#64748b; text-decoration:none;">Acceso Administrador</a></p>
     </footer>
 
   </div>
