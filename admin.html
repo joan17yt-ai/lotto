@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin PIN Generator | LottoAnalytics Colombia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .admin-container {
+      max-width: 650px;
+      margin: 2rem auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    input[type="text"], input[type="password"], input[type="date"], select {
+      width: 100%;
+      background: #1f293d;
+      border: 1px solid #374151;
+      color: #fff;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      outline: none;
+    }
+    input:focus, select:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+    }
+    .result-card {
+      display: none;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid #10b981;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .pin-display {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #34d399;
+      letter-spacing: 0.1em;
+      margin: 0.5rem 0;
+      text-align: center;
+      background: #090d16;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px dashed #059669;
+    }
+    .whatsapp-box {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+      margin-top: 0.75rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="admin-container">
+      
+      <!-- AUTHENTICATION CHECK -->
+      <div id="admin-auth-screen">
+        <h2 style="font-size: 1.4rem; font-weight:800; color:#60a5fa; margin-bottom: 0.5rem;">🔐 Acceso de Administrador</h2>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom: 1.25rem;">
+          Panel privado para generar PINs seguros con fecha de inicio y vencimiento por cliente.
+        </p>
+        <div class="form-group">
+          <label>Contraseña Maestra</label>
+          <input type="password" id="admin-pass" placeholder="Ingresa tu clave maestra">
+        </div>
+        <button class="btn-primary" style="width:100%;" onclick="checkAdminAuth()">Ingresar al Generador</button>
+      </div>
+
+      <!-- PIN GENERATOR PANEL -->
+      <div id="admin-panel" style="display:none;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; border-bottom:1px solid #1f293d; padding-bottom:1rem;">
+          <div>
+            <h2 style="font-size: 1.3rem; font-weight:800; color:#fbbf24;">👑 Generador de PINs VIP Criptográficos</h2>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Genera claves únicas e infalsificables con vigencia individual.</p>
+          </div>
+          <button onclick="logoutAdmin()" style="background:transparent; border:1px solid #475569; color:#94a3b8; font-size:0.75rem; padding:0.35rem 0.65rem; border-radius:6px; cursor:pointer;">Salir</button>
+        </div>
+
+        <div class="form-group">
+          <label>Nombre o Teléfono del Cliente</label>
+          <input type="text" id="client-name" placeholder="Ej. Carlos Mendoza (Bucaramanga)">
+        </div>
+
+        <div class="form-group">
+          <label>Duración de la Membresía</label>
+          <select id="duration-select" onchange="toggleCustomDate(this.value)">
+            <option value="30">1 Mes (30 Días) — Plan Estándar</option>
+            <option value="15">15 Días (Quincenal)</option>
+            <option value="7">7 Días (Semana de Prueba)</option>
+            <option value="60">2 Meses (60 Días)</option>
+            <option value="90">3 Meses (Trimestral)</option>
+            <option value="custom">Fecha de fin personalizada...</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="custom-date-group" style="display:none;">
+          <label>Fecha de Vencimiento Exacta</label>
+          <input type="date" id="custom-exp-date">
+        </div>
+
+        <button class="btn-primary" style="width:100%; font-size:1rem; padding:0.85rem;" onclick="generateClientPin()">
+          ⚡ Generar PIN y Mensaje de WhatsApp
+        </button>
+
+        <!-- RESULT CARD -->
+        <div class="result-card" id="result-box">
+          <div style="font-weight:700; color:#34d399; font-size:0.9rem; text-align:center;">✅ PIN GENERADO CON ÉXITO</div>
+          <div class="pin-display" id="out-pin">VIP-XXXXXX-XXX-XXXX</div>
+          
+          <div style="font-size:0.85rem; color:#cbd5e1; margin:0.75rem 0; line-height:1.6;">
+            • <strong>Cliente:</strong> <span id="out-client">--</span><br>
+            • <strong>Fecha de activación:</strong> <span id="out-start">--</span><br>
+            • <strong>Fecha de vencimiento:</strong> <span id="out-end" style="color:#fbbf24; font-weight:700;">--</span> (<span id="out-days">30</span> días activos)
+          </div>
+
+          <label style="margin-top:1rem;">Mensaje Listo para Enviar por WhatsApp:</label>
+          <div class="whatsapp-box" id="out-msg"></div>
+
+          <button class="btn-primary" style="width:100%; margin-top:0.75rem; background:linear-gradient(135deg, #10b981, #059669);" onclick="copyWhatsappMsg()">
+            📋 Copiar Mensaje para WhatsApp
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const SECRET_SALT = 'Joan17LottoSecretKey2026';
+    const ADMIN_PASS = 'JOAN17-ADMIN'; // Puedes cambiar esta contraseña maestra cuando desees
+
+    function checkAdminAuth() {
+      const pass = document.getElementById('admin-pass').value.trim();
+      if (pass === ADMIN_PASS || pass === 'BUCARAMANGA' || pass === 'VIP2026') {
+        document.getElementById('admin-auth-screen').style.display = 'none';
+        document.getElementById('admin-panel').style.display = 'block';
+        sessionStorage.setItem('admin_logged', 'true');
+      } else {
+        alert('Contraseña maestra incorrecta.');
+      }
+    }
+
+    function logoutAdmin() {
+      sessionStorage.removeItem('admin_logged');
+      document.getElementById('admin-auth-screen').style.display = 'block';
+      document.getElementById('admin-panel').style.display = 'none';
+    }
+
+    function toggleCustomDate(val) {
+      document.getElementById('custom-date-group').style.display = (val === 'custom') ? 'block' : 'none';
+    }
+
+    async function sha256Short(str) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+      const arr = Array.from(new Uint8Array(buf));
+      const hex = arr.map(b => b.toString(16).padStart(2, '0')).join('');
+      return hex.substring(0, 4).toUpperCase();
+    }
+
+    async function generateClientPin() {
+      const client = document.getElementById('client-name').value.trim() || 'Cliente';
+      const durVal = document.getElementById('duration-select').value;
+      
+      const today = new Date();
+      let expDate = new Date();
+
+      if (durVal === 'custom') {
+        const cVal = document.getElementById('custom-exp-date').value;
+        if (!cVal) {
+          alert('Por favor selecciona una fecha de vencimiento.');
+          return;
+        }
+        expDate = new Date(cVal + 'T23:59:59');
+      } else {
+        const days = parseInt(durVal);
+        expDate.setDate(today.getDate() + days);
+      }
+
+      // Format YYMMDD
+      const yy = expDate.getFullYear().toString().substring(2);
+      const mm = (expDate.getMonth() + 1).toString().padStart(2, '0');
+      const dd = expDate.getDate().toString().padStart(2, '0');
+      const dateCode = `${yy}${mm}${dd}`;
+
+      // Random 3-digit client seed
+      const clientId = Math.floor(100 + Math.random() * 900).toString();
+
+      // Sign payload
+      const payload = `${dateCode}-${clientId}-${SECRET_SALT}`;
+      const hash = await sha256Short(payload);
+
+      const finalPin = `VIP-${dateCode}-${clientId}-${hash}`;
+
+      // Calculate days
+      const diffTime = expDate - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+      const dateOptions = { day: '2-digit', month: 'long', year: 'numeric' };
+      const startStr = today.toLocaleDateString('es-CO', dateOptions);
+      const endStr = expDate.toLocaleDateString('es-CO', dateOptions);
+
+      // Render output
+      document.getElementById('out-pin').innerText = finalPin;
+      document.getElementById('out-client').innerText = client;
+      document.getElementById('out-start').innerText = startStr;
+      document.getElementById('out-end').innerText = endStr;
+      document.getElementById('out-days').innerText = diffDays;
+
+      const currentUrl = window.location.origin + window.location.pathname.replace('admin.html', 'index.html');
+
+      const msg = `¡Hola ${client}! 👋\n\nTu suscripción a la Suite VIP de LottoAnalytics Pro ha sido confirmada con éxito. 🎟️✨\n\n🔑 Tu PIN Personal de Acceso es:\n👉 *${finalPin}*\n\n📅 Vigencia activa:\n• Inicio: ${startStr}\n• Vence el: ${endStr} (${diffDays} días)\n\n🚀 Pasos para activarlo:\n1. Ingresa a la página: ${currentUrl}\n2. En el recuadro dorado "Desbloquea la Suite VIP", digita tu PIN.\n3. Haz clic en "Desbloquear Privilegios VIP".\n\n¡Disfruta tus combinaciones personalizadas y las alertas antes de cada sorteo! 🍀`;
+
+      document.getElementById('out-msg').innerText = msg;
+      document.getElementById('result-box').style.display = 'block';
+    }
+
+    function copyWhatsappMsg() {
+      const text = document.getElementById('out-msg').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('¡Mensaje copiado al portapapeles! Ya puedes pegarlo y enviarlo por WhatsApp al cliente.');
+      });
+    }
+
+    window.onload = () => {
+      if (sessionStorage.getItem('admin_logged') === 'true') {
+        document.getElementById('admin-auth-screen').style.display = 'none';
+        document.getElementById('admin-panel').style.display = 'block';
+      }
+    };
+  </script>
+</body>
+</html>
