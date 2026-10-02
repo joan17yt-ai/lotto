@@ -1,0 +1,11 @@
+{
+  "users": {
+    "12345678": {
+      "name": "Carlos",
+      "pin": "VIP-261031-842-50EB",
+      "exp_date": "2026-10-31",
+      "registered_at": "2026-10-01T20:08:03.173914",
+      "active_tickets": []
+    }
+  }
+}

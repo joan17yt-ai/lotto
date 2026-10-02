@@ -44,6 +44,15 @@ function sendTelegramMessage(token, chatId, text) {
   });
 }
 
+function getFreshLotteryData() {
+  try {
+    delete require.cache[require.resolve('../../data/lottery_data.json')];
+    return require('../../data/lottery_data.json');
+  } catch (e) {
+    return null;
+  }
+}
+
 function validateCryptographicPin(rawPin) {
   const pin = rawPin.trim().toUpperCase();
   if (pin === 'BUCARAMANGA' || pin === 'JOAN17-ADMIN' || pin === 'VIP2026') {
@@ -80,8 +89,38 @@ function validateCryptographicPin(rawPin) {
   return { valid: true, expired: false, exp_date: formattedDate, days_left: diffDays, client_id: clientId };
 }
 
+function auditNumbers(userNumbers, targetGame = 'miloto', userSb = null) {
+  const data = getFreshLotteryData();
+  if (!data || !data.games) return null;
+  
+  const gKey = targetGame.toLowerCase().includes('baloto') ? 'baloto' : 
+               (targetGame.toLowerCase().includes('revancha') ? 'revancha' : 'miloto');
+               
+  const gData = data.games[gKey];
+  if (!gData || !gData.latest_draw) return null;
+
+  const lat = gData.latest_draw;
+  const winning = lat.numbers || [];
+  const winningSb = lat.superball;
+
+  const matches = userNumbers.filter(n => winning.includes(n)).sort((a,b) => a - b);
+  const sbMatch = (userSb !== null && winningSb !== null && userSb === winningSb);
+
+  return {
+    gameName: gData.name,
+    drawNumber: lat.draw_number,
+    drawDate: lat.draw_date,
+    winningNumbers: winning,
+    winningSb: winningSb,
+    userNumbers: userNumbers.sort((a,b) => a - b),
+    userSb: userSb,
+    matches: matches,
+    matchCount: matches.length,
+    sbMatch: sbMatch
+  };
+}
+
 exports.handler = async (event, context) => {
-  // Only accept POST requests from Telegram
   if (event.httpMethod !== 'POST') {
     return { statusCode: 200, body: 'LottoAnalytics Telegram Webhook is active and healthy.' };
   }
@@ -102,7 +141,7 @@ exports.handler = async (event, context) => {
     const chatId = message.chat.id;
     const text = message.text.trim();
     const firstName = message.from ? message.from.first_name : 'Amigo';
-    const parts = text.split(' ');
+    const parts = text.split(/\s+/);
     const cmd = parts[0].toLowerCase();
 
     // 1. COMANDO /START
@@ -111,10 +150,11 @@ exports.handler = async (event, context) => {
         `Tu asistente inteligente 24/7 en la nube para Baloto, Revancha y MiLoto.\n\n` +
         `📌 *Comandos disponibles:*\n` +
         `• \`/sorteo\` — Últimos números ganadores oficiales y acumulados en vivo.\n` +
+        `• \`/auditar [números]\` — Comprueba al instante cuántos aciertos tuviste.\n` +
         `• \`/web\` — Enlace directo a la plataforma web con mapas de calor y generador.\n` +
         `• \`/activar [PIN]\` — Activa tu suscripción VIP con el código entregado por WhatsApp.\n` +
         `• \`/mipin [PIN]\` — Consulta la vigencia y días restantes de tu PIN.\n` +
-        `• \`/jugada baloto 11 18 22 30 32 sb 10\` — Registra tu boleto de hoy y recibe tus aciertos tras el sorteo.`;
+        `• \`/jugada [juego] [números]\` — Registra tu boleto para verificación.`;
       await sendTelegramMessage(token, chatId, reply);
     }
 
@@ -124,25 +164,92 @@ exports.handler = async (event, context) => {
       await sendTelegramMessage(token, chatId, reply);
     }
 
-    // 3. COMANDO /SORTEO
+    // 3. COMANDO /SORTEO (Dinámico desde lottery_data.json)
     else if (cmd === '/sorteo') {
+      const data = getFreshLotteryData();
+      if (!data || !data.games) {
+        await sendTelegramMessage(token, chatId, `🌐 Consulta los últimos números y acumulados en:\n👉 ${WEB_URL}`);
+        return { statusCode: 200, body: 'ok' };
+      }
+
+      const b = data.games.baloto.latest_draw;
+      const r = data.games.revancha.latest_draw;
+      const m = data.games.miloto.latest_draw;
+
       const reply = `📢 *ÚLTIMOS RESULTADOS OFICIALES* 🇨🇴\n\n` +
-        `🟡 *Baloto Tradicional* (30 de Septiembre de 2026)\n` +
-        `• Sorteo #2716\n` +
-        `• Balotas: \`11 - 18 - 22 - 30 - 32\` + SB: \`10\`\n` +
-        `• Acumulado: *$61.600 Millones*\n\n` +
-        `🔴 *Baloto Revancha* (30 de Septiembre de 2026)\n` +
-        `• Balotas: \`04 - 10 - 14 - 18 - 23\` + SB: \`07\`\n` +
-        `• Acumulado: *$2.000 Millones*\n\n` +
-        `🟢 *MiLoto* (29 de Septiembre de 2026)\n` +
-        `• Sorteo #615\n` +
-        `• Balotas: \`05 - 10 - 21 - 24 - 31\`\n` +
-        `• Acumulado: *$260 Millones*\n\n` +
+        `🟡 *Baloto Tradicional* (${b.draw_date})\n` +
+        `• Sorteo #${b.draw_number || ''}\n` +
+        `• Balotas: \`${b.numbers.join(' - ')}\` + SB: \`${b.superball}\`\n` +
+        `• Acumulado: *${b.jackpot}*\n\n` +
+        `🔴 *Baloto Revancha* (${r.draw_date})\n` +
+        `• Sorteo #${r.draw_number || ''}\n` +
+        `• Balotas: \`${r.numbers.join(' - ')}\` + SB: \`${r.superball}\`\n` +
+        `• Acumulado: *${r.jackpot}*\n\n` +
+        `🟢 *MiLoto* (${m.draw_date})\n` +
+        `• Sorteo #${m.draw_number || ''}\n` +
+        `• Balotas: \`${m.numbers.join(' - ')}\`\n` +
+        `• Acumulado: *${m.jackpot}*\n\n` +
         `🔗 Consulta análisis detallado y pronósticos en:\n👉 ${WEB_URL}`;
       await sendTelegramMessage(token, chatId, reply);
     }
 
-    // 4. COMANDO /ACTIVAR [PIN]
+    // 4. COMANDO /AUDITAR [juego opcional] [numeros...]
+    else if (cmd === '/auditar') {
+      const rawNumbers = text.replace(/\/auditar/i, '').trim();
+      const allNums = rawNumbers.match(/\b\d{1,2}\b/g);
+
+      if (!allNums || allNums.length < 5) {
+        const helpMsg = `ℹ️ *Cómo auditar tu jugada al instante:*\n\n` +
+          `Escribe \`/auditar\` seguido de tus números.\n\n` +
+          `Ejemplos:\n` +
+          `• Para MiLoto: \`/auditar 15 21 25 30 37\`\n` +
+          `• Para Baloto: \`/auditar baloto 11 18 22 30 32 sb 10\``;
+        await sendTelegramMessage(token, chatId, helpMsg);
+        return { statusCode: 200, body: 'ok' };
+      }
+
+      let gameGuess = 'miloto';
+      if (text.toLowerCase().includes('baloto')) gameGuess = 'baloto';
+      else if (text.toLowerCase().includes('revancha')) gameGuess = 'revancha';
+      else if (allNums.length === 6) gameGuess = 'baloto';
+
+      const userNums = allNums.slice(0, 5).map(n => parseInt(n));
+      const userSb = (allNums.length >= 6) ? parseInt(allNums[5]) : null;
+
+      const audit = auditNumbers(userNums, gameGuess, userSb);
+      if (!audit) {
+        await sendTelegramMessage(token, chatId, `⚠️ No se pudieron consultar los datos del último sorteo.`);
+        return { statusCode: 200, body: 'ok' };
+      }
+
+      let verdict = '';
+      if (audit.matchCount === 5 && (!audit.winningSb || audit.sbMatch)) {
+        verdict = `🏆🎉 *¡FELICITACIONES! ¡ACERTASTE EL PREMIO MAYOR COMPLETO!*`;
+      } else if (audit.matchCount >= 4) {
+        verdict = `🎯🔥 *¡Excelente! Tuviste ${audit.matchCount} aciertos (${audit.matches.join(', ')}).* ¡Tienes un premio importante!`;
+      } else if (audit.matchCount === 3) {
+        verdict = `🎯 *¡Bien! Tuviste 3 aciertos (${audit.matches.join(', ')}).* Cobras premio en la tabla de pagos.`;
+      } else if (audit.matchCount === 2 && audit.sbMatch) {
+        verdict = `🎉 *Acertaste 2 números + Superbalota.* Tienes premio menor.`;
+      } else {
+        verdict = `Tuviste *${audit.matchCount} acierto(s)* (${audit.matches.length > 0 ? audit.matches.join(', ') : 'ninguno'}). ¡El próximo sorteo ya está disponible en la web!`;
+      }
+
+      const sbWinStr = audit.winningSb !== null ? ` + SB ${audit.winningSb}` : '';
+      const sbUserStr = audit.userSb !== null ? ` + SB ${audit.userSb}` : '';
+
+      const rep = `📊 *AUDITORÍA DE JUGADA — ${audit.gameName.toUpperCase()}*\n` +
+        `📅 Sorteo #${audit.drawNumber} (${audit.drawDate})\n\n` +
+        `• *Números Ganadores:* \`${audit.winningNumbers.join(' - ')}\`${sbWinStr}\n` +
+        `• *Tus Números:* \`${audit.userNumbers.join(' - ')}\`${sbUserStr}\n\n` +
+        `• *Aciertos:* *${audit.matchCount} de 5* ${audit.sbMatch ? '(+ Superbalota acertada ✅)' : ''}\n\n` +
+        `${verdict}\n\n` +
+        `Genera tus combinaciones sugeridas para el siguiente juego en:\n👉 ${WEB_URL}`;
+
+      await sendTelegramMessage(token, chatId, rep);
+    }
+
+    // 5. COMANDO /ACTIVAR [PIN]
     else if (cmd === '/activar') {
       if (parts.length < 2) {
         await sendTelegramMessage(token, chatId, 'ℹ️ Escribe `/activar` seguido de tu PIN.\nEjemplo: `/activar VIP-261031-842-50EB`');
@@ -162,7 +269,7 @@ exports.handler = async (event, context) => {
       }
     }
 
-    // 5. COMANDO /MIPIN [PIN opcional]
+    // 6. COMANDO /MIPIN [PIN opcional]
     else if (cmd === '/mipin') {
       if (parts.length >= 2) {
         const pin = parts[1].trim();
@@ -177,24 +284,28 @@ exports.handler = async (event, context) => {
       }
     }
 
-    // 6. COMANDO /JUGADA
+    // 7. COMANDO /JUGADA (Registra y además audita si el sorteo ya se jugó)
     else if (cmd === '/jugada') {
-      if (parts.length < 6) {
-        await sendTelegramMessage(token, chatId, 'ℹ️ Formato para registrar tu boleto:\n`/jugada baloto 11 18 22 30 32 sb 10`\n`/jugada miloto 05 10 21 24 31`');
+      const rawNumbers = text.replace(/\/jugada/i, '').trim();
+      const allNums = rawNumbers.match(/\b\d{1,2}\b/g);
+
+      if (!allNums || allNums.length < 5) {
+        await sendTelegramMessage(token, chatId, 'ℹ️ Formato para registrar tu boleto:\n`/jugada baloto 11 18 22 30 32 sb 10`\n`/jugada miloto 15 21 25 30 37`');
       } else {
         const game = parts[1].toUpperCase();
         const nums = parts.slice(2).join(' ');
-        const reply = `🎟️ *¡Boleto Registrado para Hoy!* 🇨🇴\n\n` +
+        const reply = `🎟️ *¡Boleto Registrado!* 🇨🇴\n\n` +
           `• *Sorteo:* ${game}\n` +
-          `• *Números Registrados:* \`${nums}\`\n\n` +
-          `En cuanto termine la transmisión en televisión esta noche, tus números serán auditados automáticamente frente a los resultados oficiales. 🍀`;
+          `• *Números:* \`${nums}\`\n\n` +
+          `💡 *Tip:* Puedes consultar cuántos aciertos tuviste frente al sorteo oficial escribiendo:\n` +
+          `\`/auditar ${nums}\``;
         await sendTelegramMessage(token, chatId, reply);
       }
     }
 
     // CUALQUIER OTRO MENSAJE
     else {
-      const reply = `Hola ${firstName}. Escribe \`/sorteo\` para ver los últimos números, \`/web\` para entrar a la página o \`/start\` para ver todos los comandos disponibles.`;
+      const reply = `Hola ${firstName}. Escribe \`/sorteo\` para ver los últimos números, \`/auditar [tus números]\` para revisar tus aciertos, \`/web\` para entrar a la página o \`/start\` para ver todos los comandos.`;
       await sendTelegramMessage(token, chatId, reply);
     }
 
