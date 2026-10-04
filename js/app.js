@@ -21,6 +21,7 @@ async function initApp() {
 
   if (APP_DATA) {
     document.getElementById('last-sync-time').innerText = formatDateTime(APP_DATA.metadata.last_updated);
+    updateGlobalJackpotSum();
     renderSummaryCards();
     renderGameTab(currentGame);
     handleGenerateTickets();
@@ -45,47 +46,83 @@ function formatDateTime(isoString) {
 
 // 1. Render Top Summary Cards
 function renderSummaryCards() {
-  const container = document.getElementById('summary-cards-container');
-  container.innerHTML = '';
+  const container = document.getElementById("summary-cards-container");
+  container.innerHTML = "";
 
-  const order = ['baloto', 'revancha', 'miloto'];
-  order.forEach(key => {
+  const order = ["baloto", "revancha", "miloto"];
+  const badges = {
+    baloto: { label: "⭐ Sorteo Estelar", class: "badge-baloto" },
+    revancha: { label: "🔥 Segundo Pozo", class: "badge-revancha" },
+    miloto: { label: "💎 Mayor Frecuencia", class: "badge-miloto" }
+  };
+
+  order.forEach((key, cardIndex) => {
     const g = APP_DATA.games[key];
     if (!g || !g.latest_draw) return;
 
     const lat = g.latest_draw;
-    const ballClass = key === 'baloto' ? 'ball-baloto' : (key === 'revancha' ? 'ball-revancha' : 'ball-miloto');
-    
-    let ballsHtml = lat.numbers.map(n => `<div class="ball ${ballClass}">${pad(n)}</div>`).join('');
-    if (lat.superball) {
-      ballsHtml += `<div class="ball ball-super" title="Superbalota">${pad(lat.superball)}</div>`;
-    }
+    const ballClass = key === "baloto" ? "ball-baloto" : (key === "revancha" ? "ball-revancha" : "ball-miloto");
+    const badgeInfo = badges[key] || { label: "Sorteo Oficial", class: "badge-baloto" };
 
-    const card = document.createElement('div');
-    card.className = 'card';
-    const cardIndex = order.indexOf(key);
+    const card = document.createElement("div");
+    card.className = `card card-${key}`;
     card.style.animation = `fadeInDown 0.45s var(--ease-spring) ${cardIndex * 0.1}s both`;
-    
-    // Stagger balls slightly
+
+    // Stagger balls
     const animatedBalls = lat.numbers.map((n, idx) => 
-      `<div class="ball ${ballClass}" style="animation: fadeInDown 0.35s var(--ease-spring) ${0.15 + (idx * 0.04)}s both;">${pad(n)}</div>`
-    ).join('');
-    
-    let animatedSb = lat.superball ? `<div class="ball ball-super" style="animation: fadeInDown 0.35s var(--ease-spring) 0.38s both;" title="Superbalota">${pad(lat.superball)}</div>` : '';
+      `<div class="ball ${ballClass}" style="animation: fadeInDown 0.35s var(--ease-spring) ${0.12 + (idx * 0.04)}s both;" title="${g.name}">${pad(n)}</div>`
+    ).join("");
+
+    let animatedSb = lat.superball ? `<div class="ball ball-super" style="animation: fadeInDown 0.35s var(--ease-spring) 0.36s both;" title="Superbalota">${pad(lat.superball)}</div>` : "";
 
     card.innerHTML = `
-      <div class="card-top">
-        <span class="card-title">${g.name}</span>
-        <span class="jackpot-pill">${lat.jackpot || 'Premio Acumulado'}</span>
+      <div>
+        <span class="card-badge ${badgeInfo.class}">${badgeInfo.label}</span>
+        <div class="card-top">
+          <div class="card-title">${g.name}</div>
+          <div class="jackpot-showcase">
+            <div class="jackpot-label">Acumulado Vigente</div>
+            <div class="jackpot-number">${lat.jackpot || "En Juego"}</div>
+          </div>
+        </div>
       </div>
-      <div class="ball-row">${animatedBalls}${animatedSb}</div>
+      
+      <div class="balls-shelf">
+        <div class="ball-row">${animatedBalls}${animatedSb}</div>
+      </div>
+
       <div class="card-meta">
-        <span>Sorteo #${lat.draw_number || 'N/A'}</span>
-        <span>Fecha: ${lat.draw_date}</span>
+        <span class="meta-item"><span style="color:#60a5fa;">🎫</span> Sorteo #${lat.draw_number || "N/A"}</span>
+        <span class="meta-item"><span style="color:#94a3b8;">📅</span> Fecha: ${lat.draw_date}</span>
       </div>
     `;
     container.appendChild(card);
   });
+}
+
+function updateGlobalJackpotSum() {
+  const sumEl = document.getElementById("global-jackpot-sum");
+  if (!sumEl || !APP_DATA || !APP_DATA.games) return;
+
+  let totalMillions = 0;
+  for (let key in APP_DATA.games) {
+    const lat = APP_DATA.games[key].latest_draw;
+    if (lat && lat.jackpot) {
+      // Extract numeric value from string like "$61.600 Millones" or "$350 Millones"
+      const m = lat.jackpot.match(/\$?\s*([\d\.]+)/);
+      if (m) {
+        const valStr = m[1].replace(/\./g, ""); // "61600" or "350"
+        const num = parseFloat(valStr);
+        if (!isNaN(num)) totalMillions += num;
+      }
+    }
+  }
+
+  if (totalMillions > 0) {
+    // Format nicely with Colombian dots (e.g. 63.950)
+    const formatted = totalMillions.toLocaleString("es-CO");
+    sumEl.innerText = `$${formatted} Millones`;
+  }
 }
 
 // 2. Tab Navigation
@@ -612,12 +649,12 @@ function generateVipUniqueTicket() {
   `;
 }
 
-// 9. DELAYED SYNC STATUS NOTICE
+// 9. DELAYED SYNC STATUS NOTICE (Silent / Discreet)
 function renderDelayedSyncNotice() {
-  const syncInfo = APP_DATA.metadata.sync_info;
+  // Discreet background sync - no clunky text banner
   const statusEl = document.getElementById('delayed-sync-badge');
-  if (syncInfo && statusEl) {
-    statusEl.innerText = "Doble Chequeo: 11:30 PM & 12:30 AM (Re-verificación oficial diferida activa)";
+  if (statusEl) {
+    statusEl.innerText = "● Monitoreo nocturno activo";
   }
 }
 
