@@ -63,12 +63,22 @@ function renderSummaryCards() {
 
     const card = document.createElement('div');
     card.className = 'card';
+    const cardIndex = order.indexOf(key);
+    card.style.animation = `fadeInDown 0.45s var(--ease-spring) ${cardIndex * 0.1}s both`;
+    
+    // Stagger balls slightly
+    const animatedBalls = lat.numbers.map((n, idx) => 
+      `<div class="ball ${ballClass}" style="animation: fadeInDown 0.35s var(--ease-spring) ${0.15 + (idx * 0.04)}s both;">${pad(n)}</div>`
+    ).join('');
+    
+    let animatedSb = lat.superball ? `<div class="ball ball-super" style="animation: fadeInDown 0.35s var(--ease-spring) 0.38s both;" title="Superbalota">${pad(lat.superball)}</div>` : '';
+
     card.innerHTML = `
       <div class="card-top">
         <span class="card-title">${g.name}</span>
         <span class="jackpot-pill">${lat.jackpot || 'Premio Acumulado'}</span>
       </div>
-      <div class="ball-row">${ballsHtml}</div>
+      <div class="ball-row">${animatedBalls}${animatedSb}</div>
       <div class="card-meta">
         <span>Sorteo #${lat.draw_number || 'N/A'}</span>
         <span>Fecha: ${lat.draw_date}</span>
@@ -190,14 +200,15 @@ function handleGenerateTickets() {
 
     const card = document.createElement('div');
     card.className = 'ticket-box';
+    card.style.animation = `fadeInDown 0.35s var(--ease-spring) ${i * 0.08}s both`;
     card.innerHTML = `
       <div class="ticket-header">
         <span class="ticket-badge">Boleto #${i+1}: ${ticket.strategy}</span>
         <button class="btn-copy" onclick="copyToClipboard('${copyText}', this)">Copiar</button>
       </div>
-      <div class="ball-row" style="margin: 0.5rem 0;">${ballsHtml}</div>
-      <div style="font-size: 0.8rem; color: #94a3b8;">
-        <strong>Suma:</strong> ${ticket.sum} | <strong>Paridad:</strong> ${countParity(ticket.numbers)}
+      <div class="ball-row" style="margin: 0.65rem 0;">${ballsHtml}</div>
+      <div style="font-size: 0.825rem; color: #cbd5e1; font-weight: 500;">
+        <strong>Suma:</strong> <span style="color:#60a5fa;">${ticket.sum}</span> | <strong>Paridad:</strong> <span style="color:#34d399;">${countParity(ticket.numbers)}</span>
       </div>
       <div class="ticket-footer">${ticket.rationale}</div>
     `;
@@ -688,14 +699,12 @@ function pad(n) {
 
 function copyToClipboard(text, btn) {
   navigator.clipboard.writeText(text).then(() => {
-    const original = btn.innerText;
-    btn.innerText = '¡Copiado!';
-    btn.style.borderColor = '#10b981';
-    btn.style.color = '#10b981';
+    const original = btn.innerHTML;
+    btn.innerHTML = '✓ ¡Copiado!';
+    btn.classList.add('copied');
     setTimeout(() => {
-      btn.innerText = original;
-      btn.style.borderColor = '#334155';
-      btn.style.color = '#94a3af';
+      btn.innerHTML = original;
+      btn.classList.remove('copied');
     }, 2000);
   });
 }

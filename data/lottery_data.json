@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "LottoAnalytics Colombia",
-    "last_updated": "2026-10-04T00:59:12.568564",
+    "last_updated": "2026-10-04T01:12:36.961182",
     "status": "online",
     "publication_status": {
       "baloto": {
@@ -1333,54 +1333,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            6,
-            8,
-            23,
-            34,
-            43
+            13,
+            18,
+            25,
+            32,
+            38
           ],
           "superball": 13,
-          "sum": 114,
-          "rationale": "Suma 114 en rango óptimo [89-130], balance par/impar equilibrado y dispersión controlada."
+          "sum": 126,
+          "rationale": "Suma 126 en rango óptimo [89-130], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
             2,
-            11,
+            6,
             15,
-            30,
-            38
+            38,
+            41
           ],
-          "superball": 16,
-          "sum": 96,
+          "superball": 9,
+          "sum": 102,
           "rationale": "Incluye pareja frecuente [2, 15] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            4,
-            16,
-            21,
+            5,
+            20,
+            28,
             34,
-            37
+            43
           ],
           "superball": 12,
-          "sum": 112,
-          "rationale": "Reversión a la media con rezagados [34, 37, 21] y anclas de alta frecuencia [4, 16]."
+          "sum": 130,
+          "rationale": "Reversión a la media con rezagados [28, 43, 34] y anclas de alta frecuencia [5, 20]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
             2,
-            5,
-            22,
-            42,
+            10,
+            35,
+            40,
             43
           ],
-          "superball": 6,
-          "sum": 114,
-          "rationale": "Optimización de premio individual: incluye balotas altas [43, 42] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 9,
+          "sum": 130,
+          "rationale": "Optimización de premio individual: incluye balotas altas [43, 35, 40] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -2658,54 +2658,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            1,
-            21,
-            22,
-            24,
-            34
+            3,
+            11,
+            16,
+            34,
+            39
           ],
-          "superball": 11,
-          "sum": 102,
-          "rationale": "Suma 102 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 16,
+          "sum": 103,
+          "rationale": "Suma 103 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            9,
-            10,
+            7,
+            12,
             21,
-            24,
-            38
+            38,
+            42
           ],
-          "superball": 3,
-          "sum": 102,
+          "superball": 1,
+          "sum": 120,
           "rationale": "Incluye pareja frecuente [21, 38] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
+            7,
             8,
             20,
-            29,
-            31,
-            41
+            33,
+            37
           ],
-          "superball": 6,
-          "sum": 129,
-          "rationale": "Reversión a la media con rezagados [20, 41, 31] y anclas de alta frecuencia [8, 29]."
+          "superball": 12,
+          "sum": 105,
+          "rationale": "Reversión a la media con rezagados [37, 20, 7] y anclas de alta frecuencia [8, 33]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            6,
-            12,
-            15,
-            32,
+            8,
+            10,
+            21,
+            34,
             35
           ],
-          "superball": 5,
-          "sum": 100,
-          "rationale": "Optimización de premio individual: incluye balotas altas [32, 35] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 9,
+          "sum": 108,
+          "rationale": "Optimización de premio individual: incluye balotas altas [34, 35] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -3828,54 +3828,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            2,
-            13,
-            21,
-            23,
-            24
+            11,
+            12,
+            15,
+            36,
+            39
           ],
           "superball": null,
-          "sum": 83,
-          "rationale": "Suma 83 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
+          "sum": 113,
+          "rationale": "Suma 113 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            2,
-            3,
-            7,
-            36,
-            38
+            8,
+            15,
+            18,
+            31,
+            35
           ],
           "superball": null,
-          "sum": 86,
-          "rationale": "Incluye pareja frecuente [2, 36] y balotas en racha reciente con Superbalota caliente."
+          "sum": 107,
+          "rationale": "Incluye pareja frecuente [18, 31] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            4,
+            2,
+            6,
             18,
             27,
-            28,
             31
           ],
           "superball": null,
-          "sum": 108,
-          "rationale": "Reversión a la media con rezagados [27, 28, 4] y anclas de alta frecuencia [18, 31]."
+          "sum": 84,
+          "rationale": "Reversión a la media con rezagados [6, 27, 2] y anclas de alta frecuencia [31, 18]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            4,
             7,
-            21,
-            35,
-            36
+            8,
+            13,
+            34,
+            37
           ],
           "superball": null,
-          "sum": 103,
-          "rationale": "Optimización de premio individual: incluye balotas altas [35, 36] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "sum": 99,
+          "rationale": "Optimización de premio individual: incluye balotas altas [34, 37] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     }
