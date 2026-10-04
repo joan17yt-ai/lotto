@@ -2,8 +2,8 @@
 Automated Cloud Telegram Alert Sender for GitHub Actions.
 Sends:
   1. 6:30 PM Draw-day reminders with website link.
-  2. Post-draw results notification with winning numbers and jackpots.
-  3. Huge jackpot alerts.
+  2. 3:00 AM Post-draw consolidated results notification with exact winning numbers,
+     updated jackpots, and explicit instructions/invitation to audit tickets.
 """
 
 import os
@@ -12,12 +12,12 @@ import json
 import argparse
 import urllib.request
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timedelta
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.dirname(current_dir)
 DATA_JSON_PATH = os.path.join(root_dir, 'data', 'lottery_data.json')
-WEB_URL = os.environ.get('LOTTO_WEB_URL', 'https://lotto-colombia.netlify.app')
+WEB_URL = os.environ.get('LOTTO_WEB_URL', 'https://joan17yt-ai.github.io/lotto/')
 
 def load_data() -> dict:
     if os.path.exists(DATA_JSON_PATH):
@@ -37,7 +37,6 @@ def send_telegram_message(token: str, chat_id: str, text: str) -> bool:
     payload = {
         "chat_id": chat_id,
         "text": text,
-        "parse_mode": "Markdown",
         "disable_web_page_preview": False
     }
     data = urllib.parse.urlencode(payload).encode('utf-8')
@@ -71,44 +70,63 @@ def alert_reminder_630pm(token: str, chat_id: str):
         return
 
     baloto_jp = data.get('games', {}).get('baloto', {}).get('latest_draw', {}).get('jackpot', '$61.600 Millones')
-    miloto_jp = data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$260 Millones')
+    miloto_jp = data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$320 Millones')
 
     msg = (
-        f"🔔 *¡RECORDATORIO DE SORTEO HOY!* 🇨🇴\n\n"
-        f"Esta noche juegan: *{' y '.join(games_today)}*.\n"
-        f"💰 *Acumulado Baloto:* {baloto_jp}\n"
-        f"💰 *Acumulado MiLoto:* {miloto_jp}\n\n"
-        f"👉 *No olvides ingresar a la página y buscar tus números optimizados para hoy:*\n"
+        f"🔔 ¡RECORDATORIO DE SORTEO HOY! 🇨🇴\n\n"
+        f"Esta noche juegan: {' y '.join(games_today)}.\n"
+        f"💰 Acumulado Baloto: {baloto_jp}\n"
+        f"💰 Acumulado MiLoto: {miloto_jp}\n\n"
+        f"👉 Ingresa a la página y busca tus números optimizados para hoy:\n"
         f"🔗 {WEB_URL}\n\n"
-        f"🍀 *Recuerda realizar tu jugada antes del cierre de ventas esta noche.*"
+        f"🍀 Recuerda realizar tu jugada antes del cierre de ventas esta noche."
     )
     send_telegram_message(token, chat_id, msg)
 
 def alert_post_draw(token: str, chat_id: str):
     data = load_data()
     if not data:
+        print("No se encontraron datos en lottery_data.json.")
         return
 
     b = data.get('games', {}).get('baloto', {}).get('latest_draw', {})
     r = data.get('games', {}).get('revancha', {}).get('latest_draw', {})
     m = data.get('games', {}).get('miloto', {}).get('latest_draw', {})
 
+    b_nums = " - ".join([f"{n:02d}" for n in b.get('numbers', [])])
+    r_nums = " - ".join([f"{n:02d}" for n in r.get('numbers', [])])
+    m_nums = " - ".join([f"{n:02d}" for n in m.get('numbers', [])])
+
+    sb_b = f" + SB {b.get('superball'):02d}" if b.get('superball') is not None else ""
+    sb_r = f" + SB {r.get('superball'):02d}" if r.get('superball') is not None else ""
+
+    # Determinar qué sorteos jugaron anoche
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+
     msg = (
-        f"📢 *NUEVOS RESULTADOS OFICIALES ACTUALIZADOS* 🇨🇴\n\n"
-        f"🟡 *Baloto Tradicional* ({b.get('draw_date')})\n"
-        f"• Sorteo #{b.get('draw_number', '')}\n"
-        f"• Balotas: `{b.get('numbers')}` + SB: `{b.get('superball')}`\n"
-        f"• Acumulado: *{b.get('jackpot', '')}*\n\n"
-        f"🔴 *Baloto Revancha* ({r.get('draw_date')})\n"
-        f"• Balotas: `{r.get('numbers')}` + SB: `{r.get('superball')}`\n"
-        f"• Acumulado: *{r.get('jackpot', '')}*\n\n"
-        f"🟢 *MiLoto* ({m.get('draw_date')})\n"
-        f"• Sorteo #{m.get('draw_number', '')}\n"
-        f"• Balotas: `{m.get('numbers')}`\n"
-        f"• Acumulado: *{m.get('jackpot', '')}*\n\n"
-        f"Consulta el desglose de atrasos y los nuevos pronósticos aquí:\n"
+        f"📢 RESULTADOS OFICIALES Y ACUMULADOS (3:00 AM) 🇨🇴🎟️\n\n"
+        f"Aquí tienes los números ganadores y los nuevos pozos actualizados:\n\n"
+        f"🟢 MILOTO (Sorteo #{m.get('draw_number', '')} • {m.get('draw_date')})\n"
+        f"• Balotas: {m_nums}\n"
+        f"• Acumulado: {m.get('jackpot', '')}\n\n"
+        f"🟡 BALOTO TRADICIONAL (Sorteo #{b.get('draw_number', '')} • {b.get('draw_date')})\n"
+        f"• Balotas: {b_nums}{sb_b}\n"
+        f"• Acumulado: {b.get('jackpot', '')}\n\n"
+        f"🔴 BALOTO REVANCHA (Sorteo #{r.get('draw_number', '')} • {r.get('draw_date')})\n"
+        f"• Balotas: {r_nums}{sb_r}\n"
+        f"• Acumulado: {r.get('jackpot', '')}\n\n"
+        f"━━━━━━━━━━━━━━━━━━━━━━\n"
+        f"🎯 ¿QUIERES SABER CUÁNTOS ACIERTOS TUVISTE?\n\n"
+        f"Revisa tu boleto escribiendo aquí en el chat:\n"
+        f"/auditar [tus 5 números]\n\n"
+        f"Ejemplos:\n"
+        f"• Para MiLoto: /auditar 18 20 22 31 38\n"
+        f"• Para Baloto: /auditar baloto 11 18 22 30 32 10\n\n"
+        f"¡El bot te dirá de inmediato tus aciertos y si cobras premio! 🏆\n\n"
+        f"🌐 Consulta los mapas de calor y las nuevas jugadas sugeridas en:\n"
         f"👉 {WEB_URL}"
     )
+
     send_telegram_message(token, chat_id, msg)
 
 def main():

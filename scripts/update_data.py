@@ -14,9 +14,9 @@ from bs4 import BeautifulSoup
 
 # Ensure local packages are importable
 current_dir = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.dirname(os.path.dirname(current_dir))
+root_dir = os.path.dirname(current_dir)
 sys.path.insert(0, os.path.join(root_dir, 'lottery_system'))
-sys.path.insert(0, os.path.join(root_dir, 'lottery_engine'))
+# sys.path.insert(0, os.path.join(root_dir, 'lottery_engine'))
 
 try:
     from database import get_draws, get_latest_draw, insert_draw, log_sync

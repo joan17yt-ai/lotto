@@ -1,0 +1,7344 @@
+{
+  "draws": {
+    "baloto": [
+      {
+        "game": "baloto",
+        "draw_number": 2716,
+        "draw_date": "2026-09-30",
+        "numbers": [
+          11,
+          18,
+          22,
+          30,
+          32
+        ],
+        "superball": 10,
+        "jackpot": "$61.600 Millones",
+        "updated_at": "2026-10-01T12:03:38.779097"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2715,
+        "draw_date": "2026-09-28",
+        "numbers": [
+          12,
+          13,
+          15,
+          25,
+          29
+        ],
+        "superball": 10,
+        "jackpot": "$60.000 Millones",
+        "updated_at": "2026-10-01T12:03:38.948651"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2714,
+        "draw_date": "2026-09-26",
+        "numbers": [
+          11,
+          15,
+          16,
+          20,
+          36
+        ],
+        "superball": 12,
+        "jackpot": "$58.500 Millones",
+        "updated_at": "2026-10-01T12:03:39.103777"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2713,
+        "draw_date": "2026-09-23",
+        "numbers": [
+          4,
+          9,
+          14,
+          15,
+          16
+        ],
+        "superball": 12,
+        "jackpot": "$57.000 Millones",
+        "updated_at": "2026-10-01T12:03:39.276573"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2712,
+        "draw_date": "2026-09-21",
+        "numbers": [
+          4,
+          15,
+          17,
+          22,
+          23
+        ],
+        "superball": 10,
+        "jackpot": "$55.200 Millones",
+        "updated_at": "2026-10-01T12:03:39.461587"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2711,
+        "draw_date": "2026-09-19",
+        "numbers": [
+          11,
+          13,
+          17,
+          19,
+          39
+        ],
+        "superball": 4,
+        "jackpot": "$54.000 Millones",
+        "updated_at": "2026-10-01T12:03:39.608541"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2710,
+        "draw_date": "2026-09-16",
+        "numbers": [
+          4,
+          17,
+          18,
+          20,
+          26
+        ],
+        "superball": 5,
+        "jackpot": "$52.800 Millones",
+        "updated_at": "2026-10-01T12:03:39.777963"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2709,
+        "draw_date": "2026-09-14",
+        "numbers": [
+          3,
+          5,
+          10,
+          20,
+          31
+        ],
+        "superball": 8,
+        "jackpot": "$51.500 Millones",
+        "updated_at": "2026-10-01T12:03:39.929905"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2708,
+        "draw_date": "2026-09-12",
+        "numbers": [
+          7,
+          29,
+          31,
+          32,
+          38
+        ],
+        "superball": 13,
+        "jackpot": "$50.000 Millones",
+        "updated_at": "2026-10-01T12:03:40.099625"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2707,
+        "draw_date": "2026-09-09",
+        "numbers": [
+          4,
+          8,
+          12,
+          30,
+          39
+        ],
+        "superball": 13,
+        "jackpot": "$48.800 Millones",
+        "updated_at": "2026-10-01T12:03:40.256433"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2706,
+        "draw_date": "2026-09-07",
+        "numbers": [
+          2,
+          8,
+          16,
+          18,
+          41
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:40.436791"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2705,
+        "draw_date": "2026-09-05",
+        "numbers": [
+          6,
+          7,
+          9,
+          35,
+          38
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:40.606725"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2704,
+        "draw_date": "2026-09-03",
+        "numbers": [
+          2,
+          3,
+          6,
+          14,
+          15
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:40.777437"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2703,
+        "draw_date": "2026-09-01",
+        "numbers": [
+          13,
+          27,
+          35,
+          36,
+          42
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:40.953659"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2702,
+        "draw_date": "2026-08-30",
+        "numbers": [
+          1,
+          11,
+          18,
+          29,
+          38
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.170878"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2701,
+        "draw_date": "2026-08-28",
+        "numbers": [
+          7,
+          10,
+          14,
+          18,
+          22
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.349638"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2700,
+        "draw_date": "2026-08-26",
+        "numbers": [
+          7,
+          17,
+          23,
+          25,
+          39
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.508462"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2699,
+        "draw_date": "2026-08-24",
+        "numbers": [
+          6,
+          8,
+          25,
+          30,
+          35
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.690286"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2698,
+        "draw_date": "2026-08-22",
+        "numbers": [
+          13,
+          24,
+          37,
+          40,
+          41
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.844176"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2697,
+        "draw_date": "2026-08-20",
+        "numbers": [
+          3,
+          6,
+          15,
+          19,
+          43
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:41.978340"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2696,
+        "draw_date": "2026-08-18",
+        "numbers": [
+          7,
+          18,
+          25,
+          30,
+          41
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.137747"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2695,
+        "draw_date": "2026-08-16",
+        "numbers": [
+          11,
+          14,
+          23,
+          24,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.295016"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2694,
+        "draw_date": "2026-08-14",
+        "numbers": [
+          5,
+          11,
+          39,
+          41,
+          42
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.462589"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2693,
+        "draw_date": "2026-08-12",
+        "numbers": [
+          11,
+          18,
+          25,
+          30,
+          41
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.626714"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2692,
+        "draw_date": "2026-08-10",
+        "numbers": [
+          3,
+          4,
+          15,
+          21,
+          26
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.812952"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2691,
+        "draw_date": "2026-08-08",
+        "numbers": [
+          5,
+          14,
+          21,
+          37,
+          42
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:42.955160"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2690,
+        "draw_date": "2026-08-06",
+        "numbers": [
+          10,
+          17,
+          26,
+          30,
+          42
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.120513"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2689,
+        "draw_date": "2026-08-04",
+        "numbers": [
+          16,
+          17,
+          35,
+          36,
+          38
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.299120"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2688,
+        "draw_date": "2026-08-02",
+        "numbers": [
+          9,
+          15,
+          24,
+          26,
+          38
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.470202"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2687,
+        "draw_date": "2026-07-31",
+        "numbers": [
+          4,
+          6,
+          8,
+          10,
+          41
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.619886"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2686,
+        "draw_date": "2026-07-29",
+        "numbers": [
+          5,
+          25,
+          28,
+          30,
+          39
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.783151"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2685,
+        "draw_date": "2026-07-27",
+        "numbers": [
+          1,
+          8,
+          18,
+          35,
+          36
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:43.942516"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2684,
+        "draw_date": "2026-07-25",
+        "numbers": [
+          8,
+          11,
+          19,
+          28,
+          30
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.096851"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2683,
+        "draw_date": "2026-07-23",
+        "numbers": [
+          7,
+          12,
+          17,
+          33,
+          41
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.277774"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2682,
+        "draw_date": "2026-07-21",
+        "numbers": [
+          10,
+          13,
+          33,
+          39,
+          41
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.443798"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2681,
+        "draw_date": "2026-07-19",
+        "numbers": [
+          1,
+          11,
+          34,
+          35,
+          39
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.601241"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2680,
+        "draw_date": "2026-07-17",
+        "numbers": [
+          2,
+          8,
+          20,
+          24,
+          32
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.804945"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2679,
+        "draw_date": "2026-07-15",
+        "numbers": [
+          4,
+          6,
+          16,
+          32,
+          37
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:44.963055"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2678,
+        "draw_date": "2026-07-13",
+        "numbers": [
+          9,
+          31,
+          35,
+          36,
+          43
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.111194"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2677,
+        "draw_date": "2026-07-11",
+        "numbers": [
+          14,
+          17,
+          28,
+          34,
+          39
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.258942"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2676,
+        "draw_date": "2026-07-09",
+        "numbers": [
+          20,
+          24,
+          26,
+          42,
+          43
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.406256"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2675,
+        "draw_date": "2026-07-07",
+        "numbers": [
+          8,
+          15,
+          16,
+          29,
+          34
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.582027"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2674,
+        "draw_date": "2026-07-05",
+        "numbers": [
+          2,
+          15,
+          22,
+          36,
+          38
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.734434"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2673,
+        "draw_date": "2026-07-03",
+        "numbers": [
+          1,
+          4,
+          5,
+          15,
+          41
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:45.885658"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2672,
+        "draw_date": "2026-07-01",
+        "numbers": [
+          3,
+          5,
+          16,
+          22,
+          33
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.052636"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2671,
+        "draw_date": "2026-06-29",
+        "numbers": [
+          9,
+          14,
+          32,
+          35,
+          43
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.212919"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2670,
+        "draw_date": "2026-06-27",
+        "numbers": [
+          7,
+          13,
+          16,
+          27,
+          31
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.421588"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2669,
+        "draw_date": "2026-06-25",
+        "numbers": [
+          23,
+          27,
+          28,
+          30,
+          43
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.568625"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2668,
+        "draw_date": "2026-06-23",
+        "numbers": [
+          4,
+          7,
+          22,
+          26,
+          42
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.736675"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2667,
+        "draw_date": "2026-06-21",
+        "numbers": [
+          9,
+          13,
+          16,
+          29,
+          35
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:46.908011"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2666,
+        "draw_date": "2026-06-19",
+        "numbers": [
+          5,
+          12,
+          16,
+          18,
+          30
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.085553"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2665,
+        "draw_date": "2026-06-17",
+        "numbers": [
+          4,
+          7,
+          35,
+          36,
+          42
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.267180"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2664,
+        "draw_date": "2026-06-15",
+        "numbers": [
+          6,
+          11,
+          16,
+          27,
+          32
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.417244"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2663,
+        "draw_date": "2026-06-13",
+        "numbers": [
+          4,
+          11,
+          14,
+          25,
+          26
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.569078"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2662,
+        "draw_date": "2026-06-11",
+        "numbers": [
+          17,
+          19,
+          25,
+          28,
+          30
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.724901"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2661,
+        "draw_date": "2026-06-09",
+        "numbers": [
+          4,
+          10,
+          13,
+          14,
+          19
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:47.894907"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2660,
+        "draw_date": "2026-06-07",
+        "numbers": [
+          4,
+          21,
+          31,
+          33,
+          38
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.055694"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2659,
+        "draw_date": "2026-06-05",
+        "numbers": [
+          4,
+          5,
+          6,
+          12,
+          33
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.224536"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2658,
+        "draw_date": "2026-06-03",
+        "numbers": [
+          8,
+          16,
+          26,
+          37,
+          38
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.382086"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2657,
+        "draw_date": "2026-06-01",
+        "numbers": [
+          6,
+          27,
+          38,
+          40,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.519809"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2656,
+        "draw_date": "2026-05-30",
+        "numbers": [
+          14,
+          16,
+          17,
+          21,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.706602"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2655,
+        "draw_date": "2026-05-28",
+        "numbers": [
+          9,
+          20,
+          26,
+          42,
+          43
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:48.879107"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2654,
+        "draw_date": "2026-05-26",
+        "numbers": [
+          1,
+          5,
+          21,
+          30,
+          40
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.053192"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2653,
+        "draw_date": "2026-05-24",
+        "numbers": [
+          5,
+          14,
+          17,
+          33,
+          35
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.199247"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2652,
+        "draw_date": "2026-05-22",
+        "numbers": [
+          5,
+          16,
+          19,
+          23,
+          24
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.361444"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2651,
+        "draw_date": "2026-05-20",
+        "numbers": [
+          20,
+          29,
+          35,
+          40,
+          42
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.530289"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2650,
+        "draw_date": "2026-05-18",
+        "numbers": [
+          7,
+          9,
+          20,
+          36,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.682931"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2649,
+        "draw_date": "2026-05-16",
+        "numbers": [
+          7,
+          8,
+          10,
+          18,
+          36
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:49.841059"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2648,
+        "draw_date": "2026-05-14",
+        "numbers": [
+          14,
+          17,
+          22,
+          39,
+          41
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.016485"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2647,
+        "draw_date": "2026-05-12",
+        "numbers": [
+          4,
+          6,
+          17,
+          28,
+          41
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.159807"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2646,
+        "draw_date": "2026-05-10",
+        "numbers": [
+          1,
+          3,
+          9,
+          22,
+          41
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.322385"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2645,
+        "draw_date": "2026-05-08",
+        "numbers": [
+          1,
+          11,
+          28,
+          29,
+          36
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.485567"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2644,
+        "draw_date": "2026-05-06",
+        "numbers": [
+          3,
+          5,
+          10,
+          24,
+          35
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.636896"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2643,
+        "draw_date": "2026-05-04",
+        "numbers": [
+          3,
+          9,
+          20,
+          24,
+          28
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.800190"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2642,
+        "draw_date": "2026-05-02",
+        "numbers": [
+          7,
+          14,
+          16,
+          23,
+          43
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:50.960751"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2641,
+        "draw_date": "2026-04-30",
+        "numbers": [
+          10,
+          16,
+          27,
+          36,
+          40
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.130103"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2640,
+        "draw_date": "2026-04-28",
+        "numbers": [
+          2,
+          12,
+          22,
+          27,
+          43
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.292069"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2639,
+        "draw_date": "2026-04-26",
+        "numbers": [
+          3,
+          7,
+          11,
+          18,
+          25
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.457356"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2638,
+        "draw_date": "2026-04-24",
+        "numbers": [
+          13,
+          15,
+          20,
+          23,
+          30
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.615353"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2637,
+        "draw_date": "2026-04-22",
+        "numbers": [
+          2,
+          13,
+          15,
+          26,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.773417"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2636,
+        "draw_date": "2026-04-20",
+        "numbers": [
+          5,
+          18,
+          23,
+          33,
+          42
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:51.953312"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2635,
+        "draw_date": "2026-04-18",
+        "numbers": [
+          2,
+          8,
+          17,
+          22,
+          35
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.119940"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2634,
+        "draw_date": "2026-04-16",
+        "numbers": [
+          3,
+          7,
+          17,
+          38,
+          39
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.273086"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2633,
+        "draw_date": "2026-04-14",
+        "numbers": [
+          21,
+          23,
+          28,
+          33,
+          39
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.422236"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2632,
+        "draw_date": "2026-04-12",
+        "numbers": [
+          3,
+          13,
+          17,
+          25,
+          37
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.597807"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2631,
+        "draw_date": "2026-04-10",
+        "numbers": [
+          1,
+          13,
+          34,
+          35,
+          43
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.752885"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2630,
+        "draw_date": "2026-04-08",
+        "numbers": [
+          5,
+          22,
+          28,
+          40,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:52.917541"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2629,
+        "draw_date": "2026-04-06",
+        "numbers": [
+          8,
+          20,
+          27,
+          33,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.081393"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2628,
+        "draw_date": "2026-04-04",
+        "numbers": [
+          9,
+          13,
+          19,
+          26,
+          36
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.258254"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2627,
+        "draw_date": "2026-04-02",
+        "numbers": [
+          12,
+          25,
+          37,
+          40,
+          43
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.420083"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2626,
+        "draw_date": "2026-03-31",
+        "numbers": [
+          1,
+          19,
+          20,
+          26,
+          36
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.584071"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2625,
+        "draw_date": "2026-03-29",
+        "numbers": [
+          21,
+          28,
+          38,
+          39,
+          42
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.735395"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2624,
+        "draw_date": "2026-03-27",
+        "numbers": [
+          11,
+          14,
+          29,
+          31,
+          33
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:53.884338"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2623,
+        "draw_date": "2026-03-25",
+        "numbers": [
+          19,
+          33,
+          40,
+          41,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.047677"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2622,
+        "draw_date": "2026-03-23",
+        "numbers": [
+          6,
+          13,
+          15,
+          16,
+          20
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.228708"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2621,
+        "draw_date": "2026-03-21",
+        "numbers": [
+          2,
+          3,
+          16,
+          31,
+          40
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.388098"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2620,
+        "draw_date": "2026-03-19",
+        "numbers": [
+          13,
+          27,
+          30,
+          37,
+          41
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.533121"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2619,
+        "draw_date": "2026-03-17",
+        "numbers": [
+          10,
+          16,
+          26,
+          32,
+          42
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.697175"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2618,
+        "draw_date": "2026-03-15",
+        "numbers": [
+          7,
+          12,
+          15,
+          28,
+          34
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:54.878135"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2617,
+        "draw_date": "2026-03-13",
+        "numbers": [
+          4,
+          8,
+          16,
+          30,
+          36
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.050680"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2616,
+        "draw_date": "2026-03-11",
+        "numbers": [
+          30,
+          34,
+          36,
+          39,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.197102"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2615,
+        "draw_date": "2026-03-09",
+        "numbers": [
+          28,
+          29,
+          33,
+          36,
+          40
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.358518"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2614,
+        "draw_date": "2026-03-07",
+        "numbers": [
+          11,
+          16,
+          17,
+          29,
+          31
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.506963"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2613,
+        "draw_date": "2026-03-05",
+        "numbers": [
+          16,
+          18,
+          32,
+          34,
+          41
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.670760"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2612,
+        "draw_date": "2026-03-03",
+        "numbers": [
+          5,
+          16,
+          18,
+          19,
+          22
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.846261"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2611,
+        "draw_date": "2026-03-01",
+        "numbers": [
+          6,
+          9,
+          10,
+          15,
+          35
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:55.976953"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2610,
+        "draw_date": "2026-02-27",
+        "numbers": [
+          5,
+          10,
+          14,
+          22,
+          27
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.150471"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2609,
+        "draw_date": "2026-02-25",
+        "numbers": [
+          4,
+          14,
+          25,
+          27,
+          38
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.315633"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2608,
+        "draw_date": "2026-02-23",
+        "numbers": [
+          1,
+          23,
+          25,
+          31,
+          37
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.466696"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2607,
+        "draw_date": "2026-02-21",
+        "numbers": [
+          15,
+          25,
+          27,
+          35,
+          39
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.642137"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2606,
+        "draw_date": "2026-02-19",
+        "numbers": [
+          2,
+          15,
+          18,
+          28,
+          32
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.813136"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2605,
+        "draw_date": "2026-02-17",
+        "numbers": [
+          11,
+          22,
+          26,
+          30,
+          43
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:56.973468"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2604,
+        "draw_date": "2026-02-15",
+        "numbers": [
+          2,
+          26,
+          35,
+          38,
+          40
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.143337"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2603,
+        "draw_date": "2026-02-13",
+        "numbers": [
+          6,
+          9,
+          28,
+          30,
+          42
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.297731"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2602,
+        "draw_date": "2026-02-11",
+        "numbers": [
+          4,
+          14,
+          17,
+          21,
+          25
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.451438"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2601,
+        "draw_date": "2026-02-09",
+        "numbers": [
+          18,
+          21,
+          22,
+          25,
+          27
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.600934"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2600,
+        "draw_date": "2026-02-07",
+        "numbers": [
+          2,
+          4,
+          6,
+          31,
+          35
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.764153"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2599,
+        "draw_date": "2026-02-05",
+        "numbers": [
+          2,
+          3,
+          5,
+          15,
+          42
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:57.916445"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2598,
+        "draw_date": "2026-02-03",
+        "numbers": [
+          2,
+          10,
+          13,
+          16,
+          40
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.091176"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2597,
+        "draw_date": "2026-02-01",
+        "numbers": [
+          8,
+          14,
+          31,
+          37,
+          43
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.259304"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2596,
+        "draw_date": "2026-01-30",
+        "numbers": [
+          8,
+          11,
+          17,
+          24,
+          39
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.428830"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2595,
+        "draw_date": "2026-01-28",
+        "numbers": [
+          2,
+          7,
+          20,
+          37,
+          38
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.610837"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2594,
+        "draw_date": "2026-01-26",
+        "numbers": [
+          5,
+          13,
+          26,
+          38,
+          41
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.788050"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2593,
+        "draw_date": "2026-01-24",
+        "numbers": [
+          7,
+          8,
+          20,
+          37,
+          39
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:58.950101"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2592,
+        "draw_date": "2026-01-22",
+        "numbers": [
+          23,
+          24,
+          28,
+          35,
+          43
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.116638"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2591,
+        "draw_date": "2026-01-20",
+        "numbers": [
+          1,
+          22,
+          27,
+          33,
+          42
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.253350"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2590,
+        "draw_date": "2026-01-18",
+        "numbers": [
+          7,
+          24,
+          28,
+          30,
+          41
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.423393"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2589,
+        "draw_date": "2026-01-16",
+        "numbers": [
+          12,
+          18,
+          28,
+          34,
+          42
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.584930"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2588,
+        "draw_date": "2026-01-14",
+        "numbers": [
+          18,
+          21,
+          28,
+          30,
+          38
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.730616"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2587,
+        "draw_date": "2026-01-12",
+        "numbers": [
+          6,
+          16,
+          18,
+          29,
+          30
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:03:59.898895"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2586,
+        "draw_date": "2026-01-10",
+        "numbers": [
+          2,
+          12,
+          21,
+          22,
+          32
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.075970"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2585,
+        "draw_date": "2026-01-08",
+        "numbers": [
+          14,
+          17,
+          18,
+          22,
+          23
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.251209"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2584,
+        "draw_date": "2026-01-06",
+        "numbers": [
+          1,
+          6,
+          13,
+          34,
+          36
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.421547"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2583,
+        "draw_date": "2026-01-04",
+        "numbers": [
+          16,
+          27,
+          31,
+          32,
+          36
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.597493"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2582,
+        "draw_date": "2026-01-02",
+        "numbers": [
+          2,
+          6,
+          15,
+          19,
+          29
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.771644"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2581,
+        "draw_date": "2025-12-31",
+        "numbers": [
+          16,
+          20,
+          24,
+          38,
+          43
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:00.923114"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2580,
+        "draw_date": "2025-12-29",
+        "numbers": [
+          22,
+          23,
+          28,
+          34,
+          36
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.081365"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2579,
+        "draw_date": "2025-12-27",
+        "numbers": [
+          15,
+          17,
+          18,
+          20,
+          30
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.242149"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2578,
+        "draw_date": "2025-12-25",
+        "numbers": [
+          8,
+          12,
+          13,
+          21,
+          35
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.419350"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2577,
+        "draw_date": "2025-12-23",
+        "numbers": [
+          14,
+          18,
+          31,
+          34,
+          38
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.557270"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2576,
+        "draw_date": "2025-12-21",
+        "numbers": [
+          7,
+          13,
+          15,
+          19,
+          24
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.726188"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2575,
+        "draw_date": "2025-12-19",
+        "numbers": [
+          1,
+          9,
+          18,
+          20,
+          35
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:01.892279"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2574,
+        "draw_date": "2025-12-17",
+        "numbers": [
+          4,
+          9,
+          19,
+          36,
+          41
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.072395"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2573,
+        "draw_date": "2025-12-15",
+        "numbers": [
+          1,
+          7,
+          19,
+          31,
+          37
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.261473"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2572,
+        "draw_date": "2025-12-13",
+        "numbers": [
+          4,
+          12,
+          17,
+          22,
+          29
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.421494"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2571,
+        "draw_date": "2025-12-11",
+        "numbers": [
+          5,
+          8,
+          26,
+          32,
+          37
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.591113"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2570,
+        "draw_date": "2025-12-09",
+        "numbers": [
+          6,
+          10,
+          16,
+          20,
+          37
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.750973"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2569,
+        "draw_date": "2025-12-07",
+        "numbers": [
+          15,
+          27,
+          36,
+          39,
+          40
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:02.921512"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2568,
+        "draw_date": "2025-12-05",
+        "numbers": [
+          20,
+          28,
+          29,
+          37,
+          38
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.083371"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2567,
+        "draw_date": "2025-12-03",
+        "numbers": [
+          7,
+          14,
+          17,
+          40,
+          41
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.228722"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2566,
+        "draw_date": "2025-12-01",
+        "numbers": [
+          5,
+          11,
+          12,
+          16,
+          36
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.428113"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2565,
+        "draw_date": "2025-11-29",
+        "numbers": [
+          1,
+          27,
+          29,
+          31,
+          39
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.572179"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2564,
+        "draw_date": "2025-11-27",
+        "numbers": [
+          3,
+          5,
+          15,
+          19,
+          30
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.732388"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2563,
+        "draw_date": "2025-11-25",
+        "numbers": [
+          13,
+          17,
+          38,
+          41,
+          43
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:03.897022"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2562,
+        "draw_date": "2025-11-23",
+        "numbers": [
+          8,
+          10,
+          15,
+          35,
+          42
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.064355"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2561,
+        "draw_date": "2025-11-21",
+        "numbers": [
+          4,
+          5,
+          10,
+          11,
+          20
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.223791"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2560,
+        "draw_date": "2025-11-19",
+        "numbers": [
+          8,
+          20,
+          26,
+          29,
+          30
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.392819"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2559,
+        "draw_date": "2025-11-17",
+        "numbers": [
+          6,
+          29,
+          32,
+          33,
+          35
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.549107"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2558,
+        "draw_date": "2025-11-15",
+        "numbers": [
+          2,
+          17,
+          21,
+          28,
+          39
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.714778"
+      },
+      {
+        "game": "baloto",
+        "draw_number": 2557,
+        "draw_date": "2025-11-13",
+        "numbers": [
+          2,
+          15,
+          18,
+          37,
+          38
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:04.921168"
+      }
+    ],
+    "revancha": [
+      {
+        "game": "revancha",
+        "draw_number": 2716,
+        "draw_date": "2026-09-30",
+        "numbers": [
+          4,
+          10,
+          14,
+          18,
+          23
+        ],
+        "superball": 7,
+        "jackpot": "$2.000 Millones",
+        "updated_at": "2026-10-01T12:04:05.073534"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2715,
+        "draw_date": "2026-09-28",
+        "numbers": [
+          16,
+          19,
+          24,
+          26,
+          28
+        ],
+        "superball": 2,
+        "jackpot": "$1.900 Millones",
+        "updated_at": "2026-10-01T12:04:05.220408"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2714,
+        "draw_date": "2026-09-26",
+        "numbers": [
+          12,
+          13,
+          21,
+          40,
+          42
+        ],
+        "superball": 8,
+        "jackpot": "$1.800 Millones",
+        "updated_at": "2026-10-01T12:04:05.492514"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2713,
+        "draw_date": "2026-09-23",
+        "numbers": [
+          1,
+          6,
+          21,
+          22,
+          42
+        ],
+        "superball": 16,
+        "jackpot": "$1.700 Millones",
+        "updated_at": "2026-10-01T12:04:05.823737"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2712,
+        "draw_date": "2026-09-21",
+        "numbers": [
+          5,
+          32,
+          33,
+          36,
+          40
+        ],
+        "superball": 4,
+        "jackpot": "$1.600 Millones",
+        "updated_at": "2026-10-01T12:04:05.945673"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2711,
+        "draw_date": "2026-09-19",
+        "numbers": [
+          10,
+          25,
+          27,
+          38,
+          42
+        ],
+        "superball": 3,
+        "jackpot": "$1.500 Millones",
+        "updated_at": "2026-10-01T12:04:06.056887"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2710,
+        "draw_date": "2026-09-16",
+        "numbers": [
+          2,
+          9,
+          30,
+          36,
+          42
+        ],
+        "superball": 11,
+        "jackpot": "$1.400 Millones",
+        "updated_at": "2026-10-01T12:04:06.155724"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2709,
+        "draw_date": "2026-09-14",
+        "numbers": [
+          4,
+          12,
+          15,
+          17,
+          29
+        ],
+        "superball": 16,
+        "jackpot": "$1.300 Millones",
+        "updated_at": "2026-10-01T12:04:06.255699"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2708,
+        "draw_date": "2026-09-12",
+        "numbers": [
+          4,
+          8,
+          17,
+          21,
+          27
+        ],
+        "superball": 1,
+        "jackpot": "$1.200 Millones",
+        "updated_at": "2026-10-01T12:04:06.368712"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2707,
+        "draw_date": "2026-09-09",
+        "numbers": [
+          16,
+          25,
+          27,
+          34,
+          43
+        ],
+        "superball": 11,
+        "jackpot": "$1.100 Millones",
+        "updated_at": "2026-10-01T12:04:06.470976"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2706,
+        "draw_date": "2026-09-07",
+        "numbers": [
+          3,
+          10,
+          19,
+          24,
+          30
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:06.591406"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2705,
+        "draw_date": "2026-09-05",
+        "numbers": [
+          2,
+          30,
+          32,
+          33,
+          39
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:06.687804"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2704,
+        "draw_date": "2026-09-03",
+        "numbers": [
+          24,
+          28,
+          36,
+          37,
+          40
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:06.910425"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2703,
+        "draw_date": "2026-09-01",
+        "numbers": [
+          4,
+          7,
+          8,
+          12,
+          25
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.037828"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2702,
+        "draw_date": "2026-08-30",
+        "numbers": [
+          7,
+          9,
+          11,
+          32,
+          33
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.144597"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2701,
+        "draw_date": "2026-08-28",
+        "numbers": [
+          12,
+          18,
+          33,
+          37,
+          39
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.258138"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2700,
+        "draw_date": "2026-08-26",
+        "numbers": [
+          4,
+          5,
+          11,
+          12,
+          38
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.379371"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2699,
+        "draw_date": "2026-08-24",
+        "numbers": [
+          5,
+          7,
+          18,
+          34,
+          40
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.505870"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2698,
+        "draw_date": "2026-08-22",
+        "numbers": [
+          7,
+          22,
+          30,
+          40,
+          42
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.610532"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2697,
+        "draw_date": "2026-08-20",
+        "numbers": [
+          9,
+          11,
+          29,
+          34,
+          43
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.724411"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2696,
+        "draw_date": "2026-08-18",
+        "numbers": [
+          4,
+          18,
+          21,
+          24,
+          38
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.835929"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2695,
+        "draw_date": "2026-08-16",
+        "numbers": [
+          5,
+          8,
+          36,
+          39,
+          43
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:07.949440"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2694,
+        "draw_date": "2026-08-14",
+        "numbers": [
+          3,
+          24,
+          28,
+          31,
+          32
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.076017"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2693,
+        "draw_date": "2026-08-12",
+        "numbers": [
+          6,
+          9,
+          23,
+          39,
+          42
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.168721"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2692,
+        "draw_date": "2026-08-10",
+        "numbers": [
+          7,
+          10,
+          20,
+          37,
+          43
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.262754"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2691,
+        "draw_date": "2026-08-08",
+        "numbers": [
+          1,
+          3,
+          10,
+          29,
+          38
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.385258"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2690,
+        "draw_date": "2026-08-06",
+        "numbers": [
+          2,
+          8,
+          9,
+          22,
+          35
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.489095"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2689,
+        "draw_date": "2026-08-04",
+        "numbers": [
+          6,
+          17,
+          22,
+          25,
+          30
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.609217"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2688,
+        "draw_date": "2026-08-02",
+        "numbers": [
+          6,
+          13,
+          14,
+          26,
+          37
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.718725"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2687,
+        "draw_date": "2026-07-31",
+        "numbers": [
+          17,
+          21,
+          27,
+          38,
+          39
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.820119"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2686,
+        "draw_date": "2026-07-29",
+        "numbers": [
+          4,
+          12,
+          13,
+          23,
+          35
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:08.917492"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2685,
+        "draw_date": "2026-07-27",
+        "numbers": [
+          13,
+          15,
+          20,
+          23,
+          43
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.019577"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2684,
+        "draw_date": "2026-07-25",
+        "numbers": [
+          4,
+          15,
+          25,
+          30,
+          33
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.146621"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2683,
+        "draw_date": "2026-07-23",
+        "numbers": [
+          2,
+          7,
+          33,
+          35,
+          40
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.250557"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2682,
+        "draw_date": "2026-07-21",
+        "numbers": [
+          9,
+          15,
+          17,
+          23,
+          38
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.350738"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2681,
+        "draw_date": "2026-07-19",
+        "numbers": [
+          1,
+          7,
+          10,
+          16,
+          26
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.462015"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2680,
+        "draw_date": "2026-07-17",
+        "numbers": [
+          8,
+          13,
+          27,
+          37,
+          40
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.570758"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2679,
+        "draw_date": "2026-07-15",
+        "numbers": [
+          1,
+          7,
+          12,
+          25,
+          28
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.675143"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2678,
+        "draw_date": "2026-07-13",
+        "numbers": [
+          9,
+          17,
+          21,
+          22,
+          35
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.794924"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2677,
+        "draw_date": "2026-07-11",
+        "numbers": [
+          3,
+          6,
+          13,
+          16,
+          18
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:09.895538"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2676,
+        "draw_date": "2026-07-09",
+        "numbers": [
+          5,
+          18,
+          22,
+          31,
+          42
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.004452"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2675,
+        "draw_date": "2026-07-07",
+        "numbers": [
+          1,
+          14,
+          15,
+          21,
+          31
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.112647"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2674,
+        "draw_date": "2026-07-05",
+        "numbers": [
+          19,
+          20,
+          29,
+          37,
+          43
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.219021"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2673,
+        "draw_date": "2026-07-03",
+        "numbers": [
+          20,
+          29,
+          32,
+          36,
+          40
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.326275"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2672,
+        "draw_date": "2026-07-01",
+        "numbers": [
+          5,
+          14,
+          28,
+          34,
+          37
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.444009"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2671,
+        "draw_date": "2026-06-29",
+        "numbers": [
+          2,
+          7,
+          39,
+          41,
+          42
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.552361"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2670,
+        "draw_date": "2026-06-27",
+        "numbers": [
+          13,
+          15,
+          34,
+          40,
+          42
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.649314"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2669,
+        "draw_date": "2026-06-25",
+        "numbers": [
+          11,
+          17,
+          27,
+          30,
+          32
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.743612"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2668,
+        "draw_date": "2026-06-23",
+        "numbers": [
+          5,
+          18,
+          22,
+          29,
+          30
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.858616"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2667,
+        "draw_date": "2026-06-21",
+        "numbers": [
+          8,
+          9,
+          21,
+          22,
+          23
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:10.954297"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2666,
+        "draw_date": "2026-06-19",
+        "numbers": [
+          7,
+          20,
+          21,
+          25,
+          29
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.066257"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2665,
+        "draw_date": "2026-06-17",
+        "numbers": [
+          12,
+          16,
+          20,
+          24,
+          30
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.170924"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2664,
+        "draw_date": "2026-06-15",
+        "numbers": [
+          16,
+          19,
+          34,
+          38,
+          41
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.296108"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2663,
+        "draw_date": "2026-06-13",
+        "numbers": [
+          9,
+          10,
+          12,
+          14,
+          20
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.405027"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2662,
+        "draw_date": "2026-06-11",
+        "numbers": [
+          12,
+          13,
+          33,
+          38,
+          42
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.512619"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2661,
+        "draw_date": "2026-06-09",
+        "numbers": [
+          12,
+          17,
+          25,
+          32,
+          34
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.630226"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2660,
+        "draw_date": "2026-06-07",
+        "numbers": [
+          7,
+          9,
+          24,
+          28,
+          33
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.750943"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2659,
+        "draw_date": "2026-06-05",
+        "numbers": [
+          7,
+          10,
+          17,
+          33,
+          37
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.843589"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2658,
+        "draw_date": "2026-06-03",
+        "numbers": [
+          4,
+          25,
+          29,
+          37,
+          41
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:11.938456"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2657,
+        "draw_date": "2026-06-01",
+        "numbers": [
+          7,
+          31,
+          35,
+          36,
+          42
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.039707"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2656,
+        "draw_date": "2026-05-30",
+        "numbers": [
+          5,
+          7,
+          19,
+          31,
+          32
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.150004"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2655,
+        "draw_date": "2026-05-28",
+        "numbers": [
+          6,
+          28,
+          29,
+          31,
+          35
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.259176"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2654,
+        "draw_date": "2026-05-26",
+        "numbers": [
+          1,
+          6,
+          12,
+          17,
+          23
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.354668"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2653,
+        "draw_date": "2026-05-24",
+        "numbers": [
+          3,
+          6,
+          12,
+          21,
+          36
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.492176"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2652,
+        "draw_date": "2026-05-22",
+        "numbers": [
+          8,
+          14,
+          21,
+          23,
+          41
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.608867"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2651,
+        "draw_date": "2026-05-20",
+        "numbers": [
+          1,
+          4,
+          6,
+          30,
+          41
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.717522"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2650,
+        "draw_date": "2026-05-18",
+        "numbers": [
+          7,
+          13,
+          14,
+          16,
+          40
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.832649"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2649,
+        "draw_date": "2026-05-16",
+        "numbers": [
+          3,
+          7,
+          8,
+          20,
+          26
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:12.943558"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2648,
+        "draw_date": "2026-05-14",
+        "numbers": [
+          5,
+          15,
+          33,
+          40,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.036808"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2647,
+        "draw_date": "2026-05-12",
+        "numbers": [
+          11,
+          12,
+          18,
+          26,
+          39
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.146535"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2646,
+        "draw_date": "2026-05-10",
+        "numbers": [
+          27,
+          32,
+          37,
+          41,
+          43
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.238789"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2645,
+        "draw_date": "2026-05-08",
+        "numbers": [
+          14,
+          24,
+          29,
+          30,
+          38
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.356215"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2644,
+        "draw_date": "2026-05-06",
+        "numbers": [
+          2,
+          10,
+          32,
+          34,
+          41
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.459726"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2643,
+        "draw_date": "2026-05-04",
+        "numbers": [
+          3,
+          5,
+          8,
+          12,
+          38
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.560714"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2642,
+        "draw_date": "2026-05-02",
+        "numbers": [
+          2,
+          5,
+          7,
+          8,
+          30
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.657083"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2641,
+        "draw_date": "2026-04-30",
+        "numbers": [
+          15,
+          26,
+          33,
+          34,
+          42
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.774359"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2640,
+        "draw_date": "2026-04-28",
+        "numbers": [
+          1,
+          7,
+          16,
+          21,
+          24
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.875896"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2639,
+        "draw_date": "2026-04-26",
+        "numbers": [
+          1,
+          6,
+          9,
+          34,
+          39
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:13.976324"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2638,
+        "draw_date": "2026-04-24",
+        "numbers": [
+          3,
+          5,
+          8,
+          28,
+          42
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.086371"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2637,
+        "draw_date": "2026-04-22",
+        "numbers": [
+          7,
+          28,
+          33,
+          36,
+          43
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.187772"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2636,
+        "draw_date": "2026-04-20",
+        "numbers": [
+          19,
+          21,
+          23,
+          24,
+          38
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.279548"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2635,
+        "draw_date": "2026-04-18",
+        "numbers": [
+          2,
+          6,
+          29,
+          35,
+          40
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.396316"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2634,
+        "draw_date": "2026-04-16",
+        "numbers": [
+          2,
+          4,
+          17,
+          18,
+          28
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.503403"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2633,
+        "draw_date": "2026-04-14",
+        "numbers": [
+          2,
+          3,
+          20,
+          23,
+          29
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.630073"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2632,
+        "draw_date": "2026-04-12",
+        "numbers": [
+          18,
+          20,
+          21,
+          26,
+          42
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.725024"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2631,
+        "draw_date": "2026-04-10",
+        "numbers": [
+          3,
+          8,
+          14,
+          23,
+          35
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.836280"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2630,
+        "draw_date": "2026-04-08",
+        "numbers": [
+          19,
+          22,
+          24,
+          29,
+          37
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:14.960031"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2629,
+        "draw_date": "2026-04-06",
+        "numbers": [
+          7,
+          12,
+          23,
+          32,
+          33
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.082375"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2628,
+        "draw_date": "2026-04-04",
+        "numbers": [
+          12,
+          15,
+          28,
+          31,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.193576"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2627,
+        "draw_date": "2026-04-02",
+        "numbers": [
+          7,
+          17,
+          27,
+          32,
+          41
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.282949"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2626,
+        "draw_date": "2026-03-31",
+        "numbers": [
+          7,
+          19,
+          21,
+          33,
+          40
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.403078"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2625,
+        "draw_date": "2026-03-29",
+        "numbers": [
+          17,
+          25,
+          31,
+          36,
+          43
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.513754"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2624,
+        "draw_date": "2026-03-27",
+        "numbers": [
+          1,
+          2,
+          3,
+          11,
+          41
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.623227"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2623,
+        "draw_date": "2026-03-25",
+        "numbers": [
+          13,
+          21,
+          23,
+          40,
+          42
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.741737"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2622,
+        "draw_date": "2026-03-23",
+        "numbers": [
+          27,
+          29,
+          33,
+          34,
+          39
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.849279"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2621,
+        "draw_date": "2026-03-21",
+        "numbers": [
+          16,
+          18,
+          21,
+          36,
+          41
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:15.939516"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2620,
+        "draw_date": "2026-03-19",
+        "numbers": [
+          1,
+          12,
+          33,
+          37,
+          40
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.085964"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2619,
+        "draw_date": "2026-03-17",
+        "numbers": [
+          8,
+          9,
+          20,
+          22,
+          29
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.182557"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2618,
+        "draw_date": "2026-03-15",
+        "numbers": [
+          2,
+          6,
+          10,
+          15,
+          42
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.286107"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2617,
+        "draw_date": "2026-03-13",
+        "numbers": [
+          12,
+          17,
+          29,
+          33,
+          37
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.395736"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2616,
+        "draw_date": "2026-03-11",
+        "numbers": [
+          6,
+          11,
+          20,
+          25,
+          35
+        ],
+        "superball": 5,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.515138"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2615,
+        "draw_date": "2026-03-09",
+        "numbers": [
+          5,
+          24,
+          34,
+          40,
+          41
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.606217"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2614,
+        "draw_date": "2026-03-07",
+        "numbers": [
+          6,
+          24,
+          31,
+          38,
+          43
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.711484"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2613,
+        "draw_date": "2026-03-05",
+        "numbers": [
+          8,
+          9,
+          10,
+          27,
+          32
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.825111"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2612,
+        "draw_date": "2026-03-03",
+        "numbers": [
+          4,
+          10,
+          18,
+          23,
+          26
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:16.934504"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2611,
+        "draw_date": "2026-03-01",
+        "numbers": [
+          21,
+          23,
+          37,
+          38,
+          39
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.050261"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2610,
+        "draw_date": "2026-02-27",
+        "numbers": [
+          10,
+          12,
+          16,
+          22,
+          42
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.175533"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2609,
+        "draw_date": "2026-02-25",
+        "numbers": [
+          1,
+          25,
+          29,
+          35,
+          41
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.301528"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2608,
+        "draw_date": "2026-02-23",
+        "numbers": [
+          11,
+          13,
+          16,
+          19,
+          34
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.407125"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2607,
+        "draw_date": "2026-02-21",
+        "numbers": [
+          22,
+          25,
+          34,
+          36,
+          38
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.512493"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2606,
+        "draw_date": "2026-02-19",
+        "numbers": [
+          15,
+          16,
+          21,
+          32,
+          41
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.611853"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2605,
+        "draw_date": "2026-02-17",
+        "numbers": [
+          8,
+          19,
+          21,
+          25,
+          31
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.709660"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2604,
+        "draw_date": "2026-02-15",
+        "numbers": [
+          1,
+          2,
+          14,
+          19,
+          21
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.808791"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2603,
+        "draw_date": "2026-02-13",
+        "numbers": [
+          3,
+          4,
+          21,
+          37,
+          38
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:17.919165"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2602,
+        "draw_date": "2026-02-11",
+        "numbers": [
+          8,
+          9,
+          16,
+          26,
+          31
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.020359"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2601,
+        "draw_date": "2026-02-09",
+        "numbers": [
+          6,
+          23,
+          28,
+          34,
+          37
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.117890"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2600,
+        "draw_date": "2026-02-07",
+        "numbers": [
+          2,
+          7,
+          8,
+          18,
+          29
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.233454"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2599,
+        "draw_date": "2026-02-05",
+        "numbers": [
+          21,
+          27,
+          32,
+          36,
+          40
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.351229"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2598,
+        "draw_date": "2026-02-03",
+        "numbers": [
+          6,
+          20,
+          24,
+          28,
+          43
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.480201"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2597,
+        "draw_date": "2026-02-01",
+        "numbers": [
+          23,
+          27,
+          31,
+          37,
+          40
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.584212"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2596,
+        "draw_date": "2026-01-30",
+        "numbers": [
+          4,
+          7,
+          14,
+          40,
+          42
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.690448"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2595,
+        "draw_date": "2026-01-28",
+        "numbers": [
+          11,
+          13,
+          19,
+          28,
+          30
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.797816"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2594,
+        "draw_date": "2026-01-26",
+        "numbers": [
+          2,
+          11,
+          16,
+          23,
+          30
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:18.909238"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2593,
+        "draw_date": "2026-01-24",
+        "numbers": [
+          11,
+          21,
+          26,
+          31,
+          36
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.022938"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2592,
+        "draw_date": "2026-01-22",
+        "numbers": [
+          4,
+          8,
+          12,
+          30,
+          35
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.144663"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2591,
+        "draw_date": "2026-01-20",
+        "numbers": [
+          1,
+          3,
+          27,
+          42,
+          43
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.251848"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2590,
+        "draw_date": "2026-01-18",
+        "numbers": [
+          9,
+          18,
+          29,
+          36,
+          41
+        ],
+        "superball": 11,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.347897"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2589,
+        "draw_date": "2026-01-16",
+        "numbers": [
+          15,
+          17,
+          25,
+          36,
+          40
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.453054"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2588,
+        "draw_date": "2026-01-14",
+        "numbers": [
+          7,
+          22,
+          25,
+          34,
+          39
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.568126"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2587,
+        "draw_date": "2026-01-12",
+        "numbers": [
+          9,
+          23,
+          24,
+          35,
+          41
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.672529"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2586,
+        "draw_date": "2026-01-10",
+        "numbers": [
+          1,
+          29,
+          33,
+          37,
+          39
+        ],
+        "superball": 6,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.791278"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2585,
+        "draw_date": "2026-01-08",
+        "numbers": [
+          1,
+          2,
+          28,
+          36,
+          37
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.907546"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2584,
+        "draw_date": "2026-01-06",
+        "numbers": [
+          3,
+          8,
+          11,
+          25,
+          34
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:19.998330"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2583,
+        "draw_date": "2026-01-04",
+        "numbers": [
+          10,
+          26,
+          30,
+          33,
+          40
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.107895"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2582,
+        "draw_date": "2026-01-02",
+        "numbers": [
+          6,
+          12,
+          14,
+          16,
+          34
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.248068"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2581,
+        "draw_date": "2025-12-31",
+        "numbers": [
+          6,
+          12,
+          17,
+          20,
+          43
+        ],
+        "superball": 16,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.368537"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2580,
+        "draw_date": "2025-12-29",
+        "numbers": [
+          1,
+          20,
+          24,
+          30,
+          34
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.476596"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2579,
+        "draw_date": "2025-12-27",
+        "numbers": [
+          1,
+          5,
+          8,
+          20,
+          23
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.587595"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2578,
+        "draw_date": "2025-12-25",
+        "numbers": [
+          2,
+          15,
+          17,
+          38,
+          43
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.688365"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2577,
+        "draw_date": "2025-12-23",
+        "numbers": [
+          2,
+          8,
+          14,
+          22,
+          27
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.797118"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2576,
+        "draw_date": "2025-12-21",
+        "numbers": [
+          3,
+          13,
+          17,
+          22,
+          34
+        ],
+        "superball": 9,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:20.893998"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2575,
+        "draw_date": "2025-12-19",
+        "numbers": [
+          2,
+          6,
+          16,
+          22,
+          32
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.001820"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2574,
+        "draw_date": "2025-12-17",
+        "numbers": [
+          18,
+          25,
+          26,
+          27,
+          39
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.105237"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2573,
+        "draw_date": "2025-12-15",
+        "numbers": [
+          8,
+          17,
+          20,
+          28,
+          29
+        ],
+        "superball": 4,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.202486"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2572,
+        "draw_date": "2025-12-13",
+        "numbers": [
+          4,
+          13,
+          21,
+          27,
+          30
+        ],
+        "superball": 7,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.321872"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2571,
+        "draw_date": "2025-12-11",
+        "numbers": [
+          8,
+          10,
+          26,
+          28,
+          38
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.436147"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2570,
+        "draw_date": "2025-12-09",
+        "numbers": [
+          2,
+          12,
+          14,
+          15,
+          25
+        ],
+        "superball": 3,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.542302"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2569,
+        "draw_date": "2025-12-07",
+        "numbers": [
+          1,
+          4,
+          8,
+          25,
+          38
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.654908"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2568,
+        "draw_date": "2025-12-05",
+        "numbers": [
+          8,
+          10,
+          15,
+          20,
+          24
+        ],
+        "superball": 13,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.764166"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2567,
+        "draw_date": "2025-12-03",
+        "numbers": [
+          3,
+          4,
+          20,
+          24,
+          25
+        ],
+        "superball": 8,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.880587"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2566,
+        "draw_date": "2025-12-01",
+        "numbers": [
+          9,
+          16,
+          18,
+          41,
+          42
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:21.991113"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2565,
+        "draw_date": "2025-11-29",
+        "numbers": [
+          1,
+          3,
+          8,
+          18,
+          31
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.105547"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2564,
+        "draw_date": "2025-11-27",
+        "numbers": [
+          13,
+          14,
+          22,
+          38,
+          43
+        ],
+        "superball": 15,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.210041"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2563,
+        "draw_date": "2025-11-25",
+        "numbers": [
+          11,
+          21,
+          33,
+          36,
+          38
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.314138"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2562,
+        "draw_date": "2025-11-23",
+        "numbers": [
+          7,
+          19,
+          25,
+          31,
+          33
+        ],
+        "superball": 10,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.441275"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2561,
+        "draw_date": "2025-11-21",
+        "numbers": [
+          5,
+          9,
+          15,
+          20,
+          39
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.559678"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2560,
+        "draw_date": "2025-11-19",
+        "numbers": [
+          8,
+          24,
+          28,
+          31,
+          39
+        ],
+        "superball": 1,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.669700"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2559,
+        "draw_date": "2025-11-17",
+        "numbers": [
+          1,
+          9,
+          17,
+          29,
+          32
+        ],
+        "superball": 12,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.791703"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2558,
+        "draw_date": "2025-11-15",
+        "numbers": [
+          19,
+          25,
+          27,
+          28,
+          41
+        ],
+        "superball": 2,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:22.912861"
+      },
+      {
+        "game": "revancha",
+        "draw_number": 2557,
+        "draw_date": "2025-11-13",
+        "numbers": [
+          2,
+          32,
+          33,
+          38,
+          42
+        ],
+        "superball": 14,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:23.106075"
+      }
+    ],
+    "miloto": [
+      {
+        "game": "miloto",
+        "draw_number": 617,
+        "draw_date": "2026-10-02",
+        "numbers": [
+          18,
+          20,
+          22,
+          31,
+          38
+        ],
+        "superball": null,
+        "jackpot": "$320 Millones",
+        "updated_at": "2026-10-03T00:01:00"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 616,
+        "draw_date": "2026-10-01",
+        "numbers": [
+          15,
+          21,
+          25,
+          30,
+          37
+        ],
+        "superball": null,
+        "jackpot": "$300 Millones",
+        "updated_at": "2026-10-02T00:01:00"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 615,
+        "draw_date": "2026-09-29",
+        "numbers": [
+          5,
+          10,
+          21,
+          24,
+          31
+        ],
+        "superball": null,
+        "jackpot": "$260 Millones",
+        "updated_at": "2026-10-01T12:04:23.217365"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 614,
+        "draw_date": "2026-09-28",
+        "numbers": [
+          9,
+          13,
+          14,
+          30,
+          31
+        ],
+        "superball": null,
+        "jackpot": "$230 Millones",
+        "updated_at": "2026-10-01T12:04:23.330769"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 613,
+        "draw_date": "2026-09-25",
+        "numbers": [
+          8,
+          10,
+          18,
+          31,
+          36
+        ],
+        "superball": null,
+        "jackpot": "$200 Millones",
+        "updated_at": "2026-10-01T12:04:23.433881"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 612,
+        "draw_date": "2026-09-24",
+        "numbers": [
+          3,
+          14,
+          22,
+          24,
+          37
+        ],
+        "superball": null,
+        "jackpot": "$160 Millones",
+        "updated_at": "2026-10-01T12:04:23.537626"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 611,
+        "draw_date": "2026-09-22",
+        "numbers": [
+          1,
+          3,
+          8,
+          18,
+          20
+        ],
+        "superball": null,
+        "jackpot": "$120 Millones",
+        "updated_at": "2026-10-01T12:04:23.647277"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 610,
+        "draw_date": "2026-09-21",
+        "numbers": [
+          13,
+          17,
+          33,
+          34,
+          35
+        ],
+        "superball": null,
+        "jackpot": "$550 Millones",
+        "updated_at": "2026-10-01T12:04:23.751999"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 609,
+        "draw_date": "2026-09-18",
+        "numbers": [
+          10,
+          15,
+          31,
+          33,
+          39
+        ],
+        "superball": null,
+        "jackpot": "$500 Millones",
+        "updated_at": "2026-10-01T12:04:23.858807"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 608,
+        "draw_date": "2026-09-17",
+        "numbers": [
+          16,
+          26,
+          32,
+          34,
+          35
+        ],
+        "superball": null,
+        "jackpot": "$450 Millones",
+        "updated_at": "2026-10-01T12:04:23.966394"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 607,
+        "draw_date": "2026-09-15",
+        "numbers": [
+          1,
+          10,
+          12,
+          23,
+          29
+        ],
+        "superball": null,
+        "jackpot": "$400 Millones",
+        "updated_at": "2026-10-01T12:04:24.085630"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 606,
+        "draw_date": "2026-09-14",
+        "numbers": [
+          8,
+          14,
+          16,
+          26,
+          38
+        ],
+        "superball": null,
+        "jackpot": "$350 Millones",
+        "updated_at": "2026-10-01T12:04:24.188943"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 605,
+        "draw_date": "2026-09-11",
+        "numbers": [
+          4,
+          17,
+          27,
+          33,
+          36
+        ],
+        "superball": null,
+        "jackpot": "$300 Millones",
+        "updated_at": "2026-10-01T12:04:24.291665"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 604,
+        "draw_date": "2026-09-10",
+        "numbers": [
+          6,
+          8,
+          20,
+          28,
+          39
+        ],
+        "superball": null,
+        "jackpot": "$260 Millones",
+        "updated_at": "2026-10-01T12:04:24.394047"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 601,
+        "draw_date": "2026-09-04",
+        "numbers": [
+          4,
+          5,
+          7,
+          24,
+          25
+        ],
+        "superball": null,
+        "jackpot": "$160 Millones",
+        "updated_at": "2026-10-01T12:04:24.520386"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 600,
+        "draw_date": "2026-09-02",
+        "numbers": [
+          8,
+          12,
+          27,
+          34,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:24.620280"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 599,
+        "draw_date": "2026-08-31",
+        "numbers": [
+          2,
+          8,
+          15,
+          19,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:24.724555"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 598,
+        "draw_date": "2026-08-29",
+        "numbers": [
+          1,
+          7,
+          11,
+          33,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:24.838634"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 597,
+        "draw_date": "2026-08-27",
+        "numbers": [
+          20,
+          21,
+          25,
+          26,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:24.965142"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 596,
+        "draw_date": "2026-08-25",
+        "numbers": [
+          5,
+          11,
+          19,
+          22,
+          23
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.085092"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 595,
+        "draw_date": "2026-08-23",
+        "numbers": [
+          5,
+          7,
+          8,
+          33,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.193186"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 594,
+        "draw_date": "2026-08-21",
+        "numbers": [
+          3,
+          7,
+          18,
+          19,
+          21
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.313123"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 593,
+        "draw_date": "2026-08-19",
+        "numbers": [
+          7,
+          13,
+          23,
+          25,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.430094"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 592,
+        "draw_date": "2026-08-17",
+        "numbers": [
+          4,
+          9,
+          13,
+          16,
+          17
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.530535"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 591,
+        "draw_date": "2026-08-15",
+        "numbers": [
+          3,
+          22,
+          24,
+          28,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.649863"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 590,
+        "draw_date": "2026-08-13",
+        "numbers": [
+          10,
+          15,
+          30,
+          35,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.750259"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 589,
+        "draw_date": "2026-08-11",
+        "numbers": [
+          3,
+          18,
+          23,
+          30,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.854018"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 588,
+        "draw_date": "2026-08-09",
+        "numbers": [
+          1,
+          11,
+          15,
+          38,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:25.957464"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 587,
+        "draw_date": "2026-08-07",
+        "numbers": [
+          19,
+          23,
+          35,
+          36,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.053269"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 586,
+        "draw_date": "2026-08-05",
+        "numbers": [
+          8,
+          13,
+          22,
+          24,
+          26
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.148165"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 585,
+        "draw_date": "2026-08-03",
+        "numbers": [
+          4,
+          8,
+          15,
+          28,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.264753"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 584,
+        "draw_date": "2026-08-01",
+        "numbers": [
+          4,
+          8,
+          10,
+          12,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.375585"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 583,
+        "draw_date": "2026-07-30",
+        "numbers": [
+          1,
+          5,
+          18,
+          19,
+          28
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.483275"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 582,
+        "draw_date": "2026-07-28",
+        "numbers": [
+          4,
+          12,
+          13,
+          18,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.591779"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 581,
+        "draw_date": "2026-07-26",
+        "numbers": [
+          5,
+          17,
+          18,
+          31,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.708529"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 580,
+        "draw_date": "2026-07-24",
+        "numbers": [
+          5,
+          22,
+          32,
+          35,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.829662"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 579,
+        "draw_date": "2026-07-22",
+        "numbers": [
+          19,
+          20,
+          26,
+          32,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:26.963002"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 578,
+        "draw_date": "2026-07-20",
+        "numbers": [
+          5,
+          9,
+          17,
+          21,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.081209"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 577,
+        "draw_date": "2026-07-18",
+        "numbers": [
+          5,
+          9,
+          23,
+          26,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.192916"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 576,
+        "draw_date": "2026-07-16",
+        "numbers": [
+          6,
+          9,
+          18,
+          29,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.301141"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 575,
+        "draw_date": "2026-07-14",
+        "numbers": [
+          16,
+          18,
+          24,
+          33,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.396889"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 574,
+        "draw_date": "2026-07-12",
+        "numbers": [
+          3,
+          5,
+          15,
+          32,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.507901"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 573,
+        "draw_date": "2026-07-10",
+        "numbers": [
+          9,
+          18,
+          27,
+          29,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.615569"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 572,
+        "draw_date": "2026-07-08",
+        "numbers": [
+          9,
+          15,
+          17,
+          24,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.723552"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 571,
+        "draw_date": "2026-07-06",
+        "numbers": [
+          8,
+          10,
+          21,
+          32,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.836938"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 570,
+        "draw_date": "2026-07-04",
+        "numbers": [
+          1,
+          6,
+          25,
+          26,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:27.962487"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 569,
+        "draw_date": "2026-07-02",
+        "numbers": [
+          10,
+          11,
+          15,
+          29,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.086984"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 568,
+        "draw_date": "2026-06-30",
+        "numbers": [
+          1,
+          14,
+          20,
+          22,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.181752"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 567,
+        "draw_date": "2026-06-28",
+        "numbers": [
+          9,
+          11,
+          13,
+          35,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.304442"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 566,
+        "draw_date": "2026-06-26",
+        "numbers": [
+          2,
+          5,
+          7,
+          8,
+          26
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.411927"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 565,
+        "draw_date": "2026-06-24",
+        "numbers": [
+          4,
+          20,
+          26,
+          33,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.521750"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 564,
+        "draw_date": "2026-06-22",
+        "numbers": [
+          5,
+          9,
+          11,
+          18,
+          21
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.644572"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 563,
+        "draw_date": "2026-06-20",
+        "numbers": [
+          2,
+          19,
+          21,
+          35,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.751161"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 562,
+        "draw_date": "2026-06-18",
+        "numbers": [
+          2,
+          3,
+          8,
+          13,
+          14
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.858633"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 561,
+        "draw_date": "2026-06-16",
+        "numbers": [
+          5,
+          8,
+          11,
+          12,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:28.974386"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 560,
+        "draw_date": "2026-06-14",
+        "numbers": [
+          11,
+          18,
+          24,
+          25,
+          28
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.097533"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 559,
+        "draw_date": "2026-06-12",
+        "numbers": [
+          10,
+          16,
+          18,
+          20,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.195145"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 558,
+        "draw_date": "2026-06-10",
+        "numbers": [
+          11,
+          12,
+          17,
+          26,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.322606"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 557,
+        "draw_date": "2026-06-08",
+        "numbers": [
+          12,
+          19,
+          29,
+          31,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.452734"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 556,
+        "draw_date": "2026-06-06",
+        "numbers": [
+          19,
+          20,
+          29,
+          32,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.545659"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 555,
+        "draw_date": "2026-06-04",
+        "numbers": [
+          8,
+          18,
+          25,
+          30,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.671070"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 554,
+        "draw_date": "2026-06-02",
+        "numbers": [
+          13,
+          15,
+          17,
+          31,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:29.785077"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 553,
+        "draw_date": "2026-05-31",
+        "numbers": [
+          3,
+          12,
+          15,
+          23,
+          24
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.051198"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 552,
+        "draw_date": "2026-05-29",
+        "numbers": [
+          3,
+          18,
+          20,
+          28,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.160458"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 551,
+        "draw_date": "2026-05-27",
+        "numbers": [
+          1,
+          7,
+          15,
+          28,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.277766"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 550,
+        "draw_date": "2026-05-25",
+        "numbers": [
+          2,
+          12,
+          14,
+          20,
+          21
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.384544"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 549,
+        "draw_date": "2026-05-23",
+        "numbers": [
+          1,
+          22,
+          29,
+          32,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.474325"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 548,
+        "draw_date": "2026-05-21",
+        "numbers": [
+          4,
+          11,
+          15,
+          19,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.592553"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 547,
+        "draw_date": "2026-05-19",
+        "numbers": [
+          1,
+          11,
+          22,
+          23,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.718963"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 546,
+        "draw_date": "2026-05-17",
+        "numbers": [
+          4,
+          5,
+          20,
+          25,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.835351"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 545,
+        "draw_date": "2026-05-15",
+        "numbers": [
+          4,
+          8,
+          11,
+          17,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:30.942577"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 544,
+        "draw_date": "2026-05-13",
+        "numbers": [
+          2,
+          5,
+          15,
+          23,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.048774"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 543,
+        "draw_date": "2026-05-11",
+        "numbers": [
+          2,
+          4,
+          22,
+          32,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.157771"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 542,
+        "draw_date": "2026-05-09",
+        "numbers": [
+          8,
+          15,
+          22,
+          29,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.272809"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 541,
+        "draw_date": "2026-05-07",
+        "numbers": [
+          1,
+          2,
+          3,
+          32,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.377499"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 540,
+        "draw_date": "2026-05-05",
+        "numbers": [
+          2,
+          6,
+          8,
+          26,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.487322"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 539,
+        "draw_date": "2026-05-03",
+        "numbers": [
+          15,
+          28,
+          36,
+          37,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.618612"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 538,
+        "draw_date": "2026-05-01",
+        "numbers": [
+          4,
+          25,
+          31,
+          36,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.721295"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 537,
+        "draw_date": "2026-04-29",
+        "numbers": [
+          5,
+          14,
+          25,
+          34,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.839202"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 536,
+        "draw_date": "2026-04-27",
+        "numbers": [
+          7,
+          8,
+          9,
+          14,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:31.958563"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 535,
+        "draw_date": "2026-04-25",
+        "numbers": [
+          15,
+          17,
+          18,
+          22,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.068142"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 534,
+        "draw_date": "2026-04-23",
+        "numbers": [
+          2,
+          6,
+          25,
+          33,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.168515"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 533,
+        "draw_date": "2026-04-21",
+        "numbers": [
+          1,
+          13,
+          22,
+          27,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.275106"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 532,
+        "draw_date": "2026-04-19",
+        "numbers": [
+          1,
+          9,
+          13,
+          16,
+          26
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.401144"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 531,
+        "draw_date": "2026-04-17",
+        "numbers": [
+          13,
+          21,
+          22,
+          28,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.498018"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 530,
+        "draw_date": "2026-04-15",
+        "numbers": [
+          3,
+          21,
+          22,
+          26,
+          27
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.622706"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 529,
+        "draw_date": "2026-04-13",
+        "numbers": [
+          17,
+          30,
+          35,
+          36,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.729864"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 528,
+        "draw_date": "2026-04-11",
+        "numbers": [
+          3,
+          11,
+          24,
+          31,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:32.826191"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 527,
+        "draw_date": "2026-04-09",
+        "numbers": [
+          7,
+          16,
+          18,
+          20,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.010931"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 526,
+        "draw_date": "2026-04-07",
+        "numbers": [
+          14,
+          19,
+          34,
+          37,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.124777"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 525,
+        "draw_date": "2026-04-05",
+        "numbers": [
+          1,
+          6,
+          13,
+          30,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.233936"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 524,
+        "draw_date": "2026-04-03",
+        "numbers": [
+          15,
+          16,
+          20,
+          21,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.332005"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 523,
+        "draw_date": "2026-04-01",
+        "numbers": [
+          1,
+          2,
+          11,
+          18,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.448043"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 522,
+        "draw_date": "2026-03-30",
+        "numbers": [
+          6,
+          16,
+          27,
+          31,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.567547"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 521,
+        "draw_date": "2026-03-28",
+        "numbers": [
+          13,
+          15,
+          32,
+          35,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.687797"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 520,
+        "draw_date": "2026-03-26",
+        "numbers": [
+          10,
+          20,
+          21,
+          26,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.779797"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 519,
+        "draw_date": "2026-03-24",
+        "numbers": [
+          20,
+          24,
+          26,
+          34,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:33.901720"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 518,
+        "draw_date": "2026-03-22",
+        "numbers": [
+          3,
+          5,
+          6,
+          18,
+          24
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.003819"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 517,
+        "draw_date": "2026-03-20",
+        "numbers": [
+          2,
+          23,
+          26,
+          34,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.110532"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 516,
+        "draw_date": "2026-03-18",
+        "numbers": [
+          1,
+          11,
+          23,
+          32,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.229593"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 515,
+        "draw_date": "2026-03-16",
+        "numbers": [
+          3,
+          11,
+          17,
+          27,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.320230"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 514,
+        "draw_date": "2026-03-14",
+        "numbers": [
+          1,
+          5,
+          17,
+          21,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.431083"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 513,
+        "draw_date": "2026-03-12",
+        "numbers": [
+          1,
+          7,
+          12,
+          17,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.538823"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 512,
+        "draw_date": "2026-03-10",
+        "numbers": [
+          2,
+          13,
+          17,
+          20,
+          30
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.658325"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 511,
+        "draw_date": "2026-03-08",
+        "numbers": [
+          3,
+          12,
+          19,
+          23,
+          28
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.754620"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 510,
+        "draw_date": "2026-03-06",
+        "numbers": [
+          1,
+          6,
+          20,
+          28,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.871657"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 509,
+        "draw_date": "2026-03-04",
+        "numbers": [
+          8,
+          13,
+          25,
+          27,
+          30
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:34.975770"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 508,
+        "draw_date": "2026-03-02",
+        "numbers": [
+          13,
+          16,
+          21,
+          29,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.097890"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 507,
+        "draw_date": "2026-02-28",
+        "numbers": [
+          2,
+          10,
+          21,
+          24,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.210639"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 506,
+        "draw_date": "2026-02-26",
+        "numbers": [
+          4,
+          19,
+          25,
+          31,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.316143"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 505,
+        "draw_date": "2026-02-24",
+        "numbers": [
+          16,
+          19,
+          28,
+          37,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.426311"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 504,
+        "draw_date": "2026-02-22",
+        "numbers": [
+          2,
+          7,
+          22,
+          28,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.540061"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 503,
+        "draw_date": "2026-02-20",
+        "numbers": [
+          8,
+          12,
+          20,
+          30,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:35.637458"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 502,
+        "draw_date": "2026-02-18",
+        "numbers": [
+          3,
+          4,
+          6,
+          10,
+          12
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.016731"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 501,
+        "draw_date": "2026-02-16",
+        "numbers": [
+          1,
+          9,
+          17,
+          22,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.145462"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 500,
+        "draw_date": "2026-02-14",
+        "numbers": [
+          2,
+          4,
+          13,
+          33,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.245173"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 499,
+        "draw_date": "2026-02-12",
+        "numbers": [
+          2,
+          3,
+          11,
+          16,
+          28
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.350494"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 498,
+        "draw_date": "2026-02-10",
+        "numbers": [
+          8,
+          14,
+          24,
+          30,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.467317"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 497,
+        "draw_date": "2026-02-08",
+        "numbers": [
+          3,
+          6,
+          9,
+          24,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.581707"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 496,
+        "draw_date": "2026-02-06",
+        "numbers": [
+          4,
+          16,
+          18,
+          24,
+          26
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.696543"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 495,
+        "draw_date": "2026-02-04",
+        "numbers": [
+          19,
+          23,
+          27,
+          29,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.813071"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 494,
+        "draw_date": "2026-02-02",
+        "numbers": [
+          2,
+          10,
+          24,
+          30,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:37.938003"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 493,
+        "draw_date": "2026-01-31",
+        "numbers": [
+          10,
+          11,
+          18,
+          21,
+          22
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.071389"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 492,
+        "draw_date": "2026-01-29",
+        "numbers": [
+          2,
+          3,
+          7,
+          14,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.179071"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 491,
+        "draw_date": "2026-01-27",
+        "numbers": [
+          3,
+          19,
+          27,
+          28,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.301883"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 490,
+        "draw_date": "2026-01-25",
+        "numbers": [
+          6,
+          9,
+          15,
+          26,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.418992"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 489,
+        "draw_date": "2026-01-23",
+        "numbers": [
+          3,
+          6,
+          11,
+          14,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.543546"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 488,
+        "draw_date": "2026-01-21",
+        "numbers": [
+          2,
+          5,
+          17,
+          24,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.657923"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 487,
+        "draw_date": "2026-01-19",
+        "numbers": [
+          3,
+          8,
+          23,
+          28,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.779230"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 486,
+        "draw_date": "2026-01-17",
+        "numbers": [
+          10,
+          15,
+          18,
+          19,
+          27
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.873341"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 485,
+        "draw_date": "2026-01-15",
+        "numbers": [
+          5,
+          8,
+          11,
+          17,
+          20
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:38.988769"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 484,
+        "draw_date": "2026-01-13",
+        "numbers": [
+          6,
+          7,
+          9,
+          15,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.112538"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 483,
+        "draw_date": "2026-01-11",
+        "numbers": [
+          3,
+          7,
+          19,
+          26,
+          27
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.219461"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 482,
+        "draw_date": "2026-01-09",
+        "numbers": [
+          3,
+          4,
+          16,
+          19,
+          26
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.336915"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 481,
+        "draw_date": "2026-01-07",
+        "numbers": [
+          11,
+          13,
+          16,
+          23,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.445736"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 480,
+        "draw_date": "2026-01-05",
+        "numbers": [
+          4,
+          12,
+          17,
+          21,
+          27
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.566236"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 479,
+        "draw_date": "2026-01-03",
+        "numbers": [
+          4,
+          10,
+          15,
+          21,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.685497"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 478,
+        "draw_date": "2026-01-01",
+        "numbers": [
+          1,
+          3,
+          6,
+          16,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.811357"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 477,
+        "draw_date": "2025-12-30",
+        "numbers": [
+          1,
+          20,
+          24,
+          27,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:39.922540"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 476,
+        "draw_date": "2025-12-28",
+        "numbers": [
+          25,
+          27,
+          28,
+          35,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.044626"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 475,
+        "draw_date": "2025-12-26",
+        "numbers": [
+          3,
+          24,
+          27,
+          34,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.182212"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 474,
+        "draw_date": "2025-12-24",
+        "numbers": [
+          4,
+          26,
+          28,
+          29,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.297522"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 473,
+        "draw_date": "2025-12-22",
+        "numbers": [
+          11,
+          16,
+          27,
+          28,
+          32
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.413649"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 472,
+        "draw_date": "2025-12-20",
+        "numbers": [
+          8,
+          9,
+          10,
+          12,
+          14
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.504669"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 471,
+        "draw_date": "2025-12-18",
+        "numbers": [
+          5,
+          29,
+          32,
+          33,
+          34
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.613549"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 470,
+        "draw_date": "2025-12-16",
+        "numbers": [
+          3,
+          17,
+          31,
+          33,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.728429"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 469,
+        "draw_date": "2025-12-14",
+        "numbers": [
+          1,
+          14,
+          24,
+          25,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.844452"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 468,
+        "draw_date": "2025-12-12",
+        "numbers": [
+          4,
+          6,
+          12,
+          24,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:40.960308"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 467,
+        "draw_date": "2025-12-10",
+        "numbers": [
+          12,
+          22,
+          23,
+          26,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.061725"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 466,
+        "draw_date": "2025-12-08",
+        "numbers": [
+          2,
+          6,
+          11,
+          19,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.154437"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 465,
+        "draw_date": "2025-12-06",
+        "numbers": [
+          13,
+          15,
+          19,
+          25,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.277316"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 464,
+        "draw_date": "2025-12-04",
+        "numbers": [
+          8,
+          22,
+          24,
+          26,
+          27
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.386499"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 463,
+        "draw_date": "2025-12-02",
+        "numbers": [
+          7,
+          24,
+          30,
+          31,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.479532"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 462,
+        "draw_date": "2025-11-30",
+        "numbers": [
+          9,
+          11,
+          13,
+          30,
+          33
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.585569"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 461,
+        "draw_date": "2025-11-28",
+        "numbers": [
+          5,
+          21,
+          34,
+          36,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.675559"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 460,
+        "draw_date": "2025-11-26",
+        "numbers": [
+          2,
+          15,
+          20,
+          27,
+          31
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.770106"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 459,
+        "draw_date": "2025-11-24",
+        "numbers": [
+          3,
+          13,
+          29,
+          33,
+          38
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.871234"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 458,
+        "draw_date": "2025-11-22",
+        "numbers": [
+          11,
+          14,
+          21,
+          30,
+          39
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:41.983320"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 457,
+        "draw_date": "2025-11-20",
+        "numbers": [
+          10,
+          14,
+          22,
+          27,
+          29
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.085989"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 456,
+        "draw_date": "2025-11-18",
+        "numbers": [
+          4,
+          11,
+          17,
+          19,
+          25
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.210156"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 455,
+        "draw_date": "2025-11-16",
+        "numbers": [
+          2,
+          6,
+          27,
+          28,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.316712"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 454,
+        "draw_date": "2025-11-14",
+        "numbers": [
+          5,
+          22,
+          30,
+          34,
+          35
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.447551"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 453,
+        "draw_date": "2025-11-12",
+        "numbers": [
+          1,
+          5,
+          12,
+          16,
+          18
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.592012"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 452,
+        "draw_date": "2025-11-10",
+        "numbers": [
+          12,
+          15,
+          18,
+          28,
+          36
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.724335"
+      },
+      {
+        "game": "miloto",
+        "draw_number": 451,
+        "draw_date": "2025-11-08",
+        "numbers": [
+          1,
+          3,
+          13,
+          22,
+          37
+        ],
+        "superball": null,
+        "jackpot": null,
+        "updated_at": "2026-10-01T12:04:42.833552"
+      }
+    ]
+  },
+  "predictions": [],
+  "sync_logs": [
+    {
+      "timestamp": "2026-10-03T05:02:50.259823",
+      "game": "miloto",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-03T05:02:50.114614",
+      "game": "baloto_revancha",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-02T05:03:07.982081",
+      "game": "miloto",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-02T05:03:07.819159",
+      "game": "baloto_revancha",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-01T15:45:50.766141",
+      "game": "miloto",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-01T15:45:50.602630",
+      "game": "baloto_revancha",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-01T12:15:51.506207",
+      "game": "miloto",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "timestamp": "2026-10-01T12:15:51.347913",
+      "game": "baloto_revancha",
+      "status": "ERROR",
+      "new_draws_count": 0,
+      "message": "<urlopen error [Errno -3] Temporary failure in name resolution>"
+    }
+  ]
+}
