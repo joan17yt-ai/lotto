@@ -133,7 +133,7 @@ class TelegramLottoBot:
 
         lottery_data = self.get_lottery_data()
         baloto_jp = lottery_data.get('games', {}).get('baloto', {}).get('latest_draw', {}).get('jackpot', '$61.600 Millones')
-        miloto_jp = lottery_data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$260 Millones')
+        miloto_jp = lottery_data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$350 Millones')
 
         msg = (
             f"🔔 *¡RECORDATORIO DE SORTEO HOY!* 🇨🇴\n\n"

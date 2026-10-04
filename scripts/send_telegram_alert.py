@@ -70,7 +70,7 @@ def alert_reminder_630pm(token: str, chat_id: str):
         return
 
     baloto_jp = data.get('games', {}).get('baloto', {}).get('latest_draw', {}).get('jackpot', '$61.600 Millones')
-    miloto_jp = data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$320 Millones')
+    miloto_jp = data.get('games', {}).get('miloto', {}).get('latest_draw', {}).get('jackpot', '$350 Millones')
 
     msg = (
         f"🔔 ¡RECORDATORIO DE SORTEO HOY! 🇨🇴\n\n"

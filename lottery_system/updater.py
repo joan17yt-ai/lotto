@@ -71,6 +71,61 @@ def parse_baloto_html(html_content: str) -> List[Dict[str, Any]]:
 
     return results
 
+
+def parse_miloto_detail_html(html_content: str) -> Optional[Dict[str, Any]]:
+    """
+    Parses baloto.com/miloto/resultados-miloto/ HTML.
+    Extracts draw number, date, winning numbers, draw jackpot, new jackpot, and winner status.
+    """
+    soup = BeautifulSoup(html_content, "html.parser")
+    text = soup.get_text(separator=" ")
+
+    draw_match = re.search(r"SORTEO\s*#?\s*(\d+)", text, re.IGNORECASE)
+    draw_num = int(draw_match.group(1)) if draw_match else None
+
+    date_parsed = parse_spanish_date(text)
+
+    num_match = re.search(r"(\d{1,2})\s*[-–,]\s*(\d{1,2})\s*[-–,]\s*(\d{1,2})\s*[-–,]\s*(\d{1,2})\s*[-–,]\s*(\d{1,2})", text)
+    numbers = None
+    if num_match:
+        numbers = sorted([int(num_match.group(i)) for i in range(1, 6)])
+    else:
+        ball_tags = soup.find_all(class_=re.compile(r"ball|bolilla|numero|circle", re.I))
+        extracted_nums = []
+        for b in ball_tags:
+            t = b.get_text().strip()
+            if t.isdigit() and 1 <= int(t) <= 39:
+                extracted_nums.append(int(t))
+                if len(extracted_nums) == 5:
+                    break
+        if len(extracted_nums) == 5:
+            numbers = sorted(extracted_nums)
+
+    new_jp_match = re.search(r"Acumulado\s+nuevo[^\d]*(\d+[\.\d]*)\s*(?:Millones|MILLONES)", text, re.I)
+    new_jackpot = f"${new_jp_match.group(1)} Millones" if new_jp_match else None
+
+    draw_jp_match = re.search(r"ACUMULADO\s+DEL\s+SORTEO[^\d]*(\d+[\.\d]*)\s*(?:Millones|MILLONES)", text, re.I)
+    draw_jackpot = f"${draw_jp_match.group(1)} Millones" if draw_jp_match else None
+
+    win5_match = re.search(r"Aciertos\s+5.*?Ganadores\s*(\d+)", text, re.I)
+    has_jackpot_winner = False
+    if win5_match and int(win5_match.group(1)) > 0:
+        has_jackpot_winner = True
+
+    if numbers and date_parsed:
+        return {
+            "game": "miloto",
+            "draw_number": draw_num,
+            "date": date_parsed,
+            "numbers": numbers,
+            "superball": None,
+            "draw_jackpot": draw_jackpot,
+            "new_jackpot": new_jackpot,
+            "jackpot": new_jackpot or draw_jackpot,
+            "has_jackpot_winner": has_jackpot_winner
+        }
+    return None
+
 def parse_miloto_html(html_content: str) -> List[Dict[str, Any]]:
     """
     Parses baloto.com/miloto/resultados/ HTML.
