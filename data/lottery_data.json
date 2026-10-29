@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "LottoAnalytics Colombia",
-    "last_updated": "2026-10-29T11:00:28.408888",
+    "last_updated": "2026-10-29T11:39:07.366054",
     "status": "online",
     "publication_status": {
       "baloto": {
@@ -47,7 +47,7 @@
         ],
         "superball": 16,
         "jackpot": null,
-        "updated_at": "2026-10-29T11:00:29.315214"
+        "updated_at": "2026-10-29T11:39:08.179599"
       },
       "recent_draws": [
         {
@@ -63,7 +63,7 @@
           ],
           "superball": 16,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.315214"
+          "updated_at": "2026-10-29T11:39:08.179599"
         },
         {
           "game": "baloto",
@@ -78,7 +78,7 @@
           ],
           "superball": 7,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.328153"
+          "updated_at": "2026-10-29T11:39:08.192048"
         },
         {
           "game": "baloto",
@@ -93,7 +93,7 @@
           ],
           "superball": 8,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.340989"
+          "updated_at": "2026-10-29T11:39:08.204221"
         },
         {
           "game": "baloto",
@@ -108,7 +108,7 @@
           ],
           "superball": 16,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.354093"
+          "updated_at": "2026-10-29T11:39:08.216745"
         },
         {
           "game": "baloto",
@@ -123,7 +123,7 @@
           ],
           "superball": 4,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.367012"
+          "updated_at": "2026-10-29T11:39:08.228867"
         },
         {
           "game": "baloto",
@@ -1349,54 +1349,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            4,
-            15,
+            1,
+            13,
             28,
             39,
             42
           ],
-          "superball": 3,
-          "sum": 128,
-          "rationale": "Suma 128 en rango óptimo [89-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 1,
+          "sum": 123,
+          "rationale": "Suma 123 en rango óptimo [89-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            6,
-            7,
-            25,
-            28,
-            30
+            4,
+            13,
+            18,
+            30,
+            41
           ],
-          "superball": 2,
-          "sum": 96,
-          "rationale": "Incluye pareja frecuente [28, 30] y balotas en racha reciente con Superbalota caliente."
+          "superball": 16,
+          "sum": 106,
+          "rationale": "Incluye pareja frecuente [13, 41] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            7,
-            20,
-            27,
-            28,
+            1,
+            18,
+            30,
+            34,
             37
           ],
           "superball": 14,
-          "sum": 119,
-          "rationale": "Reversión a la media con rezagados [27, 37, 7] y anclas de alta frecuencia [20, 28]."
+          "sum": 120,
+          "rationale": "Reversión a la media con rezagados [37, 1, 34] y anclas de alta frecuencia [30, 18]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            8,
+            3,
             12,
-            33,
-            35,
-            43
+            32,
+            37,
+            38
           ],
-          "superball": 1,
-          "sum": 131,
-          "rationale": "Optimización de premio individual: incluye balotas altas [43, 35, 33] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 11,
+          "sum": 122,
+          "rationale": "Optimización de premio individual: incluye balotas altas [37, 32, 38] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -1420,7 +1420,7 @@
         ],
         "superball": 12,
         "jackpot": null,
-        "updated_at": "2026-10-29T11:00:29.321672"
+        "updated_at": "2026-10-29T11:39:08.185513"
       },
       "recent_draws": [
         {
@@ -1436,7 +1436,7 @@
           ],
           "superball": 12,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.321672"
+          "updated_at": "2026-10-29T11:39:08.185513"
         },
         {
           "game": "revancha",
@@ -1451,7 +1451,7 @@
           ],
           "superball": 9,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.334538"
+          "updated_at": "2026-10-29T11:39:08.198141"
         },
         {
           "game": "revancha",
@@ -1466,7 +1466,7 @@
           ],
           "superball": 10,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.347431"
+          "updated_at": "2026-10-29T11:39:08.210451"
         },
         {
           "game": "revancha",
@@ -1481,7 +1481,7 @@
           ],
           "superball": 14,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.360429"
+          "updated_at": "2026-10-29T11:39:08.222842"
         },
         {
           "game": "revancha",
@@ -1496,7 +1496,7 @@
           ],
           "superball": 13,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:29.373422"
+          "updated_at": "2026-10-29T11:39:08.235133"
         },
         {
           "game": "revancha",
@@ -2698,54 +2698,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            1,
-            12,
-            23,
-            33,
-            38
+            8,
+            11,
+            19,
+            28,
+            29
           ],
-          "superball": 2,
-          "sum": 107,
-          "rationale": "Suma 107 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 15,
+          "sum": 95,
+          "rationale": "Suma 95 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            12,
-            20,
-            21,
+            7,
+            18,
             24,
-            29
+            30,
+            33
           ],
-          "superball": 15,
-          "sum": 106,
-          "rationale": "Incluye pareja frecuente [20, 29] y balotas en racha reciente con Superbalota caliente."
+          "superball": 3,
+          "sum": 112,
+          "rationale": "Incluye pareja frecuente [7, 33] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            12,
+            2,
+            11,
+            17,
             20,
-            21,
-            29,
             41
           ],
           "superball": 12,
-          "sum": 123,
-          "rationale": "Reversión a la media con rezagados [41, 20, 29] y anclas de alta frecuencia [21, 12]."
+          "sum": 91,
+          "rationale": "Reversión a la media con rezagados [11, 41, 20] y anclas de alta frecuencia [17, 2]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            5,
-            12,
-            25,
-            32,
+            10,
+            13,
+            30,
+            33,
             43
           ],
-          "superball": 10,
-          "sum": 117,
-          "rationale": "Optimización de premio individual: incluye balotas altas [43, 32] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 2,
+          "sum": 129,
+          "rationale": "Optimización de premio individual: incluye balotas altas [33, 43] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -2769,7 +2769,7 @@
         ],
         "superball": null,
         "jackpot": null,
-        "updated_at": "2026-10-29T11:00:30.026814"
+        "updated_at": "2026-10-29T11:39:08.935543"
       },
       "recent_draws": [
         {
@@ -2785,7 +2785,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.026814"
+          "updated_at": "2026-10-29T11:39:08.935543"
         },
         {
           "game": "miloto",
@@ -2800,7 +2800,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.034700"
+          "updated_at": "2026-10-29T11:39:08.943336"
         },
         {
           "game": "miloto",
@@ -2815,7 +2815,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.041620"
+          "updated_at": "2026-10-29T11:39:08.950244"
         },
         {
           "game": "miloto",
@@ -2830,7 +2830,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.048497"
+          "updated_at": "2026-10-29T11:39:08.956904"
         },
         {
           "game": "miloto",
@@ -2845,7 +2845,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.055278"
+          "updated_at": "2026-10-29T11:39:08.963533"
         },
         {
           "game": "miloto",
@@ -2860,7 +2860,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.062085"
+          "updated_at": "2026-10-29T11:39:08.969909"
         },
         {
           "game": "miloto",
@@ -2875,7 +2875,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.069217"
+          "updated_at": "2026-10-29T11:39:08.976253"
         },
         {
           "game": "miloto",
@@ -2890,7 +2890,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.076108"
+          "updated_at": "2026-10-29T11:39:08.982688"
         },
         {
           "game": "miloto",
@@ -2905,7 +2905,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.083014"
+          "updated_at": "2026-10-29T11:39:08.990715"
         },
         {
           "game": "miloto",
@@ -2920,7 +2920,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-10-29T11:00:30.089868"
+          "updated_at": "2026-10-29T11:39:08.997202"
         }
       ],
       "sum_metrics": {
@@ -3866,54 +3866,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            9,
-            11,
-            14,
+            4,
+            5,
             16,
+            31,
             36
           ],
           "superball": null,
-          "sum": 86,
-          "rationale": "Suma 86 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
+          "sum": 92,
+          "rationale": "Suma 92 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
             1,
-            12,
-            14,
+            11,
+            18,
             31,
-            37
+            38
           ],
           "superball": null,
-          "sum": 95,
-          "rationale": "Incluye pareja frecuente [1, 37] y balotas en racha reciente con Superbalota caliente."
+          "sum": 99,
+          "rationale": "Incluye pareja frecuente [1, 11] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
+            3,
             4,
-            15,
-            26,
+            8,
             32,
             35
           ],
           "superball": null,
-          "sum": 112,
-          "rationale": "Reversión a la media con rezagados [32, 4, 26] y anclas de alta frecuencia [15, 35]."
+          "sum": 82,
+          "rationale": "Reversión a la media con rezagados [32, 3, 4] y anclas de alta frecuencia [35, 8]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            8,
-            10,
-            12,
-            33,
-            37
+            2,
+            13,
+            28,
+            34,
+            35
           ],
           "superball": null,
-          "sum": 100,
-          "rationale": "Optimización de premio individual: incluye balotas altas [37, 33] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "sum": 112,
+          "rationale": "Optimización de premio individual: incluye balotas altas [35, 34] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     }
