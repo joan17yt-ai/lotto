@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "LottoAnalytics Colombia",
-    "last_updated": "2026-11-04T03:04:04.760591",
+    "last_updated": "2026-11-04T12:23:35.479321",
     "status": "online",
     "publication_status": {
       "baloto": {
@@ -17,7 +17,7 @@
       "miloto": {
         "is_draw_day": false,
         "status": "up_to_date",
-        "message": "Hoy no es día de sorteo de Miloto. Último sorteo registrado: 2026-11-02."
+        "message": "Hoy no es día de sorteo de Miloto. Último sorteo registrado: 2026-11-03."
       }
     },
     "sync_info": {
@@ -47,7 +47,7 @@
         ],
         "superball": 14,
         "jackpot": null,
-        "updated_at": "2026-11-04T03:04:05.691828"
+        "updated_at": "2026-11-04T12:23:36.524246"
       },
       "recent_draws": [
         {
@@ -63,7 +63,7 @@
           ],
           "superball": 14,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.691828"
+          "updated_at": "2026-11-04T12:23:36.524246"
         },
         {
           "game": "baloto",
@@ -78,7 +78,7 @@
           ],
           "superball": 12,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.704976"
+          "updated_at": "2026-11-04T12:23:36.533190"
         },
         {
           "game": "baloto",
@@ -93,7 +93,7 @@
           ],
           "superball": 16,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.718089"
+          "updated_at": "2026-11-04T12:23:36.541818"
         },
         {
           "game": "baloto",
@@ -108,7 +108,7 @@
           ],
           "superball": 7,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.731472"
+          "updated_at": "2026-11-04T12:23:36.550540"
         },
         {
           "game": "baloto",
@@ -123,7 +123,7 @@
           ],
           "superball": 8,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.744951"
+          "updated_at": "2026-11-04T12:23:36.559274"
         },
         {
           "game": "baloto",
@@ -1365,54 +1365,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            6,
-            17,
-            21,
-            30,
-            39
+            14,
+            16,
+            28,
+            29,
+            43
           ],
-          "superball": 16,
-          "sum": 113,
-          "rationale": "Suma 113 en rango óptimo [89-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 11,
+          "sum": 130,
+          "rationale": "Suma 130 en rango óptimo [89-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            11,
+            7,
             17,
-            25,
-            28,
-            30
+            18,
+            30,
+            39
           ],
           "superball": 8,
           "sum": 111,
-          "rationale": "Incluye pareja frecuente [28, 30] y balotas en racha reciente con Superbalota caliente."
+          "rationale": "Incluye pareja frecuente [17, 39] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            4,
+            2,
             7,
-            17,
-            37,
-            40
+            16,
+            24,
+            43
           ],
           "superball": 4,
-          "sum": 105,
-          "rationale": "Reversión a la media con rezagados [40, 37, 7] y anclas de alta frecuencia [4, 17]."
+          "sum": 92,
+          "rationale": "Reversión a la media con rezagados [2, 7, 24] y anclas de alta frecuencia [43, 16]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            1,
-            6,
-            28,
-            32,
-            41
+            3,
+            14,
+            30,
+            35,
+            37
           ],
-          "superball": 14,
-          "sum": 108,
-          "rationale": "Optimización de premio individual: incluye balotas altas [32, 41] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 16,
+          "sum": 119,
+          "rationale": "Optimización de premio individual: incluye balotas altas [35, 37] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -1436,7 +1436,7 @@
         ],
         "superball": 14,
         "jackpot": null,
-        "updated_at": "2026-11-04T03:04:05.698357"
+        "updated_at": "2026-11-04T12:23:36.528696"
       },
       "recent_draws": [
         {
@@ -1452,7 +1452,7 @@
           ],
           "superball": 14,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.698357"
+          "updated_at": "2026-11-04T12:23:36.528696"
         },
         {
           "game": "revancha",
@@ -1467,7 +1467,7 @@
           ],
           "superball": 13,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.711519"
+          "updated_at": "2026-11-04T12:23:36.537510"
         },
         {
           "game": "revancha",
@@ -1482,7 +1482,7 @@
           ],
           "superball": 12,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.724790"
+          "updated_at": "2026-11-04T12:23:36.546126"
         },
         {
           "game": "revancha",
@@ -1497,7 +1497,7 @@
           ],
           "superball": 9,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.738314"
+          "updated_at": "2026-11-04T12:23:36.554947"
         },
         {
           "game": "revancha",
@@ -1512,7 +1512,7 @@
           ],
           "superball": 10,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:05.751546"
+          "updated_at": "2026-11-04T12:23:36.563626"
         },
         {
           "game": "revancha",
@@ -2722,54 +2722,54 @@
         {
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
-            8,
-            13,
-            23,
-            35,
-            38
+            1,
+            6,
+            21,
+            27,
+            34
           ],
-          "superball": 2,
-          "sum": 117,
-          "rationale": "Suma 117 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
+          "superball": 14,
+          "sum": 89,
+          "rationale": "Suma 89 en rango óptimo [86-131], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            4,
             7,
             17,
-            37,
+            30,
+            33,
             40
           ],
           "superball": 2,
-          "sum": 105,
-          "rationale": "Incluye pareja frecuente [37, 40] y balotas en racha reciente con Superbalota caliente."
+          "sum": 127,
+          "rationale": "Incluye pareja frecuente [7, 33] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            8,
+            7,
             12,
-            29,
-            31,
-            40
+            20,
+            25,
+            43
           ],
-          "superball": 16,
-          "sum": 120,
-          "rationale": "Reversión a la media con rezagados [31, 8, 29] y anclas de alta frecuencia [40, 12]."
+          "superball": 8,
+          "sum": 107,
+          "rationale": "Reversión a la media con rezagados [7, 20, 43] y anclas de alta frecuencia [12, 25]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            5,
-            8,
-            24,
-            36,
-            39
+            1,
+            13,
+            22,
+            34,
+            36
           ],
-          "superball": 7,
-          "sum": 112,
-          "rationale": "Optimización de premio individual: incluye balotas altas [36, 39] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "superball": 2,
+          "sum": 106,
+          "rationale": "Optimización de premio individual: incluye balotas altas [36, 34] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     },
@@ -2783,19 +2783,34 @@
       "latest_draw": {
         "game": "miloto",
         "draw_number": null,
-        "draw_date": "2026-11-02",
+        "draw_date": "2026-11-03",
         "numbers": [
-          4,
-          26,
-          29,
-          34,
-          35
+          8,
+          13,
+          20,
+          24,
+          25
         ],
         "superball": null,
         "jackpot": null,
-        "updated_at": "2026-11-04T03:04:06.412838"
+        "updated_at": "2026-11-04T12:23:37.416396"
       },
       "recent_draws": [
+        {
+          "game": "miloto",
+          "draw_number": null,
+          "draw_date": "2026-11-03",
+          "numbers": [
+            8,
+            13,
+            20,
+            24,
+            25
+          ],
+          "superball": null,
+          "jackpot": null,
+          "updated_at": "2026-11-04T12:23:37.416396"
+        },
         {
           "game": "miloto",
           "draw_number": null,
@@ -2809,7 +2824,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.412838"
+          "updated_at": "2026-11-04T12:23:37.421536"
         },
         {
           "game": "miloto",
@@ -2824,7 +2839,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.420552"
+          "updated_at": "2026-11-04T12:23:37.426151"
         },
         {
           "game": "miloto",
@@ -2839,7 +2854,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.427477"
+          "updated_at": "2026-11-04T12:23:37.430739"
         },
         {
           "game": "miloto",
@@ -2854,7 +2869,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.434382"
+          "updated_at": "2026-11-04T12:23:37.435308"
         },
         {
           "game": "miloto",
@@ -2869,7 +2884,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.441351"
+          "updated_at": "2026-11-04T12:23:37.439892"
         },
         {
           "game": "miloto",
@@ -2884,7 +2899,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.448261"
+          "updated_at": "2026-11-04T12:23:37.444441"
         },
         {
           "game": "miloto",
@@ -2899,7 +2914,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.455260"
+          "updated_at": "2026-11-04T12:23:37.449027"
         },
         {
           "game": "miloto",
@@ -2914,7 +2929,7 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.462253"
+          "updated_at": "2026-11-04T12:23:37.453575"
         },
         {
           "game": "miloto",
@@ -2929,26 +2944,11 @@
           ],
           "superball": null,
           "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.469251"
-        },
-        {
-          "game": "miloto",
-          "draw_number": null,
-          "draw_date": "2026-10-16",
-          "numbers": [
-            7,
-            8,
-            18,
-            38,
-            39
-          ],
-          "superball": null,
-          "jackpot": null,
-          "updated_at": "2026-11-04T03:04:06.476547"
+          "updated_at": "2026-11-04T12:23:37.458139"
         }
       ],
       "sum_metrics": {
-        "mean": 98.0,
+        "mean": 97.9,
         "median": 99.0,
         "std": 24.2,
         "min": 35,
@@ -3024,15 +3024,6 @@
           "category": "WARM"
         },
         {
-          "number": 18,
-          "count_total": 28,
-          "pct_total": 16.0,
-          "count_recent": 12,
-          "expected_recent": 6.4,
-          "deviation_total": 5.56,
-          "category": "HOT"
-        },
-        {
           "number": 15,
           "count_total": 27,
           "pct_total": 15.43,
@@ -3040,6 +3031,15 @@
           "expected_recent": 6.4,
           "deviation_total": 4.56,
           "category": "WARM"
+        },
+        {
+          "number": 18,
+          "count_total": 27,
+          "pct_total": 15.43,
+          "count_recent": 11,
+          "expected_recent": 6.4,
+          "deviation_total": 4.56,
+          "category": "HOT"
         },
         {
           "number": 35,
@@ -3060,6 +3060,24 @@
           "category": "HOT"
         },
         {
+          "number": 13,
+          "count_total": 25,
+          "pct_total": 14.29,
+          "count_recent": 8,
+          "expected_recent": 6.4,
+          "deviation_total": 2.56,
+          "category": "WARM"
+        },
+        {
+          "number": 24,
+          "count_total": 25,
+          "pct_total": 14.29,
+          "count_recent": 6,
+          "expected_recent": 6.4,
+          "deviation_total": 2.56,
+          "category": "WARM"
+        },
+        {
           "number": 26,
           "count_total": 25,
           "pct_total": 14.29,
@@ -3075,24 +3093,6 @@
           "count_recent": 6,
           "expected_recent": 6.4,
           "deviation_total": 2.56,
-          "category": "WARM"
-        },
-        {
-          "number": 13,
-          "count_total": 24,
-          "pct_total": 13.71,
-          "count_recent": 7,
-          "expected_recent": 6.4,
-          "deviation_total": 1.56,
-          "category": "WARM"
-        },
-        {
-          "number": 24,
-          "count_total": 24,
-          "pct_total": 13.71,
-          "count_recent": 5,
-          "expected_recent": 6.4,
-          "deviation_total": 1.56,
           "category": "WARM"
         },
         {
@@ -3132,7 +3132,25 @@
           "category": "WARM"
         },
         {
+          "number": 20,
+          "count_total": 23,
+          "pct_total": 13.14,
+          "count_recent": 6,
+          "expected_recent": 6.4,
+          "deviation_total": 0.56,
+          "category": "WARM"
+        },
+        {
           "number": 22,
+          "count_total": 23,
+          "pct_total": 13.14,
+          "count_recent": 6,
+          "expected_recent": 6.4,
+          "deviation_total": 0.56,
+          "category": "WARM"
+        },
+        {
+          "number": 25,
           "count_total": 23,
           "pct_total": 13.14,
           "count_recent": 6,
@@ -3168,28 +3186,10 @@
           "category": "WARM"
         },
         {
-          "number": 20,
-          "count_total": 22,
-          "pct_total": 12.57,
-          "count_recent": 5,
-          "expected_recent": 6.4,
-          "deviation_total": -0.44,
-          "category": "WARM"
-        },
-        {
           "number": 21,
           "count_total": 22,
           "pct_total": 12.57,
           "count_recent": 6,
-          "expected_recent": 6.4,
-          "deviation_total": -0.44,
-          "category": "WARM"
-        },
-        {
-          "number": 25,
-          "count_total": 22,
-          "pct_total": 12.57,
-          "count_recent": 5,
           "expected_recent": 6.4,
           "deviation_total": -0.44,
           "category": "WARM"
@@ -3285,15 +3285,6 @@
           "category": "COLD"
         },
         {
-          "number": 39,
-          "count_total": 19,
-          "pct_total": 10.86,
-          "count_recent": 6,
-          "expected_recent": 6.4,
-          "deviation_total": -3.44,
-          "category": "WARM"
-        },
-        {
           "number": 23,
           "count_total": 18,
           "pct_total": 10.29,
@@ -3303,10 +3294,10 @@
           "category": "WARM"
         },
         {
-          "number": 38,
+          "number": 39,
           "count_total": 18,
           "pct_total": 10.29,
-          "count_recent": 7,
+          "count_recent": 5,
           "expected_recent": 6.4,
           "deviation_total": -4.44,
           "category": "WARM"
@@ -3321,12 +3312,12 @@
           "category": "WARM"
         },
         {
-          "number": 7,
-          "count_total": 16,
-          "pct_total": 9.14,
+          "number": 38,
+          "count_total": 17,
+          "pct_total": 9.71,
           "count_recent": 6,
           "expected_recent": 6.4,
-          "deviation_total": -6.44,
+          "deviation_total": -5.44,
           "category": "WARM"
         },
         {
@@ -3337,6 +3328,15 @@
           "expected_recent": 6.4,
           "deviation_total": -6.44,
           "category": "COLD"
+        },
+        {
+          "number": 7,
+          "count_total": 15,
+          "pct_total": 8.57,
+          "count_recent": 5,
+          "expected_recent": 6.4,
+          "deviation_total": -7.44,
+          "category": "WARM"
         }
       ],
       "superball_stats": [],
@@ -3350,11 +3350,27 @@
           "status": "RETRASADO"
         },
         {
+          "number": 7,
+          "current_gap": 24,
+          "avg_interval": 9.9,
+          "max_gap": 27,
+          "overdue_index": 2.43,
+          "status": "RETRASADO"
+        },
+        {
           "number": 32,
           "current_gap": 19,
           "avg_interval": 7.5,
           "max_gap": 26,
           "overdue_index": 2.53,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 39,
+          "current_gap": 18,
+          "avg_interval": 8.8,
+          "max_gap": 28,
+          "overdue_index": 2.05,
           "status": "RETRASADO"
         },
         {
@@ -3382,35 +3398,11 @@
           "status": "REGULAR"
         },
         {
-          "number": 24,
-          "current_gap": 12,
-          "avg_interval": 6.5,
-          "max_gap": 25,
-          "overdue_index": 1.84,
-          "status": "RETRASADO"
-        },
-        {
-          "number": 25,
-          "current_gap": 11,
-          "avg_interval": 7.5,
-          "max_gap": 25,
-          "overdue_index": 1.46,
-          "status": "REGULAR"
-        },
-        {
           "number": 30,
           "current_gap": 11,
           "avg_interval": 10.7,
           "max_gap": 34,
           "overdue_index": 1.03,
-          "status": "REGULAR"
-        },
-        {
-          "number": 20,
-          "current_gap": 10,
-          "avg_interval": 7.4,
-          "max_gap": 19,
-          "overdue_index": 1.35,
           "status": "REGULAR"
         },
         {
@@ -3430,226 +3422,234 @@
           "status": "REGULAR"
         },
         {
-          "number": 7,
-          "current_gap": 9,
-          "avg_interval": 10.2,
-          "max_gap": 27,
-          "overdue_index": 0.88,
-          "status": "REGULAR"
-        },
-        {
           "number": 38,
-          "current_gap": 9,
-          "avg_interval": 9.2,
+          "current_gap": 10,
+          "avg_interval": 9.8,
           "max_gap": 35,
-          "overdue_index": 0.97,
-          "status": "REGULAR"
-        },
-        {
-          "number": 39,
-          "current_gap": 9,
-          "avg_interval": 8.8,
-          "max_gap": 28,
           "overdue_index": 1.03,
           "status": "REGULAR"
         },
         {
-          "number": 13,
-          "current_gap": 7,
-          "avg_interval": 7.3,
-          "max_gap": 21,
-          "overdue_index": 0.96,
-          "status": "REGULAR"
-        },
-        {
           "number": 33,
-          "current_gap": 7,
-          "avg_interval": 7.6,
+          "current_gap": 8,
+          "avg_interval": 7.5,
           "max_gap": 31,
-          "overdue_index": 0.92,
+          "overdue_index": 1.06,
           "status": "REGULAR"
         },
         {
           "number": 15,
-          "current_gap": 6,
+          "current_gap": 7,
           "avg_interval": 6.4,
           "max_gap": 31,
-          "overdue_index": 0.93,
+          "overdue_index": 1.1,
           "status": "REGULAR"
         },
         {
           "number": 16,
-          "current_gap": 6,
+          "current_gap": 7,
           "avg_interval": 9.2,
           "max_gap": 27,
-          "overdue_index": 0.65,
-          "status": "FRECUENTE"
+          "overdue_index": 0.76,
+          "status": "REGULAR"
         },
         {
           "number": 28,
-          "current_gap": 6,
-          "avg_interval": 7.6,
+          "current_gap": 7,
+          "avg_interval": 7.5,
           "max_gap": 23,
-          "overdue_index": 0.79,
+          "overdue_index": 0.93,
           "status": "REGULAR"
         },
         {
           "number": 6,
-          "current_gap": 5,
-          "avg_interval": 9.2,
+          "current_gap": 6,
+          "avg_interval": 9.1,
           "max_gap": 30,
-          "overdue_index": 0.55,
+          "overdue_index": 0.66,
           "status": "FRECUENTE"
         },
         {
           "number": 11,
-          "current_gap": 5,
-          "avg_interval": 6.1,
+          "current_gap": 6,
+          "avg_interval": 6.0,
           "max_gap": 19,
-          "overdue_index": 0.82,
+          "overdue_index": 0.99,
           "status": "REGULAR"
         },
         {
           "number": 1,
-          "current_gap": 4,
+          "current_gap": 5,
           "avg_interval": 6.3,
           "max_gap": 23,
-          "overdue_index": 0.64,
-          "status": "FRECUENTE"
+          "overdue_index": 0.8,
+          "status": "REGULAR"
         },
         {
           "number": 10,
-          "current_gap": 4,
+          "current_gap": 5,
           "avg_interval": 8.6,
           "max_gap": 39,
-          "overdue_index": 0.46,
+          "overdue_index": 0.58,
           "status": "FRECUENTE"
         },
         {
           "number": 36,
-          "current_gap": 4,
+          "current_gap": 5,
           "avg_interval": 7.0,
           "max_gap": 24,
-          "overdue_index": 0.57,
-          "status": "FRECUENTE"
+          "overdue_index": 0.71,
+          "status": "REGULAR"
         },
         {
           "number": 19,
-          "current_gap": 3,
+          "current_gap": 4,
           "avg_interval": 7.5,
-          "max_gap": 23,
-          "overdue_index": 0.4,
+          "max_gap": 22,
+          "overdue_index": 0.53,
           "status": "FRECUENTE"
         },
         {
           "number": 21,
-          "current_gap": 3,
+          "current_gap": 4,
           "avg_interval": 7.8,
           "max_gap": 19,
-          "overdue_index": 0.38,
+          "overdue_index": 0.52,
           "status": "FRECUENTE"
         },
         {
           "number": 5,
-          "current_gap": 2,
-          "avg_interval": 7.1,
+          "current_gap": 3,
+          "avg_interval": 7.0,
           "max_gap": 26,
-          "overdue_index": 0.28,
-          "status": "FRECUENTE"
-        },
-        {
-          "number": 8,
-          "current_gap": 2,
-          "avg_interval": 5.9,
-          "max_gap": 27,
-          "overdue_index": 0.34,
+          "overdue_index": 0.43,
           "status": "FRECUENTE"
         },
         {
           "number": 14,
-          "current_gap": 2,
+          "current_gap": 3,
           "avg_interval": 8.7,
           "max_gap": 36,
-          "overdue_index": 0.23,
+          "overdue_index": 0.35,
           "status": "FRECUENTE"
         },
         {
           "number": 23,
-          "current_gap": 2,
-          "avg_interval": 9.2,
+          "current_gap": 3,
+          "avg_interval": 9.1,
           "max_gap": 27,
-          "overdue_index": 0.22,
+          "overdue_index": 0.33,
           "status": "FRECUENTE"
         },
         {
           "number": 37,
-          "current_gap": 2,
+          "current_gap": 3,
           "avg_interval": 8.6,
           "max_gap": 29,
-          "overdue_index": 0.23,
+          "overdue_index": 0.35,
           "status": "FRECUENTE"
         },
         {
           "number": 12,
-          "current_gap": 1,
-          "avg_interval": 8.2,
+          "current_gap": 2,
+          "avg_interval": 8.1,
           "max_gap": 37,
-          "overdue_index": 0.12,
+          "overdue_index": 0.25,
           "status": "FRECUENTE"
         },
         {
           "number": 18,
-          "current_gap": 1,
-          "avg_interval": 6.4,
+          "current_gap": 2,
+          "avg_interval": 6.6,
           "max_gap": 33,
-          "overdue_index": 0.16,
+          "overdue_index": 0.3,
           "status": "FRECUENTE"
         },
         {
           "number": 27,
-          "current_gap": 1,
-          "avg_interval": 7.7,
+          "current_gap": 2,
+          "avg_interval": 7.6,
           "max_gap": 40,
-          "overdue_index": 0.13,
+          "overdue_index": 0.26,
           "status": "FRECUENTE"
         },
         {
           "number": 4,
-          "current_gap": 0,
-          "avg_interval": 7.7,
+          "current_gap": 1,
+          "avg_interval": 7.6,
           "max_gap": 32,
-          "overdue_index": 0.0,
+          "overdue_index": 0.13,
           "status": "FRECUENTE"
         },
         {
           "number": 26,
-          "current_gap": 0,
+          "current_gap": 1,
           "avg_interval": 6.7,
+          "max_gap": 21,
+          "overdue_index": 0.15,
+          "status": "FRECUENTE"
+        },
+        {
+          "number": 29,
+          "current_gap": 1,
+          "avg_interval": 8.8,
+          "max_gap": 27,
+          "overdue_index": 0.11,
+          "status": "FRECUENTE"
+        },
+        {
+          "number": 34,
+          "current_gap": 1,
+          "avg_interval": 8.1,
+          "max_gap": 27,
+          "overdue_index": 0.12,
+          "status": "FRECUENTE"
+        },
+        {
+          "number": 35,
+          "current_gap": 1,
+          "avg_interval": 6.5,
+          "max_gap": 22,
+          "overdue_index": 0.15,
+          "status": "FRECUENTE"
+        },
+        {
+          "number": 8,
+          "current_gap": 0,
+          "avg_interval": 6.0,
+          "max_gap": 27,
+          "overdue_index": 0.0,
+          "status": "FRECUENTE"
+        },
+        {
+          "number": 13,
+          "current_gap": 0,
+          "avg_interval": 7.2,
           "max_gap": 21,
           "overdue_index": 0.0,
           "status": "FRECUENTE"
         },
         {
-          "number": 29,
+          "number": 20,
           "current_gap": 0,
-          "avg_interval": 8.8,
-          "max_gap": 27,
+          "avg_interval": 7.5,
+          "max_gap": 19,
           "overdue_index": 0.0,
           "status": "FRECUENTE"
         },
         {
-          "number": 34,
+          "number": 24,
           "current_gap": 0,
-          "avg_interval": 8.1,
-          "max_gap": 27,
+          "avg_interval": 6.8,
+          "max_gap": 25,
           "overdue_index": 0.0,
           "status": "FRECUENTE"
         },
         {
-          "number": 35,
+          "number": 25,
           "current_gap": 0,
-          "avg_interval": 6.6,
-          "max_gap": 22,
+          "avg_interval": 7.7,
+          "max_gap": 25,
           "overdue_index": 0.0,
           "status": "FRECUENTE"
         }
@@ -3664,11 +3664,27 @@
           "status": "RETRASADO"
         },
         {
+          "number": 7,
+          "current_gap": 24,
+          "avg_interval": 9.9,
+          "max_gap": 27,
+          "overdue_index": 2.43,
+          "status": "RETRASADO"
+        },
+        {
           "number": 32,
           "current_gap": 19,
           "avg_interval": 7.5,
           "max_gap": 26,
           "overdue_index": 2.53,
+          "status": "RETRASADO"
+        },
+        {
+          "number": 39,
+          "current_gap": 18,
+          "avg_interval": 8.8,
+          "max_gap": 28,
+          "overdue_index": 2.05,
           "status": "RETRASADO"
         },
         {
@@ -3685,14 +3701,6 @@
           "avg_interval": 5.7,
           "max_gap": 15,
           "overdue_index": 2.64,
-          "status": "RETRASADO"
-        },
-        {
-          "number": 24,
-          "current_gap": 12,
-          "avg_interval": 6.5,
-          "max_gap": 25,
-          "overdue_index": 1.84,
           "status": "RETRASADO"
         }
       ],
@@ -3817,6 +3825,24 @@
         },
         {
           "triplet": [
+            8,
+            13,
+            24
+          ],
+          "count": 2,
+          "pct": 1.14
+        },
+        {
+          "triplet": [
+            8,
+            13,
+            25
+          ],
+          "count": 2,
+          "pct": 1.14
+        },
+        {
+          "triplet": [
             4,
             26,
             29
@@ -3850,24 +3876,6 @@
           ],
           "count": 2,
           "pct": 1.14
-        },
-        {
-          "triplet": [
-            12,
-            27,
-            34
-          ],
-          "count": 2,
-          "pct": 1.14
-        },
-        {
-          "triplet": [
-            14,
-            19,
-            34
-          ],
-          "count": 2,
-          "pct": 1.14
         }
       ],
       "predictions": [
@@ -3875,53 +3883,53 @@
           "strategy": "Equilibrada (Gauss + Paridad)",
           "numbers": [
             3,
-            11,
-            22,
-            32,
-            34
+            12,
+            15,
+            31,
+            38
           ],
           "superball": null,
-          "sum": 102,
-          "rationale": "Suma 102 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
+          "sum": 99,
+          "rationale": "Suma 99 en rango óptimo [81-114], balance par/impar equilibrado y dispersión controlada."
         },
         {
           "strategy": "Tendencia Caliente (Momentum)",
           "numbers": [
-            3,
-            18,
-            24,
-            26,
-            35
+            8,
+            13,
+            20,
+            33,
+            37
           ],
           "superball": null,
-          "sum": 106,
-          "rationale": "Incluye pareja frecuente [3, 24] y balotas en racha reciente con Superbalota caliente."
+          "sum": 111,
+          "rationale": "Incluye pareja frecuente [13, 33] y balotas en racha reciente con Superbalota caliente."
         },
         {
           "strategy": "Reversión a la Media (Rezagados)",
           "numbers": [
-            2,
-            11,
-            24,
+            8,
+            15,
+            17,
             32,
-            35
+            39
           ],
           "superball": null,
-          "sum": 104,
-          "rationale": "Reversión a la media con rezagados [2, 32, 24] y anclas de alta frecuencia [11, 35]."
+          "sum": 111,
+          "rationale": "Reversión a la media con rezagados [17, 39, 32] y anclas de alta frecuencia [8, 15]."
         },
         {
           "strategy": "Anti-Aglomeración (Teoría de Juegos)",
           "numbers": [
-            3,
-            11,
-            16,
-            35,
-            38
+            1,
+            14,
+            23,
+            36,
+            39
           ],
           "superball": null,
-          "sum": 103,
-          "rationale": "Optimización de premio individual: incluye balotas altas [38, 35] fuera del rango de cumpleaños (1-31) para no compartir pozo."
+          "sum": 113,
+          "rationale": "Optimización de premio individual: incluye balotas altas [39, 36] fuera del rango de cumpleaños (1-31) para no compartir pozo."
         }
       ]
     }
